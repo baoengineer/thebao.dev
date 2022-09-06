@@ -2,11 +2,12 @@
   "private": true,
   "sideEffects": false,
   "scripts": {
-    "prebuild": "rimraf ./public/build \"./api/css/**/*.css\"",
+    "clean": "rimraf ./public/build \"./api\"",
+    "prebuild": "npm run clean",
     "build:css": "postcss app/styles/app.css --dir ./api/_css --env production",
     "build": "npm run build:css && remix build",
     "dev:css": "postcss app/styles/app.css --dir ./api/_css -w",
-    "dev": "concurrently \"npm run dev:css\" \"remix dev\""
+    "dev": "concurrently  \"npm run clean\" \"npm run dev:css\" \"remix dev\""
   },
   "dependencies": {
     "@remix-run/node": "^1.7.0",
