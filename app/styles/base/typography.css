@@ -1,6 +1,9 @@
 @layer base {
+  html {
+    @apply text-root;
+  }
   body {
-    @apply font-primary text-base;
+    @apply font-primary text-base bg-primary text-primary;
   }
   h1 {
     @apply text-xl sm:text-2xl md:text-4xl lg:text-6xl;

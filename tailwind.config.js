@@ -24,6 +24,9 @@ module.exports = {
 		extend: {
 			textColor,
 			backgroundColor,
+			fontSize: {
+				root: '24px',
+			},
 		},
 		fontFamily: {
 			logo: ['Rajdhani', 'serif'],
