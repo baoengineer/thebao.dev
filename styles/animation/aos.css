@@ -1,0 +1,7 @@
+[data-aos='fade-up'] {
+	transform: translate3d(0, 15px, 0);
+
+	@screen sm {
+		transform: translate3d(0, 25px, 0);
+	}
+}
