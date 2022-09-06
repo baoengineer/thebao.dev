@@ -2,10 +2,10 @@
   "private": true,
   "sideEffects": false,
   "scripts": {
-    "prebuild": "rimraf ./public/build \"./app/css/**/*.css\"",
-    "build:css": "postcss styles/app.css --dir app/css --env production",
+    "prebuild": "rimraf ./public/build \"./api/css/**/*.css\"",
+    "build:css": "postcss app/styles/app.css --dir ./api/_css --env production",
     "build": "npm run build:css && remix build",
-    "dev:css": "postcss styles/app.css --dir app/css -w",
+    "dev:css": "postcss app/styles/app.css --dir ./api/_css -w",
     "dev": "concurrently \"npm run dev:css\" \"remix dev\""
   },
   "dependencies": {
