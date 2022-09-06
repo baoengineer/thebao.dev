@@ -3,11 +3,13 @@
   "sideEffects": false,
   "scripts": {
     "clean": "rimraf ./public/build \"./api\"",
-    "prebuild": "npm run clean",
+    "build:fonts": "copyfiles -u 3 \"./app/assets/fonts/*\" ./public/build/_assets/fonts/",
+    "preinstall": "npm run clean && npm run build:fonts",
+    "prebuild": "npm run clean && npm run build:fonts",
     "build:css": "postcss app/styles/app.css --dir ./api/_css --env production",
-    "build": "npm run build:css && remix build",
+    "build": "npm run build:css && npm run build:fonts && remix build",
     "dev:css": "postcss app/styles/app.css --dir ./api/_css -w",
-    "dev": "concurrently  \"npm run clean\" \"npm run dev:css\" \"remix dev\""
+    "dev": "concurrently \"npm run dev:css\" \"remix dev\""
   },
   "dependencies": {
     "@remix-run/node": "^1.7.0",
@@ -26,6 +28,7 @@
     "@types/react-dom": "^18.0.6",
     "autoprefixer": "^10.4.8",
     "concurrently": "^7.3.0",
+    "copyfiles": "^2.4.1",
     "cssnano": "^5.1.13",
     "eslint": "^8.20.0",
     "postcss": "^8.4.16",

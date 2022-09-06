@@ -22,29 +22,29 @@ export default function Main() {
 	}, []);
 
 	return (
-		<main className='bg-primary text-primary'>
+		<main className='bg-primary text-primary font-primary'>
 			<header>
 				<Link
 					to='/about'
-					className='text-xl text-blue-600 underline'
+					className='text-xl'
 				>
 					About
 				</Link>
 				<Link
 					to='/works'
-					className='text-xl text-blue-600 underline'
+					className='text-xl'
 				>
 					Works
 				</Link>
 				<Link
 					to='/contact'
-					className='text-xl text-blue-600 underline'
+					className='text-xl'
 				>
 					Contact
 				</Link>
 			</header>
 			<section>
-				<h1 className='text-3xl font-bold underline'>bao</h1>
+				<h1 className='font-300'>bao</h1>
 			</section>
 			<footer></footer>
 		</main>

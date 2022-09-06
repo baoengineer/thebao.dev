@@ -25,6 +25,10 @@ module.exports = {
 			textColor,
 			backgroundColor,
 		},
+		fontFamily: {
+			logo: ['Rajdhani', 'serif'],
+			primary: ['Roboto', 'serif'],
+		},
 	},
 	plugins: [],
 };

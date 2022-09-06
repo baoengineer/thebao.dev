@@ -367,6 +367,26 @@ video {
   max-width: 100%;
   height: auto;
 }
+    @font-face {
+        font-family: 'Rajdhani';
+        font-weight: 300;
+        font-display: swap;
+        src: url./fonts/Rajdhani-Light.ttf);
+    }
+
+    @font-face {
+        font-family: 'Rajdhani';
+        font-weight: 400;
+        font-display: swap;
+        src: url(./fonts/Rajdhani-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: 'Rajdhani';
+        font-weight: 500;
+        font-display: swap;
+        src: url(./fonts/Rajdhani-Medium.ttf);
+    }
     :root {
       --bg-primary: 248, 249, 250;
       --bg-secondary: 222, 226, 230;
@@ -527,28 +547,20 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgba(var(--bg-primary), var(--tw-bg-opacity));
 }
+.font-primary {
+  font-family: Roboto, serif;
+}
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-.font-bold {
-  font-weight: 700;
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 .text-primary {
   --tw-text-opacity: 1;
   color: rgba(var(--text-primary), var(--tw-text-opacity));
-}
-.text-blue-600 {
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
-}
-.underline {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
 }
 [data-aos][data-aos][data-aos-duration="50"],body[data-aos-duration="50"] [data-aos]{transition-duration:50ms}
 [data-aos][data-aos][data-aos-delay="50"],body[data-aos-delay="50"] [data-aos]{transition-delay:0s}

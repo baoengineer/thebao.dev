@@ -387,86 +387,6 @@ video {
         font-display: swap;
         src: url(./fonts/Rajdhani-Medium.ttf);
     }
-  body {
-  font-family: Roboto, serif;
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-  h1 {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-  @media (min-width: 640px) {
-
-  h1 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-}
-  @media (min-width: 768px) {
-
-  h1 {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-}
-  @media (min-width: 1024px) {
-
-  h1 {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-}
-  h2 {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-  @media (min-width: 640px) {
-
-  h2 {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-}
-  @media (min-width: 768px) {
-
-  h2 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-}
-  @media (min-width: 1024px) {
-
-  h2 {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-}
-  h3 {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-  @media (min-width: 640px) {
-
-  h3 {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-}
-  @media (min-width: 768px) {
-
-  h3 {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-}
-  @media (min-width: 1024px) {
-
-  h3 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-}
     :root {
       --bg-primary: 248, 249, 250;
       --bg-secondary: 222, 226, 230;
@@ -628,15 +548,30 @@ video {
   background-color: rgba(var(--bg-primary), var(--tw-bg-opacity));
 }
 .font-primary {
-  font-family: Roboto, serif;
+  font-family: Rajdhani, sans-serif;
 }
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.font-bold {
+  font-weight: 700;
+}
 .text-primary {
   --tw-text-opacity: 1;
   color: rgba(var(--text-primary), var(--tw-text-opacity));
+}
+.text-blue-600 {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+.underline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 [data-aos][data-aos][data-aos-duration="50"],body[data-aos-duration="50"] [data-aos]{transition-duration:50ms}
 [data-aos][data-aos][data-aos-delay="50"],body[data-aos-delay="50"] [data-aos]{transition-delay:0s}
