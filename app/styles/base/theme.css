@@ -1,6 +1,6 @@
 @layer base {
     :root {
-      --bg-primary: 248, 249, 250;
+      --bg-primary: 255, 255, 255;
       --bg-secondary: 222, 226, 230;
 
       --text-primary: 33, 37, 41;
@@ -11,7 +11,7 @@
       --bg-primary: 33, 37, 41;
       --bg-secondary: 73, 80, 87;
 
-      --text-primary: 248, 249, 250;
+      --text-primary: 255, 255, 255;
       --text-secondary: 233, 236, 239;
     }
 }

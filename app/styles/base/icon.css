@@ -1,3 +1,6 @@
 svg {
+    color: inherit;
     font-size: inherit;
+    width: 1em;
+    height: 1em;
 }

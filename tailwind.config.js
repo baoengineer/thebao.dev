@@ -25,12 +25,11 @@ module.exports = {
 			textColor,
 			backgroundColor,
 			fontSize: {
-				root: '24px',
+				root: '20px',
 			},
 		},
 		fontFamily: {
-			primary: ['Rajdhani', 'serif'],
-			secondary: ['Roboto', 'serif'],
+			primary: ['ModernSans', 'serif'],
 		},
 	},
 	plugins: [],

@@ -9,7 +9,7 @@ export default function Nav({ className }: NavProps) {
 	return (
 		<nav
 			className={clsx(
-				'flex flex-wrap items-center font-primary text-primary text-2xl md:text-4xl lg:text-6xl',
+				'flex flex-wrap items-center font-primary text-primary text-xl md:text-2xl',
 				className
 			)}
 		>
