@@ -1,17 +1,11 @@
 @layer base {
     :root {
-      --bg-primary: 255, 255, 255;
-      --bg-secondary: 222, 226, 230;
-
-      --text-primary: 33, 37, 41;
-      --text-secondary: 52, 58, 64;
+      --bg-primary: #000000;
+      --text-primary: #FDFDFD;
     }
 
     .dark {
-      --bg-primary: 33, 37, 41;
-      --bg-secondary: 73, 80, 87;
-
-      --text-primary: 255, 255, 255;
-      --text-secondary: 233, 236, 239;
+      --bg-primary: #FDFDFD;
+      --text-primary: #000000;
     }
 }

@@ -8,14 +8,15 @@
     "build": "concurrently \"npm run build:css\" \"remix build\""
   },
   "dependencies": {
-    "@lottiefiles/react-lottie-player": "^3.4.7",
     "@remix-run/node": "^1.7.0",
     "@remix-run/react": "^1.7.0",
     "@remix-run/vercel": "^1.7.0",
     "@vercel/node": "^2.4.4",
+    "animejs": "^3.2.1",
     "aos": "^3.0.0-beta.6",
     "clsx": "^1.2.1",
     "framer-motion": "^7.2.1",
+    "locomotive-scroll": "^4.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -27,6 +28,7 @@
     "@svgr/plugin-jsx": "^5.5.0",
     "@svgr/plugin-prettier": "^5.5.0",
     "@svgr/plugin-svgo": "^5.5.0",
+    "@types/animejs": "^3.1.5",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "autoprefixer": "^10.4.8",

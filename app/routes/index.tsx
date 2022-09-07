@@ -1,8 +1,9 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { Logo, Nav, ThemeToggle } from '../components';
-import { Player } from '@lottiefiles/react-lottie-player';
+import anime from 'animejs';
 
 export default function Main() {
+	const textStackRef = useRef<HTMLDivElement>(null);
 	const handleDarkMode = () => {
 		const isDark = localStorage.theme === 'dark';
 		const isThemeStored = 'theme' in localStorage;
@@ -17,44 +18,106 @@ export default function Main() {
 		}
 	};
 
+	const initSmoothScroll = () => {
+		if (document.documentElement) {
+			import('locomotive-scroll').then((locomotiveModule) => {
+				const scroll = new locomotiveModule.default({
+					el: document.documentElement,
+					scrollbarContainer: document.documentElement,
+					smooth: true,
+					smoothMobile: false,
+				});
+			});
+		}
+	};
+
+	const initTextStackAnimation = () => {
+		const textStack = textStackRef.current;
+		if (!textStack) {
+			return;
+		}
+		const timeline = anime.timeline({
+			easing: 'easeOutExpo',
+			duration: 1000,
+			loop: true,
+		});
+		const texts = textStack.querySelectorAll('span');
+		texts.forEach((text) => {
+			timeline
+				.add({
+					targets: text,
+					opacity: 1,
+				})
+				.add({
+					targets: text,
+					opacity: 0,
+				});
+		});
+	};
+
 	useEffect(() => {
 		handleDarkMode();
+		initTextStackAnimation();
+		initSmoothScroll();
 	}, []);
 
 	return (
 		<main>
-			<header className='text-primary body-font fixed top-0 w-full z-50'>
-				<div className='container flex flex-wrap  items-center py-6'>
-					<Logo className='md:mr-4' />
-					<ThemeToggle className='self-start -ml-4 md:-ml-8 pl-4' />
-					<Nav className='ml-auto' />
-				</div>
-			</header>
-			<section className='h-screen w-full flex'>
-				<div className='container flex w-full justify-center items-center text-right'>
-					<div className='relative h-full w-full'>
-						<Player
-							className='w-10/12 h-auto absolute z-0 -bottom-80 -right-64'
-							autoplay
-							loop
-							src='../animations/header.json'
-						/>
-						<div className='absolute z-10 bottom-0 right-0 py-10'>
-							<h1 className='font-300'>creative engineer.</h1>
-							<ul className='flex gap-4 justify-end items-baseline'>
-								<li>ui/ux</li>
-								<li>app</li>
-								<li>animation</li>
-								<li>accessibility</li>
-								<li>architect</li>
-								<li className='h2 font-300 mr-0.5'>.</li>
-							</ul>
-						</div>
-					</div>
+			<ThemeToggle className='fixed top-4 left-4 text-4xl' />
+			<section className='min-h-screen py-36'>
+				<div className='container flex w-full justify-end items-center text-right'>
+					<ul
+						className='flex flex-col gap-2'
+						style={{ marginTop: '30vh' }}
+					>
+						<li>
+							<h1 className='h1 text-gray-100 test'>bao.</h1>
+						</li>
+						<li>
+							<h2 className='h1'>frontend engineer.</h2>
+						</li>
+						<li>
+							<span className='h1 text-gray-100'>passionate in</span>
+						</li>
+						<li>
+							<span className='h1'>ui/ux</span>
+						</li>
+						<li>
+							<span className='h1'>web/app</span>
+						</li>
+						<li>
+							<span className='h1'>digital stuffs</span>
+						</li>
+						<li>
+							<span className='h1 text-gray-100'>focused on</span>
+						</li>
+						<li>
+							<div className='flex justify-end'>
+								<div
+									ref={textStackRef}
+									className='flex flex-col relative items-end'
+								>
+									<span className='h1 absolute opacity-100'>fast</span>
+									<span className='h1 opacity-0'>modern</span>
+									<span className='h1 absolute opacity-0'>resilient</span>
+								</div>
+								<span className='h1 ml-3 md:ml-5 lg:ml-10'>user exp</span>
+							</div>
+						</li>
+						<li>
+							<span className='h1'>animations</span>
+						</li>
+						<li>
+							<span className='h1'>accessibility</span>
+						</li>
+						<li>
+							<span className='h1'>architect.</span>
+						</li>
+					</ul>
 				</div>
 			</section>
-			<section className='py-96'>
-				<div>
+			<section>
+				<div className='container'>
 					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
 					obcaecati mollitia minus, similique consequatur natus recusandae
 					laudantium numquam quibusdam aut voluptatum est quasi sunt eveniet
