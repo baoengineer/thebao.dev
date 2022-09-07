@@ -29,8 +29,8 @@ module.exports = {
 			},
 		},
 		fontFamily: {
-			logo: ['Rajdhani', 'serif'],
-			primary: ['Roboto', 'serif'],
+			primary: ['Rajdhani', 'serif'],
+			secondary: ['Roboto', 'serif'],
 		},
 	},
 	plugins: [],

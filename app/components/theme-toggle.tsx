@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { MoonIcon, SunIcon } from './icons';
 
 type ThemeToggleProps = {
-	className: string;
+	className?: string;
 };
 
 export default function ThemeToggle({ className }: ThemeToggleProps) {
@@ -23,13 +23,11 @@ export default function ThemeToggle({ className }: ThemeToggleProps) {
 	}, []);
 
 	return (
-		<div className={clsx('flex', className)}>
-			<button
-				className='fixed top-5 right-5'
-				onClick={handleThemeToggle}
-			>
-				{theme === 'dark' ? <SunIcon /> : <MoonIcon />}
-			</button>
-		</div>
+		<button
+			className={clsx('flex', 'text-primary', className)}
+			onClick={handleThemeToggle}
+		>
+			{theme === 'dark' ? <SunIcon /> : <MoonIcon />}
+		</button>
 	);
 }

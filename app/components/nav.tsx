@@ -2,14 +2,14 @@ import { Link } from '@remix-run/react';
 import clsx from 'clsx';
 
 type NavProps = {
-	className: string;
+	className?: string;
 };
 
 export default function Nav({ className }: NavProps) {
 	return (
 		<nav
 			className={clsx(
-				'flex lg:w-2/5 flex-wrap items-center text-base',
+				'flex flex-wrap items-center font-primary text-primary text-2xl md:text-4xl lg:text-6xl',
 				className
 			)}
 		>
@@ -17,15 +17,15 @@ export default function Nav({ className }: NavProps) {
 				to='/about'
 				className='mr-5'
 			>
-				About
+				about
 			</Link>
 			<Link
 				to='/works'
 				className='mr-5'
 			>
-				Works
+				works
 			</Link>
-			<Link to='/contact'>Contact</Link>
+			<Link to='/contact'>contact</Link>
 		</nav>
 	);
 }

@@ -22,83 +22,86 @@ export default function Main() {
 
 	return (
 		<main>
-			<header>
-				<header className='text-gray-600 body-font'>
-					<div className='container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center'>
-						<Nav className='md:ml-auto' />
-						<Logo className='order-first lg:order-none lg:w-1/5 mb-4 md:mb-0' />
-						<ThemeToggle className='lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0' />
-					</div>
-				</header>
+			<header className='text-gray-600 body-font'>
+				<ThemeToggle className='fixed top-1 sm:top-2 md:top-4 left-1 sm:left-2 md:left-4' />
+				<div className='container flex flex-wrap py-4 items-center'>
+					<Logo className='order-first lg:order-none md:mr-4' />
+					<Nav className='ml-auto' />
+				</div>
 			</header>
 			<section>
-				<h1 className='font-300'>content</h1>
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. In consequatur
-				cupiditate nisi neque exercitationem enim atque temporibus accusamus
-				debitis. Ratione aut dignissimos fugiat sequi assumenda optio. Quam
-				aspernatur illo eius? Lorem ipsum, dolor sit amet consectetur
-				adipisicing elit. Distinctio omnis velit odio facere eum. Cupiditate
-				dolorum maxime, error similique minus fugiat, nulla illo iusto,
-				dignissimos tenetur dicta eligendi eveniet numquam. Lorem ipsum dolor,
-				sit amet consectetur adipisicing elit. In consequatur cupiditate nisi
-				neque exercitationem enim atque temporibus accusamus debitis. Ratione
-				aut dignissimos fugiat sequi assumenda optio. Quam aspernatur illo eius?
-				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
-				omnis velit odio facere eum. Cupiditate dolorum maxime, error similique
-				minus fugiat, nulla illo iusto, dignissimos tenetur dicta eligendi
-				eveniet numquam. Lorem ipsum dolor, sit amet consectetur adipisicing
-				elit. In consequatur cupiditate nisi neque exercitationem enim atque
-				temporibus accusamus debitis. Ratione aut dignissimos fugiat sequi
-				assumenda optio. Quam aspernatur illo eius? Lorem ipsum, dolor sit amet
-				consectetur adipisicing elit. Distinctio omnis velit odio facere eum.
-				Cupiditate dolorum maxime, error similique minus fugiat, nulla illo
-				iusto, dignissimos tenetur dicta eligendi eveniet numquam. Lorem ipsum
-				dolor, sit amet consectetur adipisicing elit. In consequatur cupiditate
-				nisi neque exercitationem enim atque temporibus accusamus debitis.
-				Ratione aut dignissimos fugiat sequi assumenda optio. Quam aspernatur
-				illo eius? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-				Distinctio omnis velit odio facere eum. Cupiditate dolorum maxime, error
-				similique minus fugiat, nulla illo iusto, dignissimos tenetur dicta
-				eligendi eveniet numquam. Lorem ipsum dolor, sit amet consectetur
-				adipisicing elit. In consequatur cupiditate nisi neque exercitationem
-				enim atque temporibus accusamus debitis. Ratione aut dignissimos fugiat
-				sequi assumenda optio. Quam aspernatur illo eius? Lorem ipsum, dolor sit
-				amet consectetur adipisicing elit. Distinctio omnis velit odio facere
-				eum. Cupiditate dolorum maxime, error similique minus fugiat, nulla illo
-				iusto, dignissimos tenetur dicta eligendi eveniet numquam. Lorem ipsum
-				dolor, sit amet consectetur adipisicing elit. In consequatur cupiditate
-				nisi neque exercitationem enim atque temporibus accusamus debitis.
-				Ratione aut dignissimos fugiat sequi assumenda optio. Quam aspernatur
-				illo eius? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-				Distinctio omnis velit odio facere eum. Cupiditate dolorum maxime, error
-				similique minus fugiat, nulla illo iusto, dignissimos tenetur dicta
-				eligendi eveniet numquam. Lorem ipsum dolor, sit amet consectetur
-				adipisicing elit. In consequatur cupiditate nisi neque exercitationem
-				enim atque temporibus accusamus debitis. Ratione aut dignissimos fugiat
-				sequi assumenda optio. Quam aspernatur illo eius? Lorem ipsum, dolor sit
-				amet consectetur adipisicing elit. Distinctio omnis velit odio facere
-				eum. Cupiditate dolorum maxime, error similique minus fugiat, nulla illo
-				iusto, dignissimos tenetur dicta eligendi eveniet numquam. Lorem ipsum
-				dolor, sit amet consectetur adipisicing elit. In consequatur cupiditate
-				nisi neque exercitationem enim atque temporibus accusamus debitis.
-				Ratione aut dignissimos fugiat sequi assumenda optio. Quam aspernatur
-				illo eius? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-				Distinctio omnis velit odio facere eum. Cupiditate dolorum maxime, error
-				similique minus fugiat, nulla illo iusto, dignissimos tenetur dicta
-				eligendi eveniet numquam. Lorem ipsum dolor, sit amet consectetur
-				adipisicing elit. In consequatur cupiditate nisi neque exercitationem
-				enim atque temporibus accusamus debitis. Ratione aut dignissimos fugiat
-				sequi assumenda optio. Quam aspernatur illo eius? Lorem ipsum, dolor sit
-				amet consectetur adipisicing elit. Distinctio omnis velit odio facere
-				eum. Cupiditate dolorum maxime, error similique minus fugiat, nulla illo
-				iusto, dignissimos tenetur dicta eligendi eveniet numquam. Lorem ipsum
-				dolor, sit amet consectetur adipisicing elit. In consequatur cupiditate
-				nisi neque exercitationem enim atque temporibus accusamus debitis.
-				Ratione aut dignissimos fugiat sequi assumenda optio. Quam aspernatur
-				illo eius? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-				Distinctio omnis velit odio facere eum. Cupiditate dolorum maxime, error
-				similique minus fugiat, nulla illo iusto, dignissimos tenetur dicta
-				eligendi eveniet numquam.
+				<div className='container'>
+					<h1 className='font-300'>content</h1>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. In
+					consequatur cupiditate nisi neque exercitationem enim atque temporibus
+					accusamus debitis. Ratione aut dignissimos fugiat sequi assumenda
+					optio. Quam aspernatur illo eius? Lorem ipsum, dolor sit amet
+					consectetur adipisicing elit. Distinctio omnis velit odio facere eum.
+					Cupiditate dolorum maxime, error similique minus fugiat, nulla illo
+					iusto, dignissimos tenetur dicta eligendi eveniet numquam. Lorem ipsum
+					dolor, sit amet consectetur adipisicing elit. In consequatur
+					cupiditate nisi neque exercitationem enim atque temporibus accusamus
+					debitis. Ratione aut dignissimos fugiat sequi assumenda optio. Quam
+					aspernatur illo eius? Lorem ipsum, dolor sit amet consectetur
+					adipisicing elit. Distinctio omnis velit odio facere eum. Cupiditate
+					dolorum maxime, error similique minus fugiat, nulla illo iusto,
+					dignissimos tenetur dicta eligendi eveniet numquam. Lorem ipsum dolor,
+					sit amet consectetur adipisicing elit. In consequatur cupiditate nisi
+					neque exercitationem enim atque temporibus accusamus debitis. Ratione
+					aut dignissimos fugiat sequi assumenda optio. Quam aspernatur illo
+					eius? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+					Distinctio omnis velit odio facere eum. Cupiditate dolorum maxime,
+					error similique minus fugiat, nulla illo iusto, dignissimos tenetur
+					dicta eligendi eveniet numquam. Lorem ipsum dolor, sit amet
+					consectetur adipisicing elit. In consequatur cupiditate nisi neque
+					exercitationem enim atque temporibus accusamus debitis. Ratione aut
+					dignissimos fugiat sequi assumenda optio. Quam aspernatur illo eius?
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
+					omnis velit odio facere eum. Cupiditate dolorum maxime, error
+					similique minus fugiat, nulla illo iusto, dignissimos tenetur dicta
+					eligendi eveniet numquam. Lorem ipsum dolor, sit amet consectetur
+					adipisicing elit. In consequatur cupiditate nisi neque exercitationem
+					enim atque temporibus accusamus debitis. Ratione aut dignissimos
+					fugiat sequi assumenda optio. Quam aspernatur illo eius? Lorem ipsum,
+					dolor sit amet consectetur adipisicing elit. Distinctio omnis velit
+					odio facere eum. Cupiditate dolorum maxime, error similique minus
+					fugiat, nulla illo iusto, dignissimos tenetur dicta eligendi eveniet
+					numquam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In
+					consequatur cupiditate nisi neque exercitationem enim atque temporibus
+					accusamus debitis. Ratione aut dignissimos fugiat sequi assumenda
+					optio. Quam aspernatur illo eius? Lorem ipsum, dolor sit amet
+					consectetur adipisicing elit. Distinctio omnis velit odio facere eum.
+					Cupiditate dolorum maxime, error similique minus fugiat, nulla illo
+					iusto, dignissimos tenetur dicta eligendi eveniet numquam. Lorem ipsum
+					dolor, sit amet consectetur adipisicing elit. In consequatur
+					cupiditate nisi neque exercitationem enim atque temporibus accusamus
+					debitis. Ratione aut dignissimos fugiat sequi assumenda optio. Quam
+					aspernatur illo eius? Lorem ipsum, dolor sit amet consectetur
+					adipisicing elit. Distinctio omnis velit odio facere eum. Cupiditate
+					dolorum maxime, error similique minus fugiat, nulla illo iusto,
+					dignissimos tenetur dicta eligendi eveniet numquam. Lorem ipsum dolor,
+					sit amet consectetur adipisicing elit. In consequatur cupiditate nisi
+					neque exercitationem enim atque temporibus accusamus debitis. Ratione
+					aut dignissimos fugiat sequi assumenda optio. Quam aspernatur illo
+					eius? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+					Distinctio omnis velit odio facere eum. Cupiditate dolorum maxime,
+					error similique minus fugiat, nulla illo iusto, dignissimos tenetur
+					dicta eligendi eveniet numquam. Lorem ipsum dolor, sit amet
+					consectetur adipisicing elit. In consequatur cupiditate nisi neque
+					exercitationem enim atque temporibus accusamus debitis. Ratione aut
+					dignissimos fugiat sequi assumenda optio. Quam aspernatur illo eius?
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
+					omnis velit odio facere eum. Cupiditate dolorum maxime, error
+					similique minus fugiat, nulla illo iusto, dignissimos tenetur dicta
+					eligendi eveniet numquam. Lorem ipsum dolor, sit amet consectetur
+					adipisicing elit. In consequatur cupiditate nisi neque exercitationem
+					enim atque temporibus accusamus debitis. Ratione aut dignissimos
+					fugiat sequi assumenda optio. Quam aspernatur illo eius? Lorem ipsum,
+					dolor sit amet consectetur adipisicing elit. Distinctio omnis velit
+					odio facere eum. Cupiditate dolorum maxime, error similique minus
+					fugiat, nulla illo iusto, dignissimos tenetur dicta eligendi eveniet
+					numquam.
+				</div>
 			</section>
 			<footer></footer>
 		</main>

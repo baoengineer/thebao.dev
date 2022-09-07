@@ -3,22 +3,21 @@
         font-family: 'Rajdhani';
         font-weight: 300;
         font-display: swap;
-        src: url./fonts/Rajdhani-Light.ttf);
+        src: url(../../fonts/Rajdhani-Light.ttf);
     }
 
     @font-face {
         font-family: 'Rajdhani';
         font-weight: 400;
         font-display: swap;
-        src: url(./fonts/Rajdhani-Regular.ttf);
+        src: url(../../fonts/Rajdhani-Regular.ttf);
     }
 
     @font-face {
         font-family: 'Rajdhani';
         font-weight: 500;
         font-display: swap;
-        src: url(./fonts/Rajdhani-Medium.ttf);
+        src: url(../../fonts/Rajdhani-Medium.ttf);
     }
 }
-    // TODO config vercel to build:fonts
 
