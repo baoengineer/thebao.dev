@@ -1,33 +1,28 @@
-import { Link } from '@remix-run/react';
 import clsx from 'clsx';
-import { useEffect, useState } from 'react';
+
 import { MoonIcon, SunIcon } from './icons';
 
 type ThemeToggleProps = {
+	theme?: string;
 	className?: string;
+	onChange?: Function;
 };
 
-export default function ThemeToggle({ className }: ThemeToggleProps) {
-	const [theme, setTheme] = useState('light');
-
+export default function ThemeToggle({
+	className,
+	theme = 'light',
+	onChange = () => {},
+}: ThemeToggleProps) {
 	const handleThemeToggle = () => {
-		const newTheme = theme === 'light' ? 'dark' : 'light';
-		setTheme(newTheme);
-		localStorage.theme = newTheme;
-		document.documentElement.classList.remove(theme);
-		document.documentElement.classList.add(newTheme);
+		onChange(theme === 'light' ? 'dark' : 'light');
 	};
-
-	useEffect(() => {
-		setTheme(localStorage.theme);
-	}, []);
 
 	return (
 		<button
 			className={clsx('flex', 'text-primary', className)}
 			onClick={handleThemeToggle}
 		>
-			{theme === 'dark' ? <SunIcon /> : <MoonIcon />}
+			{theme === 'light' ? <MoonIcon /> : <SunIcon />}
 		</button>
 	);
 }

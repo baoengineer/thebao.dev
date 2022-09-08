@@ -1,35 +1,8 @@
-import { useEffect, useRef } from 'react';
-import { Logo, Nav, ThemeToggle } from '../components';
 import anime from 'animejs';
+import { useEffect, useRef } from 'react';
 
 export default function Main() {
 	const textStackRef = useRef<HTMLDivElement>(null);
-	const handleDarkMode = () => {
-		const isDark = localStorage.theme === 'dark';
-		const isThemeStored = 'theme' in localStorage;
-		const isDarkPreferred = window.matchMedia(
-			'(prefers-color-scheme: dark)'
-		).matches;
-
-		if (isDark || (!isThemeStored && isDarkPreferred)) {
-			document.documentElement.classList.add('dark');
-		} else {
-			document.documentElement.classList.remove('dark');
-		}
-	};
-
-	const initSmoothScroll = () => {
-		if (document.documentElement) {
-			import('locomotive-scroll').then((locomotiveModule) => {
-				const scroll = new locomotiveModule.default({
-					el: document.documentElement,
-					scrollbarContainer: document.documentElement,
-					smooth: true,
-					smoothMobile: false,
-				});
-			});
-		}
-	};
 
 	const initTextStackAnimation = () => {
 		const textStack = textStackRef.current;
@@ -56,42 +29,42 @@ export default function Main() {
 	};
 
 	useEffect(() => {
-		handleDarkMode();
 		initTextStackAnimation();
-		initSmoothScroll();
 	}, []);
 
 	return (
 		<main>
-			<ThemeToggle className='fixed top-4 left-4 text-4xl' />
-			<section className='min-h-screen py-36'>
+			<section className='min-h-screen py-20'>
 				<div className='container flex w-full justify-end items-center text-right'>
 					<ul
-						className='flex flex-col gap-2'
-						style={{ marginTop: '30vh' }}
+						className='flex flex-col gap-2 -mt-20'
+						style={{ paddingTop: '50vh' }}
 					>
-						<li>
+						<li
+							data-aos='fade-up'
+							className='mt-auto'
+						>
 							<h1 className='h1 text-gray-100 test'>bao.</h1>
 						</li>
-						<li>
+						<li data-aos='fade-up'>
 							<h2 className='h1'>frontend engineer.</h2>
 						</li>
-						<li>
+						<li data-aos='fade-up'>
 							<span className='h1 text-gray-100'>passionate in</span>
 						</li>
-						<li>
+						<li data-aos='fade-up'>
 							<span className='h1'>ui/ux</span>
 						</li>
-						<li>
+						<li data-aos='fade-up'>
 							<span className='h1'>web/app</span>
 						</li>
-						<li>
+						<li data-aos='fade-up'>
 							<span className='h1'>digital stuffs</span>
 						</li>
-						<li>
+						<li data-aos='fade-up'>
 							<span className='h1 text-gray-100'>focused on</span>
 						</li>
-						<li>
+						<li data-aos='fade-up'>
 							<div className='flex justify-end'>
 								<div
 									ref={textStackRef}
@@ -104,19 +77,19 @@ export default function Main() {
 								<span className='h1 ml-3 md:ml-5 lg:ml-10'>user exp</span>
 							</div>
 						</li>
-						<li>
+						<li data-aos='fade-up'>
 							<span className='h1'>animations</span>
 						</li>
-						<li>
+						<li data-aos='fade-up'>
 							<span className='h1'>accessibility</span>
 						</li>
-						<li>
+						<li data-aos='fade-up'>
 							<span className='h1'>architect.</span>
 						</li>
 					</ul>
 				</div>
 			</section>
-			<section>
+			<section className='py-20'>
 				<div className='container'>
 					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
 					obcaecati mollitia minus, similique consequatur natus recusandae
