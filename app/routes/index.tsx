@@ -47,7 +47,7 @@ export default function Main() {
 							<h1 className='h1 text-gray-100 test'>bao.</h1>
 						</li>
 						<li data-aos='fade-up'>
-							<h2 className='h1'>frontend engineer.</h2>
+							<h2 className='h1'>creative engineer.</h2>
 						</li>
 						<li data-aos='fade-up'>
 							<span className='h1 text-gray-100'>passionate in</span>

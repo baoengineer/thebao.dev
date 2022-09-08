@@ -16,7 +16,8 @@ import AOS from 'aos';
 
 export const meta: MetaFunction = () => ({
 	charset: 'utf-8',
-	title: 'bao - a guy who likes to craft ui/ux stuffs',
+	title: 'bao - creative engineer',
+	desc: 'A creative frontend engineer enjoy crafting awesome ui/ux, web/apps, digital stuffs',
 	viewport: 'width=device-width,initial-scale=1',
 });
 
