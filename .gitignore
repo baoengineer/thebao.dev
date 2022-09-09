@@ -5,12 +5,12 @@ node_modules
 .vercel
 .output
 
-/build/
-/public/build
+build/
+public/build
 
 
-/api/index.js
-/api/index.js.map
+api/index.js
+api/index.js.map
 
 api/_assets/*.css
 app/styles/*.css
