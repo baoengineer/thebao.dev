@@ -1,87 +1,100 @@
 import {
-	Links,
-	LiveReload,
-	Meta,
-	Outlet,
-	Scripts,
-	ScrollRestoration,
-} from '@remix-run/react';
-import stylesheetUrl from 'public/styles/index.css';
-import { useEffect, useState } from 'react';
-import { ThemeToggle } from './components';
-import type { SetStateAction } from 'react';
-import type { MetaFunction } from '@remix-run/node';
-import Curtain from './components/curtain';
-import AOS from 'aos';
+  Links,
+  LiveReload,
+  Meta,
+  Outlet,
+  Scripts,
+  ScrollRestoration,
+} from "@remix-run/react";
+import mainStylesheet from "public/styles/index.css";
+import type { SetStateAction } from "react";
+import { useEffect, useRef, useState } from "react";
+import { Nav, ThemeToggle } from "./components";
+import type { MetaFunction } from "@remix-run/node";
+import Curtain from "./components/curtain";
+import AOS from "aos";
 
 export const meta: MetaFunction = () => ({
-	charset: 'utf-8',
-	title: 'bao - creative engineer',
-	desc: 'A creative frontend engineer enjoy crafting awesome ui/ux, web/apps, digital stuffs',
-	viewport: 'width=device-width,initial-scale=1',
+  charset: "utf-8",
+  title: "bao - creative engineer",
+  desc: "A creative frontend engineer enjoy crafting awesome ui/ux, web/apps, digital stuffs",
+  viewport: "width=device-width,initial-scale=1",
 });
 
 export default function App() {
-	const [theme, setTheme] = useState('light');
+  const scroller = useRef(null);
+  const [theme, setTheme] = useState("light");
 
-	const initTheme = () => {
-		const isDark = localStorage.theme === 'dark';
-		const isDarkPreferred = window.matchMedia(
-			'(prefers-color-scheme: dark)'
-		).matches;
-		if (isDark || (!('theme' in localStorage) && isDarkPreferred)) {
-			setTheme('dark');
-		} else {
-			setTheme('light');
-		}
-	};
+  const initSmoothScroll = () => {
+    // @ts-ignore
+    import("locomotive-scroll").then((locomotiveModule) => {
+      scroller.current = new locomotiveModule.default({
+        el: document.querySelector("[data-scroll-container]"),
+        smooth: true,
+        smoothMobile: true,
+      });
+    });
+  };
 
-	const handleThemeChange = (newTheme: SetStateAction<string>) => {
-		setTheme(newTheme);
-		localStorage.theme = newTheme;
-	};
+  const initTheme = () => {
+    const isDark = localStorage.theme === "dark";
+    const isDarkPreferred = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+    if (isDark || (!("theme" in localStorage) && isDarkPreferred)) {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  };
 
-	const initAOS = () => {
-		const windowDelta = window.innerHeight / 5;
-		AOS.init({
-			duration: 600,
-			easing: 'ease-in-out-quad',
-			anchorPlacement: 'top-bottom',
-			offset: windowDelta,
-		});
-		AOS.refresh();
-	};
+  const handleThemeChange = (newTheme: SetStateAction<string>) => {
+    setTheme(newTheme);
+    localStorage.theme = newTheme;
+  };
 
-	useEffect(() => {
-		initTheme();
-		initAOS();
-	}, []);
+  const initAOS = () => {
+    const windowDelta = window.innerHeight / 5;
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out-quad",
+      anchorPlacement: "top-bottom",
+      offset: windowDelta,
+    });
+    AOS.refresh();
+  };
 
-	return (
-		<html
-			lang='en'
-			className={theme}
-		>
-			<head>
-				<Meta />
-				<Links />
-			</head>
-			<body>
-				<Outlet />
-				<ScrollRestoration />
-				<Curtain />
-				<ThemeToggle
-					className='fixed top-4 left-4 text-4xl'
-					theme={theme}
-					onChange={handleThemeChange}
-				/>
-				<Scripts />
-				<LiveReload />
-			</body>
-		</html>
-	);
+  useEffect(() => {
+    initSmoothScroll();
+    initTheme();
+    initAOS();
+  }, []);
+
+  return (
+    <html lang="en" className={theme} data-scroll-container>
+      <head>
+        <Meta />
+        <Links />
+      </head>
+      <body>
+        <Curtain />
+        <header>
+          <ThemeToggle
+            className="fixed top-4 left-4 z-50 md:text-lg lg:text-xl"
+            theme={theme}
+            onChange={handleThemeChange}
+          />
+          <Nav />
+        </header>
+        <Outlet />
+        <ScrollRestoration />
+        <Scripts />
+        <LiveReload />
+      </body>
+    </html>
+  );
 }
 
 export function links() {
-	return [{ rel: 'stylesheet', href: stylesheetUrl }];
+  return [{ rel: "stylesheet", href: mainStylesheet }];
 }

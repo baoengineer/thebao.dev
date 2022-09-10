@@ -19,6 +19,6 @@ export default function Curtain() {
 				state
 			)}
 			onTransitionEnd={handleTransitionEnd}
-		></div>
+		/>
 	);
 }
