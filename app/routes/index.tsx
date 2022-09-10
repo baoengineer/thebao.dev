@@ -34,19 +34,20 @@ export default function Main() {
 
   return (
     <main data-scroll-section>
-      <section className="py-40">
+      <section className="py-20 md:py-40">
         <div className="container flex w-full justify-end items-center text-right">
           <ul
-            className="flex flex-col gap-4 md:gap-6 lg:gap-8 -mt-20"
-            style={{ paddingTop: "50vh" }}
+            className="flex flex-col gap-2 md:gap-4 lg:gap-6 md:-mt-40"
             data-aos="fade-up"
           >
-            <li className="mt-auto" data-scroll>
-              <h1 className="h1 text-gray-100">bao.</h1>
-            </li>
-            <li data-scroll>
-              <h2 className="h1">creative engineer.</h2>
-            </li>
+            <div className="flex gap-2 md:gap-4 lg:gap-6 flex-col min-h-1/2-screen md:min-h-screen">
+              <li className="mt-auto" data-scroll>
+                <h1 className="h1 text-gray-100">bao.</h1>
+              </li>
+              <li data-scroll>
+                <h2 className="h1">creative engineer.</h2>
+              </li>
+            </div>
             <li data-scroll>
               <span className="h1 text-gray-100">passionate in</span>
             </li>

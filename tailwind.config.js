@@ -30,13 +30,15 @@ module.exports = {
     extend: {
       textColor,
       backgroundColor,
+      fontFamily: {
+        primary: ["ModernSans", "serif"],
+      },
       fontSize: {
         root: "24px",
       },
-    },
-
-    fontFamily: {
-      primary: ["ModernSans", "serif"],
+      minHeight: {
+        "1/2-screen": "50vh",
+      },
     },
   },
   plugins: [],

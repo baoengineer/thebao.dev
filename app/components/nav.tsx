@@ -11,7 +11,7 @@ export default function Nav({ className }: NavProps) {
   return (
     <nav
       className={clsx(
-        "fixed top-full bottom-2 -translate-y-1/2 left-3 flex flex-row items-center font-primary text-primary hidden sm:flex md:text-md lg:text-lg",
+        "fixed top-full bottom-0 -translate-y-1/2 left-3 flex flex-row items-center font-primary text-primary hidden sm:flex md:text-md lg:text-lg",
         className
       )}
     >

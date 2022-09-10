@@ -13,6 +13,7 @@ import { Nav, ThemeToggle } from "./components";
 import type { MetaFunction } from "@remix-run/node";
 import Curtain from "./components/curtain";
 import AOS from "aos";
+import clsx from "clsx";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
@@ -72,7 +73,11 @@ export default function App() {
   }, []);
 
   return (
-    <html lang="en" className={theme} data-scroll-container>
+    <html
+      lang="en"
+      className={clsx("antialiased", theme)}
+      data-scroll-container
+    >
       <head>
         <Meta />
         <Links />
