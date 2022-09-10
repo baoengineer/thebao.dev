@@ -34,11 +34,11 @@ export default function Main() {
 
   return (
     <main data-scroll-section>
-      <section>
+      <section className="py-40">
         <div className="container flex w-full justify-end items-center text-right">
           <ul
             className="flex flex-col gap-4 md:gap-6 lg:gap-8 -mt-20"
-            style={{ paddingTop: "70vh" }}
+            style={{ paddingTop: "50vh" }}
             data-aos="fade-up"
           >
             <li className="mt-auto" data-scroll>

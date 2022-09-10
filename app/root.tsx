@@ -17,7 +17,8 @@ import AOS from "aos";
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
   title: "bao - creative engineer",
-  desc: "A creative frontend engineer enjoy crafting awesome ui/ux, web/apps, digital stuffs",
+  description:
+    "A creative frontend engineer enjoy crafting awesome ui/ux, web/apps, digital stuffs",
   viewport: "width=device-width,initial-scale=1",
 });
 
@@ -80,7 +81,7 @@ export default function App() {
         <Curtain />
         <header>
           <ThemeToggle
-            className="fixed top-4 left-4 z-50 md:text-lg lg:text-xl"
+            className="fixed top-4 left-4 z-40 md:text-lg lg:text-xl"
             theme={theme}
             onChange={handleThemeChange}
           />

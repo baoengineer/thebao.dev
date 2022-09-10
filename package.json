@@ -5,9 +5,9 @@
     "clean": "rimraf build public/build",
     "dev:css": "postcss app/styles/index.css --dir public/styles -w",
     "build:css": "postcss app/styles/index.css --dir public/styles --env production",
-    "dev": "concurrently \"npm run clean\" \"npm run dev:css\" \"remix dev\"",
-    "build": "concurrently \"npm run clean\" \"npm run build:css\" \"remix build\"",
-    "deploy": "concurrently \"npm run build\" \"vercel --prod\""
+    "dev": "npm run clean && concurrently \"npm run dev:css\" \"remix dev\"",
+    "build": "npm run clean && npm run build:css && remix build",
+    "deploy": "npm run build && vercel --prod"
   },
   "dependencies": {
     "@remix-run/node": "^1.7.0",
