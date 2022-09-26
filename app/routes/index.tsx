@@ -43,7 +43,7 @@ export default function Main() {
               className="flex gap-2 md:gap-4 lg:gap-6 flex-col min-h-1/2-screen md:min-h-screen"
             >
               <li className="mt-auto">
-                <h1 className="h1 text-gray-100">bao.</h1>
+                <h1 className="h1 text-gray-100">bao</h1>
               </li>
               <li>
                 <h2 className="h1">creative engineer.</h2>
