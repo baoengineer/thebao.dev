@@ -91,14 +91,25 @@ export default function Main() {
             <div>
               <h3 className="underline underline-offset-8">about me</h3>
             </div>
-            <div>
-              "the goals of great modern webs is now changing from displaying
-              information to serve the best user experiences for your users, to
-              command their attention and motivate them to take next actions in
-              many forms of websites, either applications or story-telling
-              landing pages without thinking and annoying bugs" ⎯ i'm a guy love
-              doing these things and optimizing them everyday.
-            </div>
+            <article>
+              <p>
+                "the goals of great modern webs is now changing from displaying
+                information to serve the best user experiences for your users,
+                to command their attention and motivate them to take next
+                actions in many forms of websites, either applications or
+                story-telling landing pages without thinking and annoying bugs"
+                <br />
+                <br /> I'm bao - an idle guy who loves doing these things and
+                optimizing them everyday.
+              </p>
+              <br />
+              <p>- making web/mobile apps, landing pages, and animations.</p>
+              <p>
+                - focused on user experience, accessibility and performance.
+              </p>
+              <p>- obsessed with being productive, but chill.</p>
+              <p>- finding life spirit, love art, minimalism.</p>
+            </article>
           </div>
         </div>
       </section>
@@ -202,7 +213,9 @@ export default function Main() {
         <div className="py-16 text-3xl bg-white text-black">
           <div className="container">
             <p>there's more</p>
-            <h4>view all projects →</h4>
+            <Link to="/works">
+              <h4>view all projects →</h4>
+            </Link>
           </div>
         </div>
       </section>

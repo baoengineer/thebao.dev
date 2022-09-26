@@ -1,7 +1,11 @@
 export default function Projects() {
   return (
-    <div>
-      <h1>Projects</h1>
-    </div>
+    <main>
+      <section className="py-20">
+        <div className="container">
+          <h1>Works</h1>
+        </div>
+      </section>
+    </main>
   );
 }
