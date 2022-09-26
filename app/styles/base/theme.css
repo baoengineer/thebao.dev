@@ -1,11 +1,11 @@
 @layer base {
-    :root {
-      --bg-primary: #FDFDFD;
-      --text-primary: #000000;
-    }
+  :root {
+    --bg-primary: #fdfdfd;
+    --text-primary: #000000;
+  }
 
-    .dark {
-      --bg-primary: #000000;
-      --text-primary: #FDFDFD;
-    }
+  .dark {
+    --bg-primary: #000000;
+    --text-primary: #fdfdfd;
+  }
 }

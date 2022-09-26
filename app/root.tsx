@@ -8,7 +8,7 @@ import {
 } from "@remix-run/react";
 import mainStylesheet from "public/styles/index.css";
 import type { SetStateAction } from "react";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { Nav, ThemeToggle } from "./components";
 import type { MetaFunction } from "@remix-run/node";
 import Curtain from "./components/curtain";
@@ -24,7 +24,6 @@ export const meta: MetaFunction = () => ({
 });
 
 export default function App() {
-  const scroller = useRef(null);
   const [theme, setTheme] = useState("light");
 
   const initTheme = () => {
