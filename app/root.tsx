@@ -27,17 +27,6 @@ export default function App() {
   const scroller = useRef(null);
   const [theme, setTheme] = useState("light");
 
-  const initSmoothScroll = () => {
-    // @ts-ignore
-    import("locomotive-scroll").then((locomotiveModule) => {
-      scroller.current = new locomotiveModule.default({
-        el: document.querySelector("[data-scroll-container]"),
-        smooth: true,
-        smoothMobile: true,
-      });
-    });
-  };
-
   const initTheme = () => {
     const isDark = localStorage.theme === "dark";
     const isDarkPreferred = window.matchMedia(
@@ -58,7 +47,7 @@ export default function App() {
   const initAOS = () => {
     const windowDelta = window.innerHeight / 5;
     AOS.init({
-      duration: 1000,
+      duration: 600,
       easing: "ease-in-out-quad",
       anchorPlacement: "top-bottom",
       offset: windowDelta,
@@ -67,17 +56,12 @@ export default function App() {
   };
 
   useEffect(() => {
-    initSmoothScroll();
     initTheme();
     initAOS();
   }, []);
 
   return (
-    <html
-      lang="en"
-      className={clsx("antialiased", theme)}
-      data-scroll-container
-    >
+    <html lang="en" className={clsx("antialiased", theme)}>
       <head>
         <Meta />
         <Links />

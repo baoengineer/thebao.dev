@@ -33,34 +33,34 @@ export default function Main() {
   }, []);
 
   return (
-    <main data-scroll-section>
+    <main>
       <section className="py-20 md:py-40">
         <div className="container flex w-full justify-end items-center text-right">
-          <ul
-            className="flex flex-col gap-2 md:gap-4 lg:gap-6 md:-mt-40"
-            data-aos="fade-up"
-          >
-            <div className="flex gap-2 md:gap-4 lg:gap-6 flex-col min-h-1/2-screen md:min-h-screen">
-              <li className="mt-auto" data-scroll>
+          <ul className="flex flex-col gap-2 md:gap-4 lg:gap-6 md:-mt-40">
+            <div
+              data-aos="fade-up"
+              className="flex gap-2 md:gap-4 lg:gap-6 flex-col min-h-1/2-screen md:min-h-screen"
+            >
+              <li className="mt-auto">
                 <h1 className="h1 text-gray-100">bao.</h1>
               </li>
-              <li data-scroll>
+              <li>
                 <h2 className="h1">creative engineer.</h2>
               </li>
             </div>
-            <li data-scroll>
+            <li data-aos="fade-up">
               <span className="h1 text-gray-100">passionate in</span>
             </li>
-            <li data-scroll>
+            <li data-aos="fade-up">
               <span className="h1">ui/ux.web/app</span>
             </li>
-            <li data-scroll>
+            <li data-aos="fade-up">
               <span className="h1">digital stuffs</span>
             </li>
-            <li data-scroll>
+            <li data-aos="fade-up">
               <span className="h1 text-gray-100">focused on</span>
             </li>
-            <li data-scroll>
+            <li data-aos="fade-up">
               <div className="flex justify-end">
                 <div
                   ref={textStackRef}
@@ -73,10 +73,10 @@ export default function Main() {
                 <span className="h1 ml-3 md:ml-5 lg:ml-10">user exp</span>
               </div>
             </li>
-            <li data-scroll>
+            <li data-aos="fade-up">
               <span className="h1">animations</span>
             </li>
-            <li data-scroll>
+            <li data-aos="fade-up">
               <span className="h1">accessibility.</span>
             </li>
           </ul>
