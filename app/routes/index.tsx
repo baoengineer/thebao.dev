@@ -121,7 +121,7 @@ export default function Main() {
         <ul>
           <li>
             <div className="container">
-              <div className="grid grid-cols-2 py-32">
+              <div className="grid grid-cols-2 items-center py-32">
                 <article>
                   <p className="relative">
                     <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-xl opacity-20">
@@ -131,16 +131,17 @@ export default function Main() {
                   </p>
                   <p>
                     <ul className="flex gap-2 text-xs">
-                      <li className="text-gray-100">ui/ux</li>
-                      <li className="text-gray-100">react</li>
-                      <li className="text-gray-100">animations</li>
-                      <li className="text-gray-100">accessibility</li>
+                      <li className="text-gray-200">ui/ux</li>
+                      <li className="text-gray-200">webapp</li>
+                      <li className="text-gray-200">site builder</li>
+                      <li className="text-gray-200">animations</li>
+                      <li className="text-gray-200">accessibility</li>
                     </ul>
                   </p>
                 </article>
-                <div className="flex items-center justify-end">
+                <div className="flex items-center justify-end ">
                   <Link
-                    className="relative before:content-[' '] before:block before:opacity-50 before:text-gray-200 before:bg-gray-200 before:absolute before:-top-4 before:-left-4 before:w-12 before:h-12 before:rounded-full before-p-4"
+                    className="relative hover:underline underline-offset-4 before:content-[' '] before:block before:opacity-50 before:text-gray-200 before:bg-gray-200 before:absolute before:-top-4 before:-left-4 before:w-12 before:h-12 before:rounded-full before-p-4 before:hover:w-16 before:hover:h-16 before:transition-all"
                     to="/works/flodesk"
                   >
                     <span className="relative z-10">view project →</span>
@@ -157,24 +158,23 @@ export default function Main() {
                     <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-xl opacity-20">
                       02
                     </small>
-                    <strong>flodesk - email / website builder</strong>
+                    <strong>natours</strong>
                   </p>
                   <p>
                     <ul className="flex gap-2 text-xs">
-                      <li className="text-gray-200">ui/ux</li>
-                      <li className="text-gray-200">react</li>
-                      <li className="text-gray-200">animations</li>
-                      <li className="text-gray-200">accessibility</li>
+                      <li className="text-gray-200">landing-pages</li>
                     </ul>
                   </p>
                 </article>
                 <div className="flex items-center justify-end">
-                  <Link
-                    className="relative before:content-[' '] before:block before:opacity-20 before:text-gray-200 before:bg-gray-200 before:absolute before:-top-4 before:-left-4 before:w-12 before:h-12 before:rounded-full before-p-4"
-                    to="/works/flodesk"
+                  <a
+                    className="relative hover:underline underline-offset-4 before:content-[' '] before:block before:opacity-50 before:text-gray-200 before:bg-gray-200 before:absolute before:-top-4 before:-left-4 before:w-12 before:h-12 before:rounded-full before-p-4 before:hover:w-16 before:hover:h-16 before:transition-all"
+                    href="https://projects.thebao.dev/natours"
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     <span className="relative z-10">view project →</span>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -187,24 +187,55 @@ export default function Main() {
                     <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-xl opacity-20">
                       03
                     </small>
-                    <strong>flodesk - email / website builder</strong>
+                    <strong>trillo</strong>
                   </p>
                   <p>
                     <ul className="flex gap-2 text-xs">
-                      <li className="text-gray-100">ui/ux</li>
-                      <li className="text-gray-100">react</li>
-                      <li className="text-gray-100">animations</li>
-                      <li className="text-gray-100">accessibility</li>
+                      <li className="text-gray-200">ui/ux</li>
+                      <li className="text-gray-200">dashboard</li>
                     </ul>
                   </p>
                 </article>
                 <div className="flex items-center justify-end">
-                  <Link
-                    className="relative before:content-[' '] before:block before:opacity-50 before:text-gray-200 before:bg-gray-200 before:absolute before:-top-4 before:-left-4 before:w-12 before:h-12 before:rounded-full before-p-4"
-                    to="/works/flodesk"
+                  <a
+                    className="relative hover:underline underline-offset-4 before:content-[' '] before:block before:opacity-50 before:text-gray-200 before:bg-gray-200 before:absolute before:-top-4 before:-left-4 before:w-12 before:h-12 before:rounded-full before-p-4 before:hover:w-16 before:hover:h-16 before:transition-all"
+                    href="https://projects.thebao.dev/trillo"
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     <span className="relative z-10">view project →</span>
-                  </Link>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li className="bg-gray-100 dark:bg-gray-300 text-black dark:text-white">
+            <div className="container">
+              <div className="grid grid-cols-2 py-32">
+                <article>
+                  <p className="relative">
+                    <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-xl opacity-20">
+                      04
+                    </small>
+                    <strong>ivyfood</strong>
+                  </p>
+                  <p>
+                    <ul className="flex gap-2 text-xs">
+                      <li className="text-gray-200">ui/ux</li>
+                      <li className="text-gray-200">landing-pages</li>
+                      <li className="text-gray-200">show-case</li>
+                    </ul>
+                  </p>
+                </article>
+                <div className="flex items-center justify-end">
+                  <a
+                    className="relative hover:underline underline-offset-4 before:content-[' '] before:block before:opacity-50 before:text-gray-200 before:bg-gray-200 before:absolute before:-top-4 before:-left-4 before:w-12 before:h-12 before:rounded-full before-p-4 before:hover:w-16 before:hover:h-16 before:transition-all"
+                    href="https://projects.thebao.dev/ivyfood"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span className="relative z-10">view project →</span>
+                  </a>
                 </div>
               </div>
             </div>

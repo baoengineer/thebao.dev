@@ -39,6 +39,9 @@ module.exports = {
       minHeight: {
         "1/2-screen": "50vh",
       },
+      backgroundImage: {
+        flodesk: "url('/images/flodesk.png')",
+      },
     },
   },
   plugins: [],
