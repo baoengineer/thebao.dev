@@ -88,8 +88,8 @@ export default function Main() {
       </section>
       <section className="py-0 md:py-20">
         <div className="container">
-          <div className="grid grid-cols-2 gap-2 min-h-screen ">
-            <div className="sticky top-0 self-start py-24">
+          <div className="grid md:grid-cols-2 gap-2 min-h-screen">
+            <div className="lg:sticky top-0 self-start md:py-12">
               <h3 className="underline underline-offset-8" data-aos="fade-up">
                 about me
               </h3>
@@ -100,7 +100,7 @@ export default function Main() {
                 <img src={avatar} alt="bao" />
               </div>
             </div>
-            <article className="text-lg py-24">
+            <article className="text-md lg:text-lg md:py-12">
               <p className="text-3xl" data-aos="fade-up">
                 hi, I'm bao - an idle guy who loves coding, making internet
                 products, and tech stuffs.
@@ -124,8 +124,7 @@ export default function Main() {
                 one of my theories is that "the goals of great modern webs is
                 now changing from displaying information to serve the best user
                 experiences for your users, to command their attention and
-                motivate them to take next actions in many forms of websites,
-                either applications or story-telling landing pages without
+                motivate them to take next actions in many forms without
                 thinking and annoying bugs".
               </p>
             </article>
@@ -172,7 +171,7 @@ export default function Main() {
             </div>
           </li>
           <li
-            className="bg-gray-100 dark:bg-gray-300 text-black dark:text-white"
+            className="bg-white dark:bg-black text-black dark:text-white"
             data-aos="fade-up"
           >
             <div className="container">
@@ -234,7 +233,7 @@ export default function Main() {
             </div>
           </li>
           <li
-            className="bg-gray-100 dark:bg-gray-300 text-black dark:text-white"
+            className="bg-white dark:bg-black text-black dark:text-white"
             data-aos="fade-up"
           >
             <div className="container">
@@ -268,7 +267,7 @@ export default function Main() {
             </div>
           </li>
         </ul>
-        <div className="py-16 text-3xl bg-white text-black" data-aos="fade-up">
+        <div className="py-16 text-3xl " data-aos="fade-up">
           <div className="container">
             <p>there's more</p>
             <Link to="/works">
@@ -277,7 +276,7 @@ export default function Main() {
           </div>
         </div>
       </section>
-      <section className="py-10 md:py-20 bg-black dark:bg-black text-white dark:text-white">
+      <section className="py-10 md:py-20">
         <div className="container">
           <div className="min-h-1/2-screen flex flex-col items-center justify-center">
             <h3 className="text-6xl" data-aos="fade-up">
