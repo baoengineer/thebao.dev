@@ -1,6 +1,7 @@
 import anime from "animejs";
 import { useEffect, useRef } from "react";
 import { Link } from "@remix-run/react";
+import avatar from "public/images/avatar.png";
 
 export default function Main() {
   const textStackRef = useRef<HTMLDivElement>(null);
@@ -85,51 +86,71 @@ export default function Main() {
           </ul>
         </div>
       </section>
-      <section className="py-10 md:py-20">
+      <section className="py-0 md:py-20">
         <div className="container">
-          <div className="grid grid-cols-2">
-            <div>
-              <h3 className="underline underline-offset-8">about me</h3>
+          <div className="grid grid-cols-2 gap-2 min-h-screen ">
+            <div className="sticky top-0 self-start py-24">
+              <h3 className="underline underline-offset-8" data-aos="fade-up">
+                about me
+              </h3>
+              <div
+                className="w-44 rounded-md overflow-hidden drop-shadow-sm grayscale"
+                data-aos="fade-up"
+              >
+                <img src={avatar} alt="bao" />
+              </div>
             </div>
-            <article>
-              <p>
-                "the goals of great modern webs is now changing from displaying
-                information to serve the best user experiences for your users,
-                to command their attention and motivate them to take next
-                actions in many forms of websites, either applications or
-                story-telling landing pages without thinking and annoying bugs"
-                <br />
-                <br /> I'm bao - an idle guy who loves doing these things and
-                optimizing them everyday.
+            <article className="text-lg py-24">
+              <p className="text-3xl" data-aos="fade-up">
+                hi, I'm bao - an idle guy who loves coding, making internet
+                products, and tech stuffs.
               </p>
               <br />
-              <p>- making web/mobile apps, landing pages, and animations.</p>
-              <p>
-                - focused on user experience, accessibility and performance.
+              <p data-aos="fade-up">I'm</p>
+              <div className="ml-6" data-aos="fade-up">
+                <p>
+                  - developing web/mobile apps, landing pages, and animations.
+                </p>
+                <p>
+                  - specialized in javascript, react, and frontend web stacks.
+                </p>
+                <p>
+                  - focused on user experience, accessibility and performance.
+                </p>
+                <p>- obsessed with being productive, but chill.</p>
+                <p>- finding life spirit, love art, minimalism.</p>
+              </div>
+              <p className="mt-6" data-aos="fade-up">
+                one of my theories is that "the goals of great modern webs is
+                now changing from displaying information to serve the best user
+                experiences for your users, to command their attention and
+                motivate them to take next actions in many forms of websites,
+                either applications or story-telling landing pages without
+                thinking and annoying bugs".
               </p>
-              <p>- obsessed with being productive, but chill.</p>
-              <p>- finding life spirit, love art, minimalism.</p>
             </article>
           </div>
         </div>
       </section>
       <section className="bg-black dark:bg-white text-white dark:text-black pt-10 md:pt-20">
         <div className="container">
-          <h3>carfted with love</h3>
-          <h4>these are a selection of my recent works.</h4>
+          <h3 data-aos="fade-up">carfted with love</h3>
+          <h4 data-aos="fade-up">these are a selection of my recent works.</h4>
         </div>
         <ul>
-          <li>
+          <li data-aos="fade-up">
             <div className="container">
               <div className="grid grid-cols-2 items-center py-32">
                 <article>
-                  <p className="relative">
+                  <div className="relative">
                     <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-xl opacity-20">
                       01
                     </small>
-                    <strong>flodesk - email / website builder</strong>
-                  </p>
-                  <p>
+                    <strong className="ml-2">
+                      flodesk - email / website builder
+                    </strong>
+                  </div>
+                  <div>
                     <ul className="flex gap-2 text-xs">
                       <li className="text-gray-200">ui/ux</li>
                       <li className="text-gray-200">webapp</li>
@@ -137,7 +158,7 @@ export default function Main() {
                       <li className="text-gray-200">animations</li>
                       <li className="text-gray-200">accessibility</li>
                     </ul>
-                  </p>
+                  </div>
                 </article>
                 <div className="flex items-center justify-end ">
                   <Link
@@ -150,7 +171,10 @@ export default function Main() {
               </div>
             </div>
           </li>
-          <li className="bg-gray-100 dark:bg-gray-300 text-black dark:text-white">
+          <li
+            className="bg-gray-100 dark:bg-gray-300 text-black dark:text-white"
+            data-aos="fade-up"
+          >
             <div className="container">
               <div className="grid grid-cols-2 py-32">
                 <article>
@@ -158,7 +182,37 @@ export default function Main() {
                     <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-xl opacity-20">
                       02
                     </small>
-                    <strong>natours</strong>
+                    <strong className="ml-2">uiutils</strong>
+                  </p>
+                  <p>
+                    <ul className="flex gap-2 text-xs">
+                      <li className="text-gray-200">utilities</li>
+                      <li className="text-gray-200">development tool</li>
+                    </ul>
+                  </p>
+                </article>
+                <div className="flex items-center justify-end">
+                  <a
+                    className="relative hover:underline underline-offset-4 before:content-[' '] before:block before:opacity-50 before:text-gray-200 before:bg-gray-200 before:absolute before:-top-4 before:-left-4 before:w-12 before:h-12 before:rounded-full before-p-4 before:hover:w-16 before:hover:h-16 before:transition-all"
+                    href="https://uiutils.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span className="relative z-10">view project →</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li data-aos="fade-up">
+            <div className="container">
+              <div className="grid grid-cols-2 py-32 pb-24">
+                <article>
+                  <p className="relative">
+                    <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-xl opacity-20">
+                      03
+                    </small>
+                    <strong className="ml-2">natours</strong>
                   </p>
                   <p>
                     <ul className="flex gap-2 text-xs">
@@ -179,37 +233,10 @@ export default function Main() {
               </div>
             </div>
           </li>
-          <li>
-            <div className="container">
-              <div className="grid grid-cols-2 py-32 pb-24">
-                <article>
-                  <p className="relative">
-                    <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-xl opacity-20">
-                      03
-                    </small>
-                    <strong>trillo</strong>
-                  </p>
-                  <p>
-                    <ul className="flex gap-2 text-xs">
-                      <li className="text-gray-200">ui/ux</li>
-                      <li className="text-gray-200">dashboard</li>
-                    </ul>
-                  </p>
-                </article>
-                <div className="flex items-center justify-end">
-                  <a
-                    className="relative hover:underline underline-offset-4 before:content-[' '] before:block before:opacity-50 before:text-gray-200 before:bg-gray-200 before:absolute before:-top-4 before:-left-4 before:w-12 before:h-12 before:rounded-full before-p-4 before:hover:w-16 before:hover:h-16 before:transition-all"
-                    href="https://projects.thebao.dev/trillo"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <span className="relative z-10">view project →</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li className="bg-gray-100 dark:bg-gray-300 text-black dark:text-white">
+          <li
+            className="bg-gray-100 dark:bg-gray-300 text-black dark:text-white"
+            data-aos="fade-up"
+          >
             <div className="container">
               <div className="grid grid-cols-2 py-32">
                 <article>
@@ -217,7 +244,7 @@ export default function Main() {
                     <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-xl opacity-20">
                       04
                     </small>
-                    <strong>ivyfood</strong>
+                    <strong className="ml-2">ivyfood</strong>
                   </p>
                   <p>
                     <ul className="flex gap-2 text-xs">
@@ -241,7 +268,7 @@ export default function Main() {
             </div>
           </li>
         </ul>
-        <div className="py-16 text-3xl bg-white text-black">
+        <div className="py-16 text-3xl bg-white text-black" data-aos="fade-up">
           <div className="container">
             <p>there's more</p>
             <Link to="/works">
@@ -253,12 +280,17 @@ export default function Main() {
       <section className="py-10 md:py-20 bg-black dark:bg-black text-white dark:text-white">
         <div className="container">
           <div className="min-h-1/2-screen flex flex-col items-center justify-center">
-            <h3 className="text-6xl">let's work together.</h3>
-            <p className="text-xl">i'm available for freelance work.</p>
+            <h3 className="text-6xl" data-aos="fade-up">
+              let's work together.
+            </h3>
+            <p className="text-xl" data-aos="fade-up">
+              i'm available for freelance work.
+            </p>
             <a
               className="relative mt-14 before:content-[' '] before:block before:opacity-80 before:text-gray-200 before:bg-gray-200 before:absolute before:-top-4 before:-left-4 before:w-12 before:h-12 before:rounded-full before-p-4"
               href="mailto:thebao.dev@gmail.com"
               aria-label="talk to me by email"
+              data-aos="fade-up"
             >
               <span className="relative z-10 text-xl">talk to me →</span>
             </a>

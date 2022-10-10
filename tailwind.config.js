@@ -20,18 +20,17 @@ module.exports = {
       black: "#000000",
       white: "#FDFDFD",
       gray: {
-        500: "#060606",
-        400: "#0C0C0C",
-        300: "#121212",
-        200: "#a2a2a2",
-        100: "#f9f9f9",
+        400: "#121212",
+        300: "#323232",
+        200: "#515151",
+        100: "#717171",
       },
     },
     extend: {
       textColor,
       backgroundColor,
       fontFamily: {
-        primary: ["ModernSans", "serif"],
+        primary: ["Gotham", "serif"],
       },
       fontSize: {
         root: "24px",

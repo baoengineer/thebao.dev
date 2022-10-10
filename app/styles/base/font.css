@@ -1,9 +1,26 @@
 @layer base {
-    @font-face {
-        font-family: 'ModernSans';
-        font-weight: 300;
-        font-display: swap;
-        src: url(../../fonts/ModernSans-Light.otf);
-    }
+  @font-face {
+    font-family: "Gotham";
+    font-weight: 300;
+    font-display: swap;
+    src: url(../../fonts/GothamThin.ttf);
+  }
+  @font-face {
+    font-family: "Gotham";
+    font-weight: 400;
+    font-display: swap;
+    src: url(../../fonts/GothamLight.ttf);
+  }
+  @font-face {
+    font-family: "Gotham";
+    font-weight: 500;
+    font-display: swap;
+    src: url(../../fonts/GothamMedium.ttf);
+  }
+  @font-face {
+    font-family: "Gotham";
+    font-weight: 600;
+    font-display: swap;
+    src: url(../../fonts/GothamBold.ttf);
+  }
 }
-
