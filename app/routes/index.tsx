@@ -1,10 +1,14 @@
 import anime from "animejs";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "@remix-run/react";
 import avatar from "public/images/avatar.png";
+import Lottie from "lottie-react";
+import meAnimation from "../animations/me.json";
+import { Waypoint } from "react-waypoint";
 
 export default function Main() {
   const textStackRef = useRef<HTMLDivElement>(null);
+  const [renderAnimation, setRenderAnimation] = useState(false);
 
   const initTextStackAnimation = () => {
     const textStack = textStackRef.current;
@@ -89,18 +93,28 @@ export default function Main() {
       <section className="py-0 md:py-20">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-2 min-h-screen">
-            <div className="lg:sticky top-0 self-start md:py-12">
+            <div className=" lg:sticky top-0 self-start md:py-24">
               <h3 className="underline underline-offset-8" data-aos="fade-up">
                 about me
               </h3>
-              <div
-                className="w-44 rounded-md overflow-hidden drop-shadow-sm grayscale"
-                data-aos="fade-up"
-              >
-                <img src={avatar} alt="bao" />
+              <div className="flex relative" data-aos="fade-up ">
+                <img
+                  src={avatar}
+                  alt="bao"
+                  className="w-48 rounded-md drop-shadow-sm grayscale"
+                />
+                {renderAnimation && (
+                  <div className="grayscale absolute -bottom-1/3 right-1/3 tr w-48">
+                    <Lottie
+                      animationData={meAnimation}
+                      initialSegment={[0, 50]}
+                      loop={false}
+                    />
+                  </div>
+                )}
               </div>
             </div>
-            <article className="text-md lg:text-lg md:py-12">
+            <article className="text-md lg:text-lg md:py-24">
               <p className="text-3xl" data-aos="fade-up">
                 hi, I'm bao - an idle guy who loves coding, making internet
                 products, and tech stuffs.
@@ -128,6 +142,12 @@ export default function Main() {
                 thinking and annoying bugs".
               </p>
             </article>
+            <Waypoint
+              topOffset={200}
+              onEnter={() => {
+                setRenderAnimation(true);
+              }}
+            />
           </div>
         </div>
       </section>
