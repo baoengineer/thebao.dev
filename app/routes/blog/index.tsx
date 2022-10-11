@@ -20,7 +20,7 @@ export default function Posts() {
     <main>
       <section className="py-20">
         <div className="container">
-          <h1>Posts</h1>
+          <h1>Blog</h1>
           {/*<Link to="/admin" className="inline-flex text-red-600 underline">*/}
           {/*  Admin*/}
           {/*</Link>*/}

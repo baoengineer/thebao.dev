@@ -7,7 +7,7 @@ type NavProps = {
 };
 
 export default function Nav({ className }: NavProps) {
-  const [state, setState] = useState("intro");
+  const [state, setState] = useState("nav");
   return (
     <nav
       className={clsx(
@@ -25,9 +25,12 @@ export default function Nav({ className }: NavProps) {
             ),
             nav: (
               <ul className="flex">
-                <Link to="/about" className="mr-5">
-                  about
+                <Link to="/blog" className="mr-5">
+                  blog
                 </Link>
+                <a href="#about" className="mr-5">
+                  about
+                </a>
                 <Link to="/works" className="mr-5">
                   works
                 </Link>

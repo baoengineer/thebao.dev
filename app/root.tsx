@@ -14,6 +14,7 @@ import type { MetaFunction } from "@remix-run/node";
 import Curtain from "./components/curtain";
 import AOS from "aos";
 import clsx from "clsx";
+import Footer from "~/components/footer";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
@@ -76,9 +77,9 @@ export default function App() {
           <Nav />
         </header>
         <Outlet />
-        <ScrollRestoration />
-        <Scripts />
+        <ScrollRestoration /> <Scripts />
         <LiveReload />
+        <Footer />
       </body>
     </html>
   );

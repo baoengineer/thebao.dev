@@ -90,7 +90,7 @@ export default function Main() {
           </ul>
         </div>
       </section>
-      <section className="py-0 md:py-20">
+      <section id="about" className="py-0 md:py-20">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-2 min-h-screen">
             <div className=" lg:sticky top-0 self-start md:py-24">
@@ -293,26 +293,6 @@ export default function Main() {
             <Link to="/works">
               <h4>view all projects →</h4>
             </Link>
-          </div>
-        </div>
-      </section>
-      <section className="py-10 md:py-20">
-        <div className="container">
-          <div className="min-h-1/2-screen flex flex-col items-center justify-center">
-            <h3 className="text-6xl" data-aos="fade-up">
-              let's work together.
-            </h3>
-            <p className="text-xl" data-aos="fade-up">
-              i'm available for freelance work.
-            </p>
-            <a
-              className="relative mt-14 before:content-[' '] before:block before:opacity-80 before:text-gray-200 before:bg-gray-200 before:absolute before:-top-4 before:-left-4 before:w-12 before:h-12 before:rounded-full before-p-4"
-              href="mailto:thebao.dev@gmail.com"
-              aria-label="talk to me by email"
-              data-aos="fade-up"
-            >
-              <span className="relative z-10 text-xl">talk to me →</span>
-            </a>
           </div>
         </div>
       </section>
