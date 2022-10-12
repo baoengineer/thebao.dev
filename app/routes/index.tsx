@@ -1,10 +1,10 @@
-import anime from "animejs";
-import { useEffect, useRef, useState } from "react";
-import { Link } from "@remix-run/react";
-import avatar from "public/images/avatar.png";
-import Lottie from "lottie-react";
-import meAnimation from "../animations/me.json";
-import { Waypoint } from "react-waypoint";
+import anime from 'animejs';
+import { useEffect, useRef, useState } from 'react';
+import { Link } from '@remix-run/react';
+import avatar from 'public/images/avatar.png';
+import Lottie from 'lottie-react';
+import meAnimation from '../animations/me.json';
+import { Waypoint } from 'react-waypoint';
 
 export default function Main() {
   const textStackRef = useRef<HTMLDivElement>(null);
@@ -16,12 +16,12 @@ export default function Main() {
       return;
     }
     const timeline = anime.timeline({
-      easing: "easeOutExpo",
+      easing: 'easeOutExpo',
       duration: 1000,
       loop: true,
     });
-    const texts = textStack.querySelectorAll("span");
-    texts.forEach((text) => {
+    const texts = textStack.querySelectorAll('span');
+    texts.forEach(text => {
       timeline
         .add({
           targets: text,
@@ -68,15 +68,10 @@ export default function Main() {
             </li>
             <li data-aos="fade-up">
               <div className="flex justify-end">
-                <div
-                  ref={textStackRef}
-                  className="flex flex-col relative items-end"
-                >
+                <div ref={textStackRef} className="flex flex-col relative items-end">
                   <span className="h1 absolute h-full opacity-100">fast</span>
                   <span className="h1 opacity-0">modern</span>
-                  <span className="h1 absolute h-full opacity-0">
-                    resilient
-                  </span>
+                  <span className="h1 absolute h-full opacity-0">resilient</span>
                 </div>
                 <span className="h1 ml-3 md:ml-5 lg:ml-10">user exp</span>
               </div>
@@ -98,47 +93,32 @@ export default function Main() {
                 about me
               </h3>
               <div className="flex relative" data-aos="fade-up ">
-                <img
-                  src={avatar}
-                  alt="bao"
-                  className="w-48 rounded-md drop-shadow-sm grayscale"
-                />
+                <img src={avatar} alt="bao" className="w-48 rounded-md drop-shadow-sm grayscale" />
                 {renderAnimation && (
                   <div className="grayscale absolute -bottom-1/3 right-1/3 tr w-48">
-                    <Lottie
-                      animationData={meAnimation}
-                      initialSegment={[0, 50]}
-                      loop={false}
-                    />
+                    <Lottie animationData={meAnimation} initialSegment={[0, 50]} loop={false} />
                   </div>
                 )}
               </div>
             </div>
             <article className="text-md lg:text-lg md:py-24">
               <p className="text-3xl" data-aos="fade-up">
-                hi, I'm bao - an idle guy who loves coding, making internet
-                products, and tech stuffs.
+                hi, I'm bao - an idle guy who loves coding, making internet products, and tech
+                stuffs.
               </p>
               <br />
               <p data-aos="fade-up">I'm</p>
               <div className="ml-6" data-aos="fade-up">
-                <p>
-                  - developing web/mobile apps, landing pages, and animations.
-                </p>
-                <p>
-                  - specialized in javascript, react, and frontend web stacks.
-                </p>
-                <p>
-                  - focused on user experience, accessibility and performance.
-                </p>
+                <p>- developing web/mobile apps, landing pages, and animations.</p>
+                <p>- specialized in javascript, react, and frontend web stacks.</p>
+                <p>- focused on user experience, accessibility and performance.</p>
                 <p>- obsessed with being productive, but chill.</p>
                 <p>- finding life spirit, love art, minimalism.</p>
               </div>
               <p className="mt-6" data-aos="fade-up">
-                one of my theories is that "the goals of great modern webs is
-                now changing from displaying information to serve the best user
-                experiences for your users, to command their attention and
-                motivate them to take next actions in many forms without
+                one of my theories is that "the goals of great modern webs is now changing from
+                displaying information to serve the best user experiences for your users, to command
+                their attention and motivate them to take next actions in many forms without
                 thinking and annoying bugs".
               </p>
             </article>
@@ -165,9 +145,7 @@ export default function Main() {
                     <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-xl opacity-20">
                       01
                     </small>
-                    <strong className="ml-2">
-                      flodesk - email / website builder
-                    </strong>
+                    <strong className="ml-2">flodesk - email / website builder</strong>
                   </div>
                   <div>
                     <ul className="flex gap-2 text-xs">
@@ -190,10 +168,7 @@ export default function Main() {
               </div>
             </div>
           </li>
-          <li
-            className="bg-white dark:bg-black text-black dark:text-white"
-            data-aos="fade-up"
-          >
+          <li className="bg-white dark:bg-black text-black dark:text-white" data-aos="fade-up">
             <div className="container">
               <div className="grid grid-cols-2 py-32">
                 <article>
@@ -252,10 +227,7 @@ export default function Main() {
               </div>
             </div>
           </li>
-          <li
-            className="bg-white dark:bg-black text-black dark:text-white"
-            data-aos="fade-up"
-          >
+          <li className="bg-white dark:bg-black text-black dark:text-white" data-aos="fade-up">
             <div className="container">
               <div className="grid grid-cols-2 py-32">
                 <article>

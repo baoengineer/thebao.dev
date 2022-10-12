@@ -2,7 +2,7 @@ type FooterProps = {
   className?: string;
 };
 
-export default function Footer({ className = "" }: FooterProps) {
+export default function Footer({ className = '' }: FooterProps) {
   return (
     <section className={`py-10 md:py-20 ${className}`}>
       <div className="container">

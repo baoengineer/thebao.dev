@@ -1,23 +1,20 @@
-import { useEffect, useState } from "react";
-import clsx from "clsx";
+import { useEffect, useState } from 'react';
+import clsx from 'clsx';
 
 export default function Curtain() {
-  const [state, setState] = useState("show");
+  const [state, setState] = useState('show');
 
   useEffect(() => {
-    setState("hide");
+    setState('hide');
   }, []);
 
   const handleTransitionEnd = () => {
-    setState("hidden");
+    setState('hidden');
   };
 
   return (
     <div
-      className={clsx(
-        "fixed top-0 z-50 h-screen w-screen bg-white transition-opacity",
-        state
-      )}
+      className={clsx('fixed top-0 z-50 h-screen w-screen bg-white transition-opacity', state)}
       onTransitionEnd={handleTransitionEnd}
     />
   );

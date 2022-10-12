@@ -1,41 +1,32 @@
-import {
-  Links,
-  LiveReload,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-} from "@remix-run/react";
-import mainStylesheet from "public/styles/index.css";
-import type { SetStateAction } from "react";
-import { useEffect, useState } from "react";
-import { Nav, ThemeToggle } from "./components";
-import type { MetaFunction } from "@remix-run/node";
-import Curtain from "./components/curtain";
-import AOS from "aos";
-import clsx from "clsx";
-import Footer from "~/components/footer";
+import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react';
+import mainStylesheet from 'public/styles/index.css';
+import type { SetStateAction } from 'react';
+import { useEffect, useState } from 'react';
+import { Nav, ThemeToggle } from './components';
+import type { MetaFunction } from '@remix-run/node';
+import Curtain from './components/curtain';
+import AOS from 'aos';
+import clsx from 'clsx';
+import Footer from '~/components/footer';
 
 export const meta: MetaFunction = () => ({
-  charset: "utf-8",
-  title: "bao - creative engineer",
+  charset: 'utf-8',
+  title: 'bao - creative engineer',
   description:
-    "A creative frontend engineer enjoy crafting awesome ui/ux, web/apps, digital stuffs",
-  viewport: "width=device-width,initial-scale=1",
+    'A creative frontend engineer enjoy crafting awesome ui/ux, web/apps, digital stuffs',
+  viewport: 'width=device-width,initial-scale=1',
 });
 
 export default function App() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState('light');
 
   const initTheme = () => {
-    const isDark = localStorage.theme === "dark";
-    const isDarkPreferred = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches;
-    if (isDark || (!("theme" in localStorage) && isDarkPreferred)) {
-      setTheme("dark");
+    const isDark = localStorage.theme === 'dark';
+    const isDarkPreferred = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (isDark || (!('theme' in localStorage) && isDarkPreferred)) {
+      setTheme('dark');
     } else {
-      setTheme("light");
+      setTheme('light');
     }
   };
 
@@ -48,8 +39,8 @@ export default function App() {
     const windowDelta = window.innerHeight / 5;
     AOS.init({
       duration: 600,
-      easing: "ease-in-out-quad",
-      anchorPlacement: "top-bottom",
+      easing: 'ease-in-out-quad',
+      anchorPlacement: 'top-bottom',
       offset: windowDelta,
     });
     AOS.refresh();
@@ -61,7 +52,7 @@ export default function App() {
   }, []);
 
   return (
-    <html lang="en" className={clsx("antialiased", theme)}>
+    <html lang="en" className={clsx('antialiased', theme)}>
       <head>
         <Meta />
         <Links />
@@ -86,5 +77,5 @@ export default function App() {
 }
 
 export function links() {
-  return [{ rel: "stylesheet", href: mainStylesheet }];
+  return [{ rel: 'stylesheet', href: mainStylesheet }];
 }

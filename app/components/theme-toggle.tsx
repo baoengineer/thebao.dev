@@ -1,6 +1,6 @@
-import clsx from "clsx";
+import clsx from 'clsx';
 
-import { MoonIcon, SunIcon } from "./icons";
+import { MoonIcon, SunIcon } from './icons';
 
 type ThemeToggleProps = {
   theme?: string;
@@ -10,20 +10,20 @@ type ThemeToggleProps = {
 
 export default function ThemeToggle({
   className,
-  theme = "light",
+  theme = 'light',
   onChange = () => {},
 }: ThemeToggleProps) {
   const handleThemeToggle = () => {
-    onChange(theme === "light" ? "dark" : "light");
+    onChange(theme === 'light' ? 'dark' : 'light');
   };
 
   return (
     <button
-      className={clsx("flex", "text-primary", className)}
+      className={clsx('flex', 'text-primary', className)}
       onClick={handleThemeToggle}
       aria-label={`${theme} mode`}
     >
-      {theme === "light" ? <MoonIcon /> : <SunIcon />}
+      {theme === 'light' ? <MoonIcon /> : <SunIcon />}
     </button>
   );
 }
