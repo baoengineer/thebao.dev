@@ -36,7 +36,7 @@ export default function Nav({ className }: NavProps) {
       style={{ backfaceVisibility: 'hidden' }}
     >
       <div className="container w-full">
-        <ul className="flex flex-row items-center justify-end relative bg-white dark:bg-black rounded-bl-sm rounded-br-sm p-4 -mx-6">
+          <ul className="flex flex-col items-end md:flex-row md:items-center justify-end relative bg-white dark:bg-black rounded-bl-sm rounded-br-sm p-4 -mx-6">
           <li>
             <a
               href="https://blog.thebao.dev"
