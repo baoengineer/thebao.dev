@@ -112,7 +112,7 @@ export default function Main() {
                 <p>- developing web/mobile apps, landing pages, and animations.</p>
                 <p>- specialized in javascript, react, and frontend web stacks.</p>
                 <p>- focused on user experience, accessibility and performance.</p>
-                  <br/>
+                <br />
                 <p>- obsessed with being productive, but chill.</p>
                 <p>- finding life spirit, love art, minimalism.</p>
               </div>
@@ -132,7 +132,10 @@ export default function Main() {
           </div>
         </div>
       </section>
-        <section id="works" className="bg-black dark:bg-white text-white dark:text-black pt-10 md:pt-20">
+      <section
+        id="works"
+        className="bg-black dark:bg-white text-white dark:text-black pt-10 md:pt-20 text-3xl"
+      >
         <div className="container">
           <h3 data-aos="fade-up">carfted with love</h3>
           <h4 data-aos="fade-up">these are a selection of my recent works.</h4>
@@ -146,25 +149,36 @@ export default function Main() {
                     <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-xl opacity-20">
                       01
                     </small>
-                    <strong className="ml-2">flodesk - email / website builder</strong>
+                    <strong className="ml-3">flodesk.com - email / website builder</strong>
                   </div>
+                  <div className="text-sm m-3">
+                    Flodesk is a digital marketing service provider that’s built for creators, by
+                    creators. You can use it to design and send on-brand marketing emails, create
+                    high converting sales and checkout pages, publish opt-in forms to grow your
+                    list, and build powerful email automations.
+                  </div>
+
                   <div>
-                    <ul className="flex gap-2 text-xs">
-                      <li className="text-gray-200">ui/ux</li>
-                      <li className="text-gray-200">webapp</li>
-                      <li className="text-gray-200">site builder</li>
-                      <li className="text-gray-200">animations</li>
-                      <li className="text-gray-200">accessibility</li>
+                    <ul className="flex gap-2 flex-wrap text-sm m-3">
+                      <li className="text-gray-200">#ui/ux</li>
+                      <li className="text-gray-200">#webapp</li>
+                      <li className="text-gray-200">#site builder</li>
+                      <li className="text-gray-200">#animations</li>
+                      <li className="text-gray-200">#accessibility</li>
                     </ul>
+                  </div>
+                  <div className="text-sm m-3 italic text-gray-200">
+                    | I'm currently working on this project in a small team at Flodesk Inc.
                   </div>
                 </article>
                 <div className="flex items-center justify-end ">
-                  <Link
+                  <a
                     className="relative hover:underline underline-offset-4 before:content-[' '] before:block before:opacity-50 before:text-gray-200 before:bg-gray-200 before:absolute before:-top-4 before:-left-4 before:w-12 before:h-12 before:rounded-full before-p-4 before:hover:w-16 before:hover:h-16 before:transition-all"
-                    to="/works/flodesk"
+                    href="https://flodesk.com"
+                    target="_blank"
                   >
                     <span className="relative z-10">view project →</span>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -177,12 +191,18 @@ export default function Main() {
                     <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-xl opacity-20">
                       02
                     </small>
-                    <strong className="ml-2">uiutils</strong>
+                    <strong className="ml-2">uiutils.com - an indie ui development kit</strong>
                   </p>
+                  <div className="text-sm m-3">
+                    A set of utilities and tools for UI development.
+                    <br />
+                    all in one place. personalized.
+                  </div>
                   <div>
-                    <ul className="flex gap-2 text-xs">
-                      <li className="text-gray-200">utilities</li>
-                      <li className="text-gray-200">development tool</li>
+                    <ul className="flex gap-2 text-sm m-3">
+                      <li className="text-gray-200">#side-project</li>
+                      <li className="text-gray-200">#utilities</li>
+                      <li className="text-gray-200">#development tool</li>
                     </ul>
                   </div>
                 </article>
@@ -207,11 +227,17 @@ export default function Main() {
                     <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-xl opacity-20">
                       03
                     </small>
-                    <strong className="ml-2">natours</strong>
+                    <strong className="ml-3">natours</strong>
                   </p>
+                  <div className="text-sm m-3">
+                      a modern landing page demo.
+                  </div>
                   <div>
-                    <ul className="flex gap-2 text-xs">
-                      <li className="text-gray-200">landing-pages</li>
+                    <ul className="flex gap-2 text-sm m-3">
+                      <li className="text-gray-300">#landing-pages</li>
+                        <li className="text-gray-300">#ui/ux</li>
+                      <li className="text-gray-300">#markup</li>
+                      <li className="text-gray-300">#layout</li>
                     </ul>
                   </div>
                 </article>
@@ -236,13 +262,16 @@ export default function Main() {
                     <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-xl opacity-20">
                       04
                     </small>
-                    <strong className="ml-2">ivyfood</strong>
+                    <strong className="ml-3">ivyfood</strong>
                   </p>
+                    <div className="text-sm m-3">
+                        a another nice website demo.
+                    </div>
                   <div>
-                    <ul className="flex gap-2 text-xs">
-                      <li className="text-gray-200">ui/ux</li>
-                      <li className="text-gray-200">landing-pages</li>
-                      <li className="text-gray-200">show-case</li>
+                      <ul className="flex gap-2 text-sm m-3">
+                      <li className="text-gray-300">#ui/ux</li>
+                      <li className="text-gray-300">#landing-pages</li>
+                      <li className="text-gray-300">#show-case</li>
                     </ul>
                   </div>
                 </article>
