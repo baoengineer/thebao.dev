@@ -1,8 +1,8 @@
 @layer base {
-    @font-face {
-        font-family: 'ModernSans-Light';
-        font-weight: 300;
-        font-display: swap;
-        src: url(../../fonts/ModernSans-Light.otf);
-    }
+  @font-face {
+    font-family: 'ModernSans-Light';
+    font-weight: 300;
+    font-display: swap;
+    src: url(../../fonts/ModernSans-Light.otf);
+  }
 }
