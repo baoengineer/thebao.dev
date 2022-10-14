@@ -58,7 +58,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="overflow-visible">
+      <body className="overflow-visible font-sans">
         <Curtain />
         <header>
           <ThemeToggle

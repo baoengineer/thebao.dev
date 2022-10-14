@@ -42,7 +42,7 @@ export default function Main() {
 
   return (
     <main>
-      <section className="">
+      <section>
         <div className="container flex w-full justify-end items-center text-right">
           <ul className="flex flex-col gap-2 md:gap-4 lg:gap-6 md:-mt-40">
             <div
@@ -87,9 +87,9 @@ export default function Main() {
           </ul>
         </div>
       </section>
-      <section id="about-me" className="py-6 md:py-20">
+      <section id="about-me" className="py-6 md:py-12 lg:py-20">
         <div className="container">
-          <div className="grid md:grid-cols-2 gap-2 min-h-screen">
+          <div className="grid lg:grid-cols-2 lg:gap-2 min-h-screen">
             <div className=" lg:sticky top-0 self-start">
               <h3 className="underline underline-offset-8" data-aos="fade-up">
                 about me
@@ -103,8 +103,8 @@ export default function Main() {
                 )}
               </div>
             </div>
-            <article className="text-md lg:text-lg mt-84 lg:mt-0">
-              <p className="text-3xl" data-aos="fade-up">
+            <article className="text-md lg:text-lg mt-8 lg:mt-0">
+              <p className="text-3xl font-primary" data-aos="fade-up">
                 hi, I'm bao - an idle guy who loves coding, making internet products, and tech
                 stuffs.
               </p>
@@ -112,12 +112,12 @@ export default function Main() {
               <p data-aos="fade-up">I'm</p>
               <div className="ml-6" data-aos="fade-up">
                 <p>- developing web/mobile apps, landing pages, and animations.</p>
-                <p>- specialized in javascript, react, and frontend web stacks.</p>
-                <p>- focused on user experience, accessibility and performance.</p>
-                <p>- obsessed with being productive, but chill.</p>
+                <p>- specializing in javascript, react, and frontend web stacks.</p>
+                <p>- focusing on user experience, accessibility and performance.</p>
+                <p>- obsessing with being productive, but chill.</p>
                 <p>- finding life spirit, love art, minimalism.</p>
               </div>
-              <p className="mt-6 lg:py-24" data-aos="fade-up">
+              <p className="mt-6 lg:py-24 font-primary" data-aos="fade-up">
                 "the goals of great modern webs is now changing from displaying information to serve
                 the best user experiences for your users, to command their attention and motivate
                 them to take next actions in many forms without thinking and annoying bugs" - one of
@@ -133,12 +133,12 @@ export default function Main() {
           </div>
         </div>
       </section>
-      <section className="py-6 md:py-20">
+      <section className="py-6 md:py-12 lg:py-20">
         <div className="mx-auto max-w-screen-2xl px-4 lg:py-8 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-            <div className="bg-blue-600 lg:p-8 md:p-12 lg:px-16 lg:py-24">
+          <div className="grid grid-cols-1 items-start gap-4 md:grid-cols-2">
+            <div className="sticky top-0 lg:p-8 md:p-12 lg:px-16 lg:py-24">
               <div className="mx-auto max-w-xl text-left lg:text-center">
-                <h2 className="text-2xl text-left font-bold md:text-3xl" data-aos="fade-up">
+                <h2 className="text-2xl font-primary text-left  md:text-3xl" data-aos="fade-up">
                   have some great ideas?
                 </h2>
                 <p className=" text-left  sm:mt-4 " data-aos="fade-up">
@@ -179,7 +179,7 @@ export default function Main() {
 
       <section
         id="works"
-        className="bg-black dark:bg-white text-white dark:text-black pt-10 md:pt-20 text-2xl md:text-3xl"
+        className="bg-black dark:bg-white text-white dark:text-black pt-10 md:pt-20 text-2xl md:text-2xl"
       >
         <div className="container">
           <h3 data-aos="fade-up">carfted with love</h3>
@@ -194,9 +194,9 @@ export default function Main() {
                     <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-md md:text-xl opacity-20">
                       01
                     </small>
-                    <strong className="ml-3">flodesk.com - email / website builder</strong>
+                    <strong className="ml-3 font-primary">flodesk - email / website builder</strong>
                   </div>
-                  <div className="text-sm m-3">
+                  <div className="text-xs m-3">
                     Flodesk is a digital marketing service provider that’s built for creators, by
                     creators. You can use it to design and send on-brand marketing emails, create
                     high converting sales and checkout pages, publish opt-in forms to grow your
@@ -204,7 +204,7 @@ export default function Main() {
                   </div>
 
                   <div>
-                    <ul className="flex gap-2 flex-wrap text-sm m-3">
+                    <ul className="flex gap-2 flex-wrap text-xs m-3">
                       <li className="text-gray-200">#ui/ux</li>
                       <li className="text-gray-200">#webapp</li>
                       <li className="text-gray-200">#site builder</li>
@@ -212,8 +212,8 @@ export default function Main() {
                       <li className="text-gray-200">#accessibility</li>
                     </ul>
                   </div>
-                  <div className="text-sm m-3 italic text-gray-200">
-                    | I'm currently working on this project in a small team at Flodesk Inc.
+                  <div className="text-sm m-3  text-gray-200">
+                    I'm currently working on this with Flodesk team.
                   </div>
                 </article>
                 <div className="flex items-center justify-end mt-12 lg:mt-0">
@@ -222,7 +222,7 @@ export default function Main() {
                     href="https://flodesk.com"
                     target="_blank"
                   >
-                    <span className="relative z-10">view project →</span>
+                    <span className="relative z-10 font-primary">view project →</span>
                   </a>
                 </div>
               </div>
@@ -236,15 +236,15 @@ export default function Main() {
                     <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-md md:text-xl opacity-20">
                       02
                     </small>
-                    <strong className="ml-2">uiutils.com - an indie ui development kit</strong>
+                      <strong className="ml-2 font-primary">uiutil - an indie ui development kit</strong>
                   </p>
-                  <div className="text-sm m-3">
+                  <div className="text-xs  m-3">
                     A set of utilities and tools for UI development.
                     <br />
                     all in one place. personalized.
                   </div>
                   <div>
-                    <ul className="flex flex-wrap gap-2 text-sm m-3">
+                    <ul className="flex flex-wrap gap-2 text-xs m-3">
                       <li className="text-gray-200">#side-project</li>
                       <li className="text-gray-200">#utilities</li>
                       <li className="text-gray-200">#development tool</li>
@@ -258,7 +258,7 @@ export default function Main() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <span className="relative z-10">view project →</span>
+                    <span className="relative z-10 font-primary">view project →</span>
                   </a>
                 </div>
               </div>
@@ -272,11 +272,11 @@ export default function Main() {
                     <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-md md:text-xl opacity-20">
                       03
                     </small>
-                    <strong className="ml-3">natours</strong>
+                    <strong className="ml-3 font-primary">natours</strong>
                   </p>
-                  <div className="text-sm m-3">a modern landing page demo.</div>
+                  <div className="text-xs m-3">a modern landing page demo.</div>
                   <div>
-                    <ul className="flex flex-wrap gap-2 text-sm m-3">
+                    <ul className="flex flex-wrap gap-2 text-xs m-3">
                       <li className="text-gray-300">#landing-pages</li>
                       <li className="text-gray-300">#ui/ux</li>
                       <li className="text-gray-300">#markup</li>
@@ -291,7 +291,7 @@ export default function Main() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <span className="relative z-10">view project →</span>
+                    <span className="relative z-10 font-primary">view project →</span>
                   </a>
                 </div>
               </div>
@@ -305,11 +305,11 @@ export default function Main() {
                     <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-md md:text-xl opacity-20">
                       04
                     </small>
-                    <strong className="ml-3">ivyfood</strong>
+                    <strong className="ml-3 font-primary">ivyfood</strong>
                   </p>
-                  <div className="text-sm m-3">another nice website demo.</div>
+                  <div className="text-xs m-3">another nice website demo.</div>
                   <div>
-                    <ul className="flex flex-wrap gap-2 text-sm m-3">
+                    <ul className="flex flex-wrap gap-2 text-xs m-3">
                       <li className="text-gray-300">#ui/ux</li>
                       <li className="text-gray-300">#landing-pages</li>
                       <li className="text-gray-300">#show-case</li>
@@ -323,7 +323,7 @@ export default function Main() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <span className="relative z-10">view project →</span>
+                    <span className="relative z-10 font-primary">view project →</span>
                   </a>
                 </div>
               </div>
@@ -331,7 +331,7 @@ export default function Main() {
           </li>
         </ul>
         <div className="py-16 text-3xl" data-aos="fade-up">
-          <div className="container flex items-end">
+          <div className="container flex items-end font-primary">
             <a
               className="flex items-end hover:opacity-70 hover:underline transition-all"
               href="https://github.com/thebaodev"

@@ -7,40 +7,54 @@ type NavProps = {
 };
 
 export default function Nav({ className }: NavProps) {
+  const timer = useRef<any>();
   const lastScroll = useRef(0);
   const nav = useRef<HTMLDivElement>(null);
 
+  const handleScrollAnimation = () => {
+    if (!nav.current) {
+      return;
+    }
+    let currentScroll = window.pageYOffset;
+    if (currentScroll - lastScroll.current > 0) {
+      nav.current.classList.add('-translate-y-full');
+      nav.current.classList.remove('translate-y-0');
+    } else {
+      nav.current.classList.add('translate-y-0');
+      nav.current.classList.remove('-translate-y-full');
+    }
+    lastScroll.current = currentScroll;
+  };
   useEffect(() => {
-    window.addEventListener('scroll', () => {
-      if (!nav.current) {
-        return;
+    if (timer.current) {
+      clearTimeout(timer.current);
+    }
+    timer.current = setTimeout(() => {
+      window.addEventListener('scroll', handleScrollAnimation);
+    }, 1000);
+    return () => {
+      if (timer.current) {
+        clearTimeout(timer.current);
       }
-      let currentScroll = window.pageYOffset;
-      if (currentScroll - lastScroll.current > 0) {
-        nav.current.classList.add('-translate-y-full');
-        nav.current.classList.remove('translate-y-0');
-      } else {
-        nav.current.classList.add('translate-y-0');
-        nav.current.classList.remove('-translate-y-full');
-      }
-      lastScroll.current = currentScroll;
-    });
+      window.removeEventListener('scroll', handleScrollAnimation);
+    };
   }, []);
+
   return (
     <nav
       ref={nav}
       className={clsx(
-        'font-primary will-change-[transform] text-primary sm:flex text-md md:text-lg lg:text-2xl transform-gpu duration-500 ease-in-out transition-transform',
+        'font-sans will-change-[transform] text-primary sm:flex text-md md:text-lg lg:text-2xl transform-gpu duration-500 ease-in-out transition-transform',
         className,
       )}
       style={{ backfaceVisibility: 'hidden' }}
     >
       <div className="container w-full">
-          <ul className="flex flex-col items-end md:flex-row md:items-center justify-end relative bg-white dark:bg-black rounded-bl-sm rounded-br-sm p-4 -mx-6">
+        <ul className="flex flex-col items-end md:flex-row md:items-center justify-end relative bg-white dark:bg-black rounded-bl-sm rounded-br-sm p-4 -mx-6">
           <li>
             <a
               href="https://blog.thebao.dev"
-                target="_blank"
+              target="_blank"
               className="p-2 hover:drop-shadow-md transition-all duration-300 hover:underline"
             >
               #blog
