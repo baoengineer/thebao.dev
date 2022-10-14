@@ -9,7 +9,7 @@ export default function LeftNav({ className }: LeftNavProps) {
   return (
     <div
       className={clsx(
-        'flex flex-row items-center font-primary text-primary hidden sm:flex md:text-md lg:text-lg',
+        'flex flex-row items-center font-primary text-gray-100 hidden sm:flex md:text-md lg:text-lg',
         className,
       )}
     >

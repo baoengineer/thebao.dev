@@ -41,6 +41,9 @@ module.exports = {
       backgroundImage: {
         flodesk: "url('/images/flodesk.png')",
       },
+      willChange: {
+        transform: 'transform',
+      },
     },
   },
   plugins: [],
