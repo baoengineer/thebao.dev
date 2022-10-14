@@ -25,6 +25,8 @@ export default function Nav({ className }: NavProps) {
         </Link>
         <Link to="/contact">contact</Link>
       </ul>
+
     </nav>
+
   );
 }

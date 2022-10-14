@@ -179,12 +179,12 @@ export default function Main() {
                     </small>
                     <strong className="ml-2">uiutils</strong>
                   </p>
-                  <p>
+                  <div>
                     <ul className="flex gap-2 text-xs">
                       <li className="text-gray-200">utilities</li>
                       <li className="text-gray-200">development tool</li>
                     </ul>
-                  </p>
+                  </div>
                 </article>
                 <div className="flex items-center justify-end">
                   <a
@@ -209,11 +209,11 @@ export default function Main() {
                     </small>
                     <strong className="ml-2">natours</strong>
                   </p>
-                  <p>
+                  <div>
                     <ul className="flex gap-2 text-xs">
                       <li className="text-gray-200">landing-pages</li>
                     </ul>
-                  </p>
+                  </div>
                 </article>
                 <div className="flex items-center justify-end">
                   <a
@@ -238,13 +238,13 @@ export default function Main() {
                     </small>
                     <strong className="ml-2">ivyfood</strong>
                   </p>
-                  <p>
+                  <div>
                     <ul className="flex gap-2 text-xs">
                       <li className="text-gray-200">ui/ux</li>
                       <li className="text-gray-200">landing-pages</li>
                       <li className="text-gray-200">show-case</li>
                     </ul>
-                  </p>
+                  </div>
                 </article>
                 <div className="flex items-center justify-end">
                   <a

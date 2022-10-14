@@ -8,6 +8,7 @@ import Curtain from './components/curtain';
 import AOS from 'aos';
 import clsx from 'clsx';
 import Footer from '~/components/footer';
+import LeftNav from '~/components/left-nav';
 
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
@@ -66,6 +67,7 @@ export default function App() {
             onChange={handleThemeChange}
           />
           <Nav />
+          <LeftNav className="fixed top-full bottom-2 -translate-y-1/2 left-3" />
         </header>
         <Outlet />
         <ScrollRestoration /> <Scripts />
