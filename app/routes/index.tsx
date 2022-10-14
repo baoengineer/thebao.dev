@@ -97,13 +97,13 @@ export default function Main() {
               <div className="flex relative" data-aos="fade-up ">
                 <img src={avatar} alt="bao" className="w-48 rounded-md drop-shadow-sm grayscale" />
                 {renderAnimation && (
-                  <div className="grayscale absolute -bottom-1/3 right-1/3 tr w-48">
+                  <div className="  hidden lg:block grayscale absolute -bottom-1/3 right-1/3 tr w-48">
                     <Lottie animationData={meAnimation} initialSegment={[0, 50]} loop={false} />
                   </div>
                 )}
               </div>
             </div>
-            <article className="text-md lg:text-lg">
+            <article className="text-md lg:text-lg mt-84 lg:mt-0">
               <p className="text-3xl" data-aos="fade-up">
                 hi, I'm bao - an idle guy who loves coding, making internet products, and tech
                 stuffs.
@@ -114,11 +114,10 @@ export default function Main() {
                 <p>- developing web/mobile apps, landing pages, and animations.</p>
                 <p>- specialized in javascript, react, and frontend web stacks.</p>
                 <p>- focused on user experience, accessibility and performance.</p>
-                <br />
                 <p>- obsessed with being productive, but chill.</p>
                 <p>- finding life spirit, love art, minimalism.</p>
               </div>
-              <p className="mt-6" data-aos="fade-up">
+              <p className="mt-6 lg:py-24" data-aos="fade-up">
                 "the goals of great modern webs is now changing from displaying information to serve
                 the best user experiences for your users, to command their attention and motivate
                 them to take next actions in many forms without thinking and annoying bugs" - one of
@@ -135,23 +134,23 @@ export default function Main() {
         </div>
       </section>
       <section className="py-10 md:py-20">
-        <div className="mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-screen-2xl px-4 lg:py-8 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-            <div className="bg-blue-600 p-8 md:p-12 lg:px-16 lg:py-24">
-              <div className="mx-auto max-w-xl text-center">
+            <div className="bg-blue-600 lg:p-8 md:p-12 lg:px-16 lg:py-24">
+              <div className="mx-auto max-w-xl text-left lg:text-center">
                 <h2 className="text-2xl text-left font-bold md:text-3xl" data-aos="fade-up">
                   have some great ideas?
                 </h2>
-                <p className="hidden text-left  sm:mt-4 sm:block" data-aos="fade-up">
+                <p className=" text-left  sm:mt-4 " data-aos="fade-up">
                   I love to collaborate, work together or just talk about softwares, web
                   technologies, coding, productivity and tech stuffs.
                   <br />
                   ping me, let's have a coffee together ☕️.
                 </p>
-                <div className="mt-4 md:mt-8">
+                <div className="mt-4 md:mt-8" data-aos="fade-up">
                   <Link
                     to="/contact"
-                    className="inline-block rounded border border-black dark:border-white bg-black dark:bg-white px-12 py-3 text-sm font-medium text-white dark:text-black transition-all hover:underline focus:outline-none focus:ring focus:ring-yellow-400"
+                    className="inline-block rounded border border-black dark:border-white bg-black dark:bg-white px-4 lg:px-12 py-3 text-sm font-medium text-white dark:text-black transition-all hover:underline focus:outline-none focus:ring focus:ring-yellow-400"
                   >
                     talk to me
                   </Link>
@@ -164,12 +163,14 @@ export default function Main() {
                 alt="made with love by bao"
                 src={cta1}
                 className="h-40 w-full object-cover sm:h-56 md:h-full"
+                data-aos="fade-up"
               />
 
               <img
                 alt="bao - creative engineer"
                 src={cta2}
                 className="h-40 w-full object-cover sm:h-56 md:h-full"
+                data-aos="fade-up"
               />
             </div>
           </div>
