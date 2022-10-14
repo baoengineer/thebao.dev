@@ -87,7 +87,7 @@ export default function Main() {
           </ul>
         </div>
       </section>
-      <section id="about-me" className="py-10 md:py-20">
+      <section id="about-me" className="py-6 md:py-20">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-2 min-h-screen">
             <div className=" lg:sticky top-0 self-start">
@@ -95,7 +95,7 @@ export default function Main() {
                 about me
               </h3>
               <div className="flex relative" data-aos="fade-up ">
-                <img src={avatar} alt="bao" className="w-48 rounded-md drop-shadow-sm grayscale" />
+                <img src={avatar} alt="bao" className="w-24 md:w-36 lg:w-48 rounded-md drop-shadow-sm grayscale" />
                 {renderAnimation && (
                   <div className="  hidden lg:block grayscale absolute -bottom-1/3 right-1/3 tr w-48">
                     <Lottie animationData={meAnimation} initialSegment={[0, 50]} loop={false} />
@@ -133,7 +133,7 @@ export default function Main() {
           </div>
         </div>
       </section>
-      <section className="py-10 md:py-20">
+      <section className="py-6 md:py-20">
         <div className="mx-auto max-w-screen-2xl px-4 lg:py-8 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             <div className="bg-blue-600 lg:p-8 md:p-12 lg:px-16 lg:py-24">
@@ -179,7 +179,7 @@ export default function Main() {
 
       <section
         id="works"
-        className="bg-black dark:bg-white text-white dark:text-black pt-10 md:pt-20 text-3xl"
+        className="bg-black dark:bg-white text-white dark:text-black pt-10 md:pt-20 text-2xl md:text-3xl"
       >
         <div className="container">
           <h3 data-aos="fade-up">carfted with love</h3>
@@ -188,10 +188,10 @@ export default function Main() {
         <ul>
           <li data-aos="fade-up">
             <div className="container">
-              <div className="grid grid-cols-2 items-center py-32">
+                <div className="grid md:grid-cols-2 py-8 md:py-16 lg:py-32">
                 <article>
                   <div className="relative">
-                    <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-xl opacity-20">
+                    <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-md md:text-xl opacity-20">
                       01
                     </small>
                     <strong className="ml-3">flodesk.com - email / website builder</strong>
@@ -216,7 +216,7 @@ export default function Main() {
                     | I'm currently working on this project in a small team at Flodesk Inc.
                   </div>
                 </article>
-                <div className="flex items-center justify-end ">
+                <div className="flex items-center justify-end mt-12 lg:mt-0">
                   <a
                     className="relative hover:underline underline-offset-4 before:content-[' '] before:block before:opacity-50 before:text-gray-200 before:bg-gray-200 before:absolute before:-top-4 before:-left-4 before:w-12 before:h-12 before:rounded-full before-p-4 before:hover:w-16 before:hover:h-16 before:transition-all"
                     href="https://flodesk.com"
@@ -230,10 +230,10 @@ export default function Main() {
           </li>
           <li className="bg-white dark:bg-black text-black dark:text-white" data-aos="fade-up">
             <div className="container">
-              <div className="grid grid-cols-2 py-32">
+              <div className="grid md:grid-cols-2 py-8 md:py-16 lg:py-32">
                 <article>
                   <p className="relative">
-                    <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-xl opacity-20">
+                    <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-md md:text-xl opacity-20">
                       02
                     </small>
                     <strong className="ml-2">uiutils.com - an indie ui development kit</strong>
@@ -244,14 +244,14 @@ export default function Main() {
                     all in one place. personalized.
                   </div>
                   <div>
-                    <ul className="flex gap-2 text-sm m-3">
+                    <ul className="flex flex-wrap gap-2 text-sm m-3">
                       <li className="text-gray-200">#side-project</li>
                       <li className="text-gray-200">#utilities</li>
                       <li className="text-gray-200">#development tool</li>
                     </ul>
                   </div>
                 </article>
-                <div className="flex items-center justify-end">
+                <div className="flex items-center justify-end mt-12 lg:mt-0">
                   <a
                     className="relative hover:underline underline-offset-4 before:content-[' '] before:block before:opacity-50 before:text-gray-200 before:bg-gray-200 before:absolute before:-top-4 before:-left-4 before:w-12 before:h-12 before:rounded-full before-p-4 before:hover:w-16 before:hover:h-16 before:transition-all"
                     href="https://uiutils.com"
@@ -266,17 +266,17 @@ export default function Main() {
           </li>
           <li data-aos="fade-up">
             <div className="container">
-              <div className="grid grid-cols-2 py-32 pb-24">
+              <div className="grid md:grid-cols-2 py-8 md:py-16 lg:py-32 pb-24">
                 <article>
                   <p className="relative">
-                    <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-xl opacity-20">
+                    <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-md md:text-xl opacity-20">
                       03
                     </small>
                     <strong className="ml-3">natours</strong>
                   </p>
                   <div className="text-sm m-3">a modern landing page demo.</div>
                   <div>
-                    <ul className="flex gap-2 text-sm m-3">
+                    <ul className="flex flex-wrap gap-2 text-sm m-3">
                       <li className="text-gray-300">#landing-pages</li>
                       <li className="text-gray-300">#ui/ux</li>
                       <li className="text-gray-300">#markup</li>
@@ -284,7 +284,7 @@ export default function Main() {
                     </ul>
                   </div>
                 </article>
-                <div className="flex items-center justify-end">
+                <div className="flex items-center justify-end mt-12 lg:mt-0">
                   <a
                     className="relative hover:underline underline-offset-4 before:content-[' '] before:block before:opacity-50 before:text-gray-200 before:bg-gray-200 before:absolute before:-top-4 before:-left-4 before:w-12 before:h-12 before:rounded-full before-p-4 before:hover:w-16 before:hover:h-16 before:transition-all"
                     href="https://projects.thebao.dev/natours"
@@ -299,24 +299,24 @@ export default function Main() {
           </li>
           <li className="bg-white dark:bg-black text-black dark:text-white" data-aos="fade-up">
             <div className="container">
-              <div className="grid grid-cols-2 py-32">
+              <div className="grid md:grid-cols-2 py-8 md:py-16 lg:py-32">
                 <article>
                   <p className="relative">
-                    <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-xl opacity-20">
+                    <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-md md:text-xl opacity-20">
                       04
                     </small>
                     <strong className="ml-3">ivyfood</strong>
                   </p>
                   <div className="text-sm m-3">another nice website demo.</div>
                   <div>
-                    <ul className="flex gap-2 text-sm m-3">
+                    <ul className="flex flex-wrap gap-2 text-sm m-3">
                       <li className="text-gray-300">#ui/ux</li>
                       <li className="text-gray-300">#landing-pages</li>
                       <li className="text-gray-300">#show-case</li>
                     </ul>
                   </div>
                 </article>
-                <div className="flex items-center justify-end">
+                <div className="flex items-center justify-end mt-12 lg:mt-0">
                   <a
                     className="relative hover:underline underline-offset-4 before:content-[' '] before:block before:opacity-50 before:text-gray-200 before:bg-gray-200 before:absolute before:-top-4 before:-left-4 before:w-12 before:h-12 before:rounded-full before-p-4 before:hover:w-16 before:hover:h-16 before:transition-all"
                     href="https://projects.thebao.dev/ivyfood"
