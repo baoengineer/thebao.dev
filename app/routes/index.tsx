@@ -5,6 +5,8 @@ import avatar from 'public/images/avatar.png';
 import Lottie from 'lottie-react';
 import meAnimation from '../animations/me.json';
 import { Waypoint } from 'react-waypoint';
+import cta1 from 'public/images/cta-1.jpg';
+import cta2 from 'public/images/cta-2.png';
 
 export default function Main() {
   const textStackRef = useRef<HTMLDivElement>(null);
@@ -132,6 +134,48 @@ export default function Main() {
           </div>
         </div>
       </section>
+      <section className="py-10 md:py-20">
+        <div className="mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+            <div className="bg-blue-600 p-8 md:p-12 lg:px-16 lg:py-24">
+              <div className="mx-auto max-w-xl text-center">
+                <h2 className="text-2xl text-left font-bold md:text-3xl" data-aos="fade-up">
+                  have some great ideas?
+                </h2>
+                <p className="hidden text-left  sm:mt-4 sm:block" data-aos="fade-up">
+                  I love to collaborate, work together or just talk about softwares, web
+                  technologies, coding, productivity and tech stuffs.
+                  <br />
+                  ping me, let's have a coffee together ☕️.
+                </p>
+                <div className="mt-4 md:mt-8">
+                  <Link
+                    to="/contact"
+                    className="inline-block rounded border border-black dark:border-white bg-black dark:bg-white px-12 py-3 text-sm font-medium text-white dark:text-black transition-all hover:underline focus:outline-none focus:ring focus:ring-yellow-400"
+                  >
+                    talk to me
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 gap-4 md:grid-cols-1 lg:grid-cols-2 grayscale">
+              <img
+                alt="made with love by bao"
+                src={cta1}
+                className="h-40 w-full object-cover sm:h-56 md:h-full"
+              />
+
+              <img
+                alt="bao - creative engineer"
+                src={cta2}
+                className="h-40 w-full object-cover sm:h-56 md:h-full"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section
         id="works"
         className="bg-black dark:bg-white text-white dark:text-black pt-10 md:pt-20 text-3xl"
@@ -229,13 +273,11 @@ export default function Main() {
                     </small>
                     <strong className="ml-3">natours</strong>
                   </p>
-                  <div className="text-sm m-3">
-                      a modern landing page demo.
-                  </div>
+                  <div className="text-sm m-3">a modern landing page demo.</div>
                   <div>
                     <ul className="flex gap-2 text-sm m-3">
                       <li className="text-gray-300">#landing-pages</li>
-                        <li className="text-gray-300">#ui/ux</li>
+                      <li className="text-gray-300">#ui/ux</li>
                       <li className="text-gray-300">#markup</li>
                       <li className="text-gray-300">#layout</li>
                     </ul>
@@ -264,11 +306,9 @@ export default function Main() {
                     </small>
                     <strong className="ml-3">ivyfood</strong>
                   </p>
-                    <div className="text-sm m-3">
-                        a another nice website demo.
-                    </div>
+                  <div className="text-sm m-3">another nice website demo.</div>
                   <div>
-                      <ul className="flex gap-2 text-sm m-3">
+                    <ul className="flex gap-2 text-sm m-3">
                       <li className="text-gray-300">#ui/ux</li>
                       <li className="text-gray-300">#landing-pages</li>
                       <li className="text-gray-300">#show-case</li>

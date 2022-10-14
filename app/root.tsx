@@ -62,11 +62,11 @@ export default function App() {
         <Curtain />
         <header>
           <ThemeToggle
-            className="fixed top-4 left-4 z-40 md:text-lg lg:text-xl"
+            className="fixed top-4 left-4 z-50 md:text-lg lg:text-xl"
             theme={theme}
             onChange={handleThemeChange}
           />
-          <Nav />
+            <Nav className="fixed top-0 z-40 w-full" />
           <LeftNav className="fixed top-full bottom-2 -translate-y-1/2 left-3" />
         </header>
         <Outlet />

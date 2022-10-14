@@ -30,7 +30,7 @@ export default function Nav({ className }: NavProps) {
     <nav
       ref={nav}
       className={clsx(
-        'fixed top-0 z-50 w-full font-primary will-change-[transform] text-primary sm:flex text-md md:text-lg lg:text-2xl transform-gpu duration-500 ease-in-out transition-transform',
+        'font-primary will-change-[transform] text-primary sm:flex text-md md:text-lg lg:text-2xl transform-gpu duration-500 ease-in-out transition-transform',
         className,
       )}
       style={{ backfaceVisibility: 'hidden' }}
