@@ -1,5 +1,4 @@
 import clsx from 'clsx';
-import { ThemeToggle } from '~/components/index';
 
 type LeftNavProps = {
   className?: string;
@@ -13,10 +12,11 @@ export default function LeftNav({ className }: LeftNavProps) {
         className,
       )}
     >
-      <div className="-rotate-90 transform-gpu origin-top-left">
+      <div className="-rotate-90 transform-gpu origin-top-left flex items-center">
         <div>
           <label>scroll ⎯⎯ ⎯</label>
         </div>
+
       </div>
     </div>
   );
