@@ -63,7 +63,7 @@ export default function Main() {
               <span className="h1">ui/ux.web/app</span>
             </li>
             <li data-aos="fade-up">
-              <span className="h1">digital stuffs</span>
+              <span className="h1">digital stuffs.</span>
             </li>
             <li data-aos="fade-up">
               <span className="h1 text-gray-100">focused on</span>
@@ -87,16 +87,17 @@ export default function Main() {
           </ul>
         </div>
       </section>
-      <section id="about-me" className="py-6 md:py-12 lg:py-20">
+      <section id="about-me" className="pt-6 md:pt-12 lg:pt-20">
         <div className="container">
           <div className="grid lg:grid-cols-2 lg:gap-2 min-h-screen">
             <div className=" lg:sticky top-0 self-start">
               <h3 data-aos="fade-up">about me</h3>
-              <div className="flex relative" data-aos="fade-up ">
+              <div className="flex relative">
                 <img
                   src={avatar}
                   alt="bao"
                   className="w-24 md:w-36 lg:w-48 rounded-md drop-shadow-sm grayscale"
+                  data-aos="fade-up"
                 />
                 {renderAnimation && (
                   <div className="  hidden lg:block grayscale absolute -bottom-1/3 right-1/3 tr w-48">
@@ -105,32 +106,8 @@ export default function Main() {
                 )}
               </div>
               <div className="flex flex-col md:items-center mt-4 md:mt-20" data-aos="fade-up">
-                <span>you can find me on</span>
+                <span className="text-gray-100 text-sm">you can find me on</span>
                 <ul className="flex gap-2">
-                  <li className="flex">
-                    <a
-                      href="https://github.com/thebaodev"
-                      target="_blank"
-                      className="w-6 h-6 text-gray-100 hover:text-black dark:hover:text-white transition"
-                      title="Github"
-                    >
-                      <svg viewBox="0 0 512 512" className="w-6 h-6" fill="currentColor">
-                        <path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z" />
-                      </svg>
-                    </a>
-                  </li>
-                  <li className="flex">
-                    <a
-                      href="https://www.linkedin.com/in/thebao/"
-                      target="_blank"
-                      className="w-6 h-6 text-gray-100 hover:text-black dark:hover:text-white transition"
-                      title="LinkedIn"
-                    >
-                      <svg viewBox="0 0 512 512" className="w-6 h-6" fill="currentColor">
-                        <path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z" />
-                      </svg>
-                    </a>
-                  </li>
                   <li className="flex items-center">
                     <a
                       href="https://twitter.com/thebao_dev"
@@ -143,6 +120,20 @@ export default function Main() {
                       </svg>
                     </a>
                   </li>
+
+                  <li className="flex">
+                    <a
+                      href="https://www.linkedin.com/in/thebao/"
+                      target="_blank"
+                      className="w-6 h-6 text-gray-100 hover:text-black dark:hover:text-white transition"
+                      title="LinkedIn"
+                    >
+                      <svg viewBox="0 0 512 512" className="w-6 h-6" fill="currentColor">
+                        <path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z" />
+                      </svg>
+                    </a>
+                  </li>
+
                   <li className="flex items-center">
                     <a
                       href="https://www.instagram.com/the.baooo/"
@@ -163,25 +154,23 @@ export default function Main() {
               </div>
             </div>
             <article className="text-md mt-8 lg:mt-0">
-              <p className="text-3xl font-primary" data-aos="fade-up">
+              <p className="text-2xl font-primary" data-aos="fade-up">
                 hi, I'm bao - an idle guy who loves coding, making internet products, and tech
                 stuffs.
               </p>
               <br />
-              <p data-aos="fade-up">I</p>
-              <div className="ml-6 md:-mt-6" data-aos="fade-up">
-                <p>develop web/mobile apps, landing pages, and animations.</p>
+              <br />
+              <div data-aos="fade-up">
+                <p>I create websites, mobile apps, frontend technologies, </p>
                 <p>focus on user experience, accessibility and performance.</p>
                 <p>specialized in javascript, react, and frontend web stacks.</p>
                 <p>obsessed with being productive, but chill.</p>
-                <p>finding life spirit, love art, minimalism.</p>
+                <br />
+                <p>
+                  I love to make products that meaningful, create values, and make our world a
+                  better place.
+                </p>
               </div>
-              <p className="mt-6 lg:py-24 md:font-primary" data-aos="fade-up">
-                "the goals of great modern webs is now changing from displaying information to serve
-                the best user experiences for your users, to command their attention and motivate
-                them to take next actions in many forms without thinking and annoying bugs" - one of
-                my theories.
-              </p>
             </article>
             <Waypoint
               topOffset={200}
@@ -192,15 +181,15 @@ export default function Main() {
           </div>
         </div>
       </section>
-      <section className="py-6 md:py-12 lg:py-20">
+      <section className="py-6 md:py-12 lg:pb-20">
         <div className="mx-auto max-w-screen-2xl px-4 lg:py-8 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 items-start gap-4 md:grid-cols-2">
-            <div className="sticky top-0 lg:p-8 md:p-12 lg:px-16 lg:py-24">
+            <div className="md:sticky md:top-12 lg:p-4 md:p-2 lg:px-16 lg:py-24 order-1 md:order-0">
               <div className="mx-auto max-w-xl text-left lg:text-center">
                 <h2 className="text-2xl font-primary text-left  md:text-3xl" data-aos="fade-up">
                   have some great ideas?
                 </h2>
-                <p className=" text-left  sm:mt-4 " data-aos="fade-up">
+                <p className=" text-left  mt-4 " data-aos="fade-up">
                   I love to collaborate, work together or just talk about softwares, web
                   technologies, coding, productivity and tech stuffs.
                   <br />
@@ -217,7 +206,7 @@ export default function Main() {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-4 md:grid-cols-1 lg:grid-cols-2 grayscale">
+            <div className="grid grid-cols-2 gap-4 md:grid-cols-1 lg:grid-cols-2 grayscale order-0 md:order-1">
               <img
                 alt="made with love by bao"
                 src={cta1}
@@ -235,15 +224,16 @@ export default function Main() {
           </div>
         </div>
       </section>
-
-      <section id="works" className="pt-10 md:pt-20 text-2xl md:text-2xl">
+      <section id="works" className="pt-6 md:pt-12 lg:pt-20">
         <div className="container">
-          <h3 data-aos="fade-up">carfted with love</h3>
+          <h3 className="text-2xl font-primary text-left  md:text-3xl" data-aos="fade-up">
+            carfted with love
+          </h3>
           <h4 className="text-xl" data-aos="fade-up">
             these are a selection of my recent works.
           </h4>
         </div>
-        <ul className="mt-12">
+        <ul className="mt-2 md:mt-6 lg:mt-12">
           <li data-aos="fade-up">
             <div className="container">
               <div className="grid md:grid-cols-2 py-4 md:py-8 lg:py-12">
@@ -252,9 +242,11 @@ export default function Main() {
                     <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-md md:text-xl opacity-20">
                       01
                     </small>
-                    <strong className="ml-3 font-primary">flodesk - email / website builder</strong>
+                      <strong className="ml-3 font-light tracking-wide text-lg md:text-xl lg:text-2xl">
+                      flodesk - email / website builder
+                    </strong>
                   </div>
-                  <div className="text-sm m-3">
+                  <div className="text-xs sm:text-sm m-3">
                     Flodesk is a digital marketing service provider that’s built for creators, by
                     creators. You can use it to design and send on-brand marketing emails, create
                     high converting sales and checkout pages, publish opt-in forms to grow your
@@ -291,7 +283,7 @@ export default function Main() {
                     <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-md md:text-xl opacity-20">
                       02
                     </small>
-                    <strong className="ml-2 font-primary">
+                      <strong className="ml-3 font-light tracking-wide text-lg md:text-xl lg:text-2xl">
                       uiutil - an indie ui development kit
                     </strong>
                   </p>
@@ -329,9 +321,11 @@ export default function Main() {
                     <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-md md:text-xl opacity-20">
                       03
                     </small>
-                    <strong className="ml-3 font-primary">natours</strong>
+                      <strong className="ml-3 font-light tracking-wide text-lg md:text-xl lg:text-2xl">
+                      natours
+                    </strong>
                   </p>
-                  <div className="text-sm m-3">a modern landing page demo.</div>
+                  <div className="text-xs sm:text-sm m-3">a modern landing page demo.</div>
                   <div>
                     <ul className="flex flex-wrap gap-2 text-xs m-3">
                       <li className="text-gray-300">#landing-pages</li>
@@ -362,9 +356,11 @@ export default function Main() {
                     <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-md md:text-xl opacity-20">
                       04
                     </small>
-                    <strong className="ml-3 font-primary">ivyfood</strong>
+                      <strong className="ml-3 font-light tracking-wide text-lg md:text-xl lg:text-2xl">
+                      ivyfood
+                    </strong>
                   </p>
-                  <div className="text-sm m-3">another nice website demo.</div>
+                  <div className="text-xs sm:text-sm m-3">another nice website demo.</div>
                   <div>
                     <ul className="flex flex-wrap gap-2 text-xs m-3">
                       <li className="text-gray-300">#ui/ux</li>
@@ -387,7 +383,7 @@ export default function Main() {
             </div>
           </li>
         </ul>
-        <div className="py-16 bg-black dark:bg-white text-white dark:text-black text-3xl">
+        <div className="mt-4 py-12 lg:py-16 bg-gray-100 text-white text-3xl">
           <div className="container flex items-end font-primary" data-aos="fade-up">
             <a
               className="flex items-end hover:opacity-70 hover:underline transition-all"
