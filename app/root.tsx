@@ -66,7 +66,7 @@ export default function App() {
             theme={theme}
             onChange={handleThemeChange}
           />
-            <Nav className="fixed top-0 z-40 w-full" />
+            <Nav className="md:fixed top-0 z-40 w-full" />
           <LeftNav className="fixed top-full bottom-2 -translate-y-1/2 left-3" />
         </header>
         <Outlet />

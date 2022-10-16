@@ -753,6 +753,9 @@ video {
 .mb-2 {
   margin-bottom: 0.5rem;
 }
+.ml-8 {
+  margin-left: 2rem;
+}
 .block {
   display: block;
 }
@@ -937,6 +940,9 @@ video {
 }
 .pb-24 {
   padding-bottom: 6rem;
+}
+.pl-8 {
+  padding-left: 2rem;
 }
 .text-left {
   text-align: left;
@@ -1467,6 +1473,10 @@ svg {
 }
 @media (min-width: 768px) {
 
+  .md\:fixed {
+    position: fixed;
+  }
+
   .md\:absolute {
     position: absolute;
   }
@@ -1515,6 +1525,10 @@ svg {
     margin-left: 0.75rem;
   }
 
+  .md\:ml-0 {
+    margin-left: 0px;
+  }
+
   .md\:block {
     display: block;
   }
@@ -1546,6 +1560,10 @@ svg {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
   }
 
   .md\:items-end {

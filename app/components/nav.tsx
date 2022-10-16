@@ -12,7 +12,7 @@ export default function Nav({ className }: NavProps) {
   const nav = useRef<HTMLDivElement>(null);
 
   const handleScrollAnimation = () => {
-    if (!nav.current) {
+      if (!nav.current || document.documentElement.clientWidth <= 768) {
       return;
     }
     let currentScroll = window.pageYOffset;
@@ -50,7 +50,7 @@ export default function Nav({ className }: NavProps) {
       style={{ backfaceVisibility: 'hidden' }}
     >
       <div className="container w-full">
-        <ul className="flex flex-col items-end md:flex-row md:items-center justify-end relative bg-white dark:bg-black rounded-bl-sm rounded-br-sm p-4 -mx-6">
+        <ul className="flex flex-col md:flex-row items-end justify-end relative bg-white dark:bg-black rounded-bl-sm rounded-br-sm p-4 -mx-6">
           <li>
             <Link
               to="#about-me"
