@@ -120,10 +120,8 @@ export default function Main() {
                 <br />
                 <p>
                   Make products that meaningful, create values, and
-                    <br className="hidden md:block" />
-
-                    make our world a
-                  better place is my passion.
+                  <br className="hidden md:block" />
+                  make our world a better place is my passion.
                 </p>
               </div>
               <div className="font-primary py-12 md:py-24 lg:py-56" data-aos="fade-up">
@@ -146,12 +144,15 @@ export default function Main() {
             <div className="md:sticky md:top-12 lg:p-4 md:p-2 lg:px-16 lg:py-24 order-1 md:order-0">
               <div className="mx-auto max-w-xl text-left">
                 <h2
-                  className="text-xl md:text-2xl font-primary text-left  md:text-3xl"
+                  className="text-xl md:text-2xl font-sans text-left  md:text-3xl"
                   data-aos="fade-up"
                 >
                   have some great ideas?
                 </h2>
-                <p className="text-xs md:text-md text-left  mt-4 text-sm " data-aos="fade-up">
+                <p
+                  className="font-primary text-xs md:text-md text-left  mt-4 text-sm "
+                  data-aos="fade-up"
+                >
                   I love to collaborate, work together or just talk about softwares, web
                   technologies, coding, productivity and tech stuffs.
                   <br />
@@ -260,15 +261,6 @@ export default function Main() {
                     that carfted millions of stunning emails, funnel pages that converts. loved by
                     hundred thousand of entrepreneurs, marketters.
                   </div>
-                  <div>
-                    <ul className="flex gap-2 flex-wrap text-xs mt-3 md:m-3">
-                      <li className="text-gray-200">#ui libraries</li>
-                      <li className="text-gray-200">#webapp</li>
-                      <li className="text-gray-200">#email/website builder</li>
-                      <li className="text-gray-200">#animations</li>
-                      <li className="text-gray-200">#accessibility</li>
-                    </ul>
-                  </div>
                 </article>
                 <div className="flex items-center justify-end mt-12 lg:mt-0">
                   <a
@@ -297,12 +289,6 @@ export default function Main() {
                   <div className="font-primary text-xs mt-3 md:m-3">
                     A open-sourced project that provided set of utilities and tools for UI
                     development. all in one place. personalized.
-                  </div>
-                  <div>
-                    <ul className="flex flex-wrap gap-2 text-xs mt-3 md:m-3">
-                      <li className="text-gray-200">#utilities</li>
-                      <li className="text-gray-200">#development tool</li>
-                    </ul>
                   </div>
                 </article>
                 <div className="flex items-center justify-end mt-12 lg:mt-0">
@@ -333,14 +319,6 @@ export default function Main() {
                   <div className="font-primary  text-xs sm:text-sm md:m-3">
                     a modern landing page markup.
                   </div>
-                  <div>
-                    <ul className="flex flex-wrap gap-2 text-xs mt-3 md:m-3">
-                      <li className="text-gray-300">#landing-pages</li>
-                      <li className="text-gray-300">#ui/ux</li>
-                      <li className="text-gray-300">#markup</li>
-                      <li className="text-gray-300">#layout</li>
-                    </ul>
-                  </div>
                 </article>
                 <div className="flex items-center justify-end mt-12 lg:mt-0">
                   <a
@@ -367,12 +345,8 @@ export default function Main() {
                       ivyfood
                     </strong>
                   </p>
-                  <div>
-                    <ul className="flex flex-wrap gap-2 text-xs mt-3 md:m-3">
-                      <li className="text-gray-300">#ui/ux</li>
-                      <li className="text-gray-300">#landing-pages</li>
-                      <li className="text-gray-300">#show-case</li>
-                    </ul>
+                  <div className="font-primary  text-xs sm:text-sm md:m-3">
+                    another modern landing page markup.
                   </div>
                 </article>
                 <div className="flex items-center justify-end mt-12 lg:mt-0">
