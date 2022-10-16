@@ -44,7 +44,7 @@ export default function Main() {
     <main>
       <section>
         <div className="container flex w-full justify-end items-center text-right">
-          <ul className="flex flex-col gap-2 md:gap-4 lg:gap-6 md:-mt-40">
+          <ul className="flex flex-col gap-2 md:gap-4 lg:gap-6 md:-mt-10">
             <div
               data-aos="fade-up"
               className="flex gap-2 md:gap-4 lg:gap-6 flex-col min-h-1/2-screen md:min-h-screen z-0"
@@ -105,71 +105,27 @@ export default function Main() {
                   </div>
                 )}
               </div>
-              <div className="flex flex-col md:items-center mt-4 md:mt-20" data-aos="fade-up">
-                <span className="text-gray-100 text-sm">you can find me on</span>
-                <ul className="flex gap-2">
-                  <li className="flex items-center">
-                    <a
-                      href="https://twitter.com/thebao_dev"
-                      target="_blank"
-                      className="w-6 h-6 text-gray-100 hover:text-black dark:hover:text-white transition"
-                      title="Twitter"
-                    >
-                      <svg viewBox="0 0 512 512" className="w-6 h-6" fill="currentColor">
-                        <path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z" />
-                      </svg>
-                    </a>
-                  </li>
-
-                  <li className="flex">
-                    <a
-                      href="https://www.linkedin.com/in/thebao/"
-                      target="_blank"
-                      className="w-6 h-6 text-gray-100 hover:text-black dark:hover:text-white transition"
-                      title="LinkedIn"
-                    >
-                      <svg viewBox="0 0 512 512" className="w-6 h-6" fill="currentColor">
-                        <path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z" />
-                      </svg>
-                    </a>
-                  </li>
-
-                  <li className="flex items-center">
-                    <a
-                      href="https://www.instagram.com/the.baooo/"
-                      target="_blank"
-                      className="w-6 h-6 text-gray-100 hover:text-black dark:hover:text-white transition"
-                      title="Instagram"
-                    >
-                      <svg viewBox="0 0 512 512" className="w-6 h-6" fill="currentColor">
-                        <g>
-                          <path d="M256 109.3c47.8 0 53.4 0.2 72.3 1 17.4 0.8 26.9 3.7 33.2 6.2 8.4 3.2 14.3 7.1 20.6 13.4 6.3 6.3 10.1 12.2 13.4 20.6 2.5 6.3 5.4 15.8 6.2 33.2 0.9 18.9 1 24.5 1 72.3s-0.2 53.4-1 72.3c-0.8 17.4-3.7 26.9-6.2 33.2 -3.2 8.4-7.1 14.3-13.4 20.6 -6.3 6.3-12.2 10.1-20.6 13.4 -6.3 2.5-15.8 5.4-33.2 6.2 -18.9 0.9-24.5 1-72.3 1s-53.4-0.2-72.3-1c-17.4-0.8-26.9-3.7-33.2-6.2 -8.4-3.2-14.3-7.1-20.6-13.4 -6.3-6.3-10.1-12.2-13.4-20.6 -2.5-6.3-5.4-15.8-6.2-33.2 -0.9-18.9-1-24.5-1-72.3s0.2-53.4 1-72.3c0.8-17.4 3.7-26.9 6.2-33.2 3.2-8.4 7.1-14.3 13.4-20.6 6.3-6.3 12.2-10.1 20.6-13.4 6.3-2.5 15.8-5.4 33.2-6.2C202.6 109.5 208.2 109.3 256 109.3M256 77.1c-48.6 0-54.7 0.2-73.8 1.1 -19 0.9-32.1 3.9-43.4 8.3 -11.8 4.6-21.7 10.7-31.7 20.6 -9.9 9.9-16.1 19.9-20.6 31.7 -4.4 11.4-7.4 24.4-8.3 43.4 -0.9 19.1-1.1 25.2-1.1 73.8 0 48.6 0.2 54.7 1.1 73.8 0.9 19 3.9 32.1 8.3 43.4 4.6 11.8 10.7 21.7 20.6 31.7 9.9 9.9 19.9 16.1 31.7 20.6 11.4 4.4 24.4 7.4 43.4 8.3 19.1 0.9 25.2 1.1 73.8 1.1s54.7-0.2 73.8-1.1c19-0.9 32.1-3.9 43.4-8.3 11.8-4.6 21.7-10.7 31.7-20.6 9.9-9.9 16.1-19.9 20.6-31.7 4.4-11.4 7.4-24.4 8.3-43.4 0.9-19.1 1.1-25.2 1.1-73.8s-0.2-54.7-1.1-73.8c-0.9-19-3.9-32.1-8.3-43.4 -4.6-11.8-10.7-21.7-20.6-31.7 -9.9-9.9-19.9-16.1-31.7-20.6 -11.4-4.4-24.4-7.4-43.4-8.3C310.7 77.3 304.6 77.1 256 77.1L256 77.1z" />
-                          <path d="M256 164.1c-50.7 0-91.9 41.1-91.9 91.9s41.1 91.9 91.9 91.9 91.9-41.1 91.9-91.9S306.7 164.1 256 164.1zM256 315.6c-32.9 0-59.6-26.7-59.6-59.6s26.7-59.6 59.6-59.6 59.6 26.7 59.6 59.6S288.9 315.6 256 315.6z" />
-                          <circle cx="351.5" cy="160.5" r="21.5" />
-                        </g>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
             </div>
-            <article className="text-md mt-8 lg:mt-0">
-              <p className="text-2xl font-primary" data-aos="fade-up">
-                hi, I'm bao - an idle guy who loves coding, making internet products, and tech
-                stuffs.
+            <article className="text-md mt-2">
+              <p className="text-xl font-primary" data-aos="fade-up">
+                I'm bao - a frontend engineer and an idle guy who loves coding, making internet
+                products, and tech stuffs.
               </p>
               <br />
-              <br />
               <div data-aos="fade-up">
-                <p>I create websites, mobile apps, frontend technologies, </p>
-                <p>focus on user experience, accessibility and performance.</p>
+                <p>working on modern websites, applications.</p>
                 <p>specialized in javascript, react, and frontend web stacks.</p>
+                <p>focus on user experience, accessibility, and performance.</p>
                 <p>obsessed with being productive, but chill.</p>
                 <br />
                 <p>
                   I love to make products that meaningful, create values, and make our world a
                   better place.
                 </p>
+              </div>
+              <div className="font-primary py-12 md:py-36 lg:py-56" data-aos="fade-up">
+                "good design is about process, not product."
+                <span className="text-gray-100">- jared sinclair</span>
               </div>
             </article>
             <Waypoint
@@ -182,26 +138,73 @@ export default function Main() {
         </div>
       </section>
       <section className="py-6 md:py-12 lg:pb-20">
-        <div className="mx-auto max-w-screen-2xl px-4 lg:py-8 sm:px-6 lg:px-8">
+        <div className="container px-4 lg:py-8 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 items-start gap-4 md:grid-cols-2">
             <div className="md:sticky md:top-12 lg:p-4 md:p-2 lg:px-16 lg:py-24 order-1 md:order-0">
-              <div className="mx-auto max-w-xl text-left lg:text-center">
+              <div className="mx-auto max-w-xl text-left">
                 <h2 className="text-2xl font-primary text-left  md:text-3xl" data-aos="fade-up">
                   have some great ideas?
                 </h2>
-                <p className=" text-left  mt-4 " data-aos="fade-up">
+                <p className=" text-left  mt-4 text-sm " data-aos="fade-up">
                   I love to collaborate, work together or just talk about softwares, web
                   technologies, coding, productivity and tech stuffs.
                   <br />
                   ping me, let's have a coffee together ☕️.
                 </p>
                 <div className="mt-4 md:mt-8" data-aos="fade-up">
-                  <Link
-                    to="/contact"
+                  <a
+                    href="mailto:thebao.dev@gmail.com"
                     className="inline-block rounded border border-black dark:border-white bg-black dark:bg-white px-4 lg:px-12 py-3 text-sm font-medium text-white dark:text-black transition-all hover:underline focus:outline-none focus:ring focus:ring-yellow-400"
                   >
                     talk to me
-                  </Link>
+                  </a>
+                </div>
+                <div className="flex items-center mt-4" data-aos="fade-up">
+                  <span className="text-gray-100 text-xs">or you can find me on</span>
+                  <ul className="flex">
+                    <li className="flex items-center ml-2">
+                      <a
+                        href="https://twitter.com/thebao_dev"
+                        target="_blank"
+                        className="w-6 h-6 text-gray-100 hover:text-black dark:hover:text-white transition"
+                        title="Twitter"
+                      >
+                        <svg viewBox="0 0 512 512" className="w-6 h-6" fill="currentColor">
+                          <path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z" />
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li className="flex">
+                      <a
+                        href="https://www.linkedin.com/in/thebao/"
+                        target="_blank"
+                        className="w-6 h-6 text-gray-100 hover:text-black dark:hover:text-white transition"
+                        title="LinkedIn"
+                      >
+                        <svg viewBox="0 0 512 512" className="w-6 h-6" fill="currentColor">
+                          <path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z" />
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li className="flex items-center">
+                      <a
+                        href="https://www.instagram.com/the.baooo/"
+                        target="_blank"
+                        className="w-6 h-6 text-gray-100 hover:text-black dark:hover:text-white transition"
+                        title="Instagram"
+                      >
+                        <svg viewBox="0 0 512 512" className="w-6 h-6" fill="currentColor">
+                          <g>
+                            <path d="M256 109.3c47.8 0 53.4 0.2 72.3 1 17.4 0.8 26.9 3.7 33.2 6.2 8.4 3.2 14.3 7.1 20.6 13.4 6.3 6.3 10.1 12.2 13.4 20.6 2.5 6.3 5.4 15.8 6.2 33.2 0.9 18.9 1 24.5 1 72.3s-0.2 53.4-1 72.3c-0.8 17.4-3.7 26.9-6.2 33.2 -3.2 8.4-7.1 14.3-13.4 20.6 -6.3 6.3-12.2 10.1-20.6 13.4 -6.3 2.5-15.8 5.4-33.2 6.2 -18.9 0.9-24.5 1-72.3 1s-53.4-0.2-72.3-1c-17.4-0.8-26.9-3.7-33.2-6.2 -8.4-3.2-14.3-7.1-20.6-13.4 -6.3-6.3-10.1-12.2-13.4-20.6 -2.5-6.3-5.4-15.8-6.2-33.2 -0.9-18.9-1-24.5-1-72.3s0.2-53.4 1-72.3c0.8-17.4 3.7-26.9 6.2-33.2 3.2-8.4 7.1-14.3 13.4-20.6 6.3-6.3 12.2-10.1 20.6-13.4 6.3-2.5 15.8-5.4 33.2-6.2C202.6 109.5 208.2 109.3 256 109.3M256 77.1c-48.6 0-54.7 0.2-73.8 1.1 -19 0.9-32.1 3.9-43.4 8.3 -11.8 4.6-21.7 10.7-31.7 20.6 -9.9 9.9-16.1 19.9-20.6 31.7 -4.4 11.4-7.4 24.4-8.3 43.4 -0.9 19.1-1.1 25.2-1.1 73.8 0 48.6 0.2 54.7 1.1 73.8 0.9 19 3.9 32.1 8.3 43.4 4.6 11.8 10.7 21.7 20.6 31.7 9.9 9.9 19.9 16.1 31.7 20.6 11.4 4.4 24.4 7.4 43.4 8.3 19.1 0.9 25.2 1.1 73.8 1.1s54.7-0.2 73.8-1.1c19-0.9 32.1-3.9 43.4-8.3 11.8-4.6 21.7-10.7 31.7-20.6 9.9-9.9 16.1-19.9 20.6-31.7 4.4-11.4 7.4-24.4 8.3-43.4 0.9-19.1 1.1-25.2 1.1-73.8s-0.2-54.7-1.1-73.8c-0.9-19-3.9-32.1-8.3-43.4 -4.6-11.8-10.7-21.7-20.6-31.7 -9.9-9.9-19.9-16.1-31.7-20.6 -11.4-4.4-24.4-7.4-43.4-8.3C310.7 77.3 304.6 77.1 256 77.1L256 77.1z" />
+                            <path d="M256 164.1c-50.7 0-91.9 41.1-91.9 91.9s41.1 91.9 91.9 91.9 91.9-41.1 91.9-91.9S306.7 164.1 256 164.1zM256 315.6c-32.9 0-59.6-26.7-59.6-59.6s26.7-59.6 59.6-59.6 59.6 26.7 59.6 59.6S288.9 315.6 256 315.6z" />
+                            <circle cx="351.5" cy="160.5" r="21.5" />
+                          </g>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -239,25 +242,23 @@ export default function Main() {
               <div className="grid md:grid-cols-2 py-4 md:py-8 lg:py-12">
                 <article>
                   <div className="relative">
-                    <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-md md:text-xl opacity-20">
+                    <small className="md:absolute h-full md:top-1/2 md:-translate-y-1/2 md:-left-6 text-md md:text-xl opacity-100 md:opacity-40">
                       01
                     </small>
-                      <strong className="ml-3 font-light tracking-wide text-lg md:text-xl lg:text-2xl">
-                      flodesk - email / website builder
+                    <strong className="flex md:ml-3 font-light tracking-wide text-lg md:text-xl lg:text-lg">
+                      flodesk - design emails, funnels that people love to open
                     </strong>
                   </div>
-                  <div className="text-xs sm:text-sm m-3">
-                    Flodesk is a digital marketing service provider that’s built for creators, by
-                    creators. You can use it to design and send on-brand marketing emails, create
-                    high converting sales and checkout pages, publish opt-in forms to grow your
-                    list, and build powerful email automations.
+                  <div className="text-xs mt-3 md:m-3">
+                    I'm working at Flodesk as Frontend engineer. Developing email, website builders
+                    that carfted millions of stunning emails, funnel pages that converts. loved by
+                    hundred thousand of entrepreneurs, marketters.
                   </div>
-
                   <div>
-                    <ul className="flex gap-2 flex-wrap text-xs m-3">
-                      <li className="text-gray-200">#ui/ux</li>
+                    <ul className="flex gap-2 flex-wrap text-xs mt-3 md:m-3">
+                      <li className="text-gray-200">#ui libraries</li>
                       <li className="text-gray-200">#webapp</li>
-                      <li className="text-gray-200">#site builder</li>
+                      <li className="text-gray-200">#email/website builder</li>
                       <li className="text-gray-200">#animations</li>
                       <li className="text-gray-200">#accessibility</li>
                     </ul>
@@ -280,21 +281,19 @@ export default function Main() {
               <div className="grid md:grid-cols-2 py-4 md:py-8 lg:py-12">
                 <article>
                   <p className="relative">
-                    <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-md md:text-xl opacity-20">
+                    <small className="md:absolute h-full md:top-1/2 md:-translate-y-1/2 md:-left-6 text-md md:text-xl opacity-100 md:opacity-40">
                       02
                     </small>
-                      <strong className="ml-3 font-light tracking-wide text-lg md:text-xl lg:text-2xl">
+                    <strong className="flex md:ml-3 font-light tracking-wide text-lg md:text-xl lg:text-lg">
                       uiutil - an indie ui development kit
                     </strong>
                   </p>
-                  <div className="text-xs  m-3">
-                    A set of utilities and tools for UI development.
-                    <br />
-                    all in one place. personalized.
+                  <div className="text-xs mt-3 md:m-3">
+                    A open-sourced project that provided set of utilities and tools for UI
+                    development. all in one place. personalized.
                   </div>
                   <div>
-                    <ul className="flex flex-wrap gap-2 text-xs m-3">
-                      <li className="text-gray-200">#side-project</li>
+                    <ul className="flex flex-wrap gap-2 text-xs mt-3 md:m-3">
                       <li className="text-gray-200">#utilities</li>
                       <li className="text-gray-200">#development tool</li>
                     </ul>
@@ -318,16 +317,16 @@ export default function Main() {
               <div className="grid md:grid-cols-2 py-4 md:py-8 lg:py-12 pb-24">
                 <article>
                   <p className="relative">
-                    <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-md md:text-xl opacity-20">
+                    <small className="md:absolute h-full md:top-1/2 md:-translate-y-1/2 md:-left-6 text-md md:text-xl opacity-100 md:opacity-40">
                       03
                     </small>
-                      <strong className="ml-3 font-light tracking-wide text-lg md:text-xl lg:text-2xl">
+                    <strong className="flex md:ml-3 font-light tracking-wide text-lg md:text-xl lg:text-lg">
                       natours
                     </strong>
                   </p>
-                  <div className="text-xs sm:text-sm m-3">a modern landing page demo.</div>
+                  <div className="text-xs sm:text-sm md:m-3">a modern landing page markup.</div>
                   <div>
-                    <ul className="flex flex-wrap gap-2 text-xs m-3">
+                    <ul className="flex flex-wrap gap-2 text-xs mt-3 md:m-3">
                       <li className="text-gray-300">#landing-pages</li>
                       <li className="text-gray-300">#ui/ux</li>
                       <li className="text-gray-300">#markup</li>
@@ -353,16 +352,15 @@ export default function Main() {
               <div className="grid md:grid-cols-2 py-4 md:py-8 lg:py-12">
                 <article>
                   <p className="relative">
-                    <small className="absolute h-full top-1/2 -translate-y-1/2 -left-6 text-md md:text-xl opacity-20">
+                    <small className="md:absolute h-full md:top-1/2 md:-translate-y-1/2 md:-left-6 text-md md:text-xl opacity-100 md:opacity-40">
                       04
                     </small>
-                      <strong className="ml-3 font-light tracking-wide text-lg md:text-xl lg:text-2xl">
+                    <strong className="flex md:ml-3 font-light tracking-wide text-lg md:text-xl lg:text-lg">
                       ivyfood
                     </strong>
                   </p>
-                  <div className="text-xs sm:text-sm m-3">another nice website demo.</div>
                   <div>
-                    <ul className="flex flex-wrap gap-2 text-xs m-3">
+                    <ul className="flex flex-wrap gap-2 text-xs mt-3 md:m-3">
                       <li className="text-gray-300">#ui/ux</li>
                       <li className="text-gray-300">#landing-pages</li>
                       <li className="text-gray-300">#show-case</li>
@@ -383,7 +381,7 @@ export default function Main() {
             </div>
           </li>
         </ul>
-        <div className="mt-4 py-12 lg:py-16 bg-gray-100 text-white text-3xl">
+        <div className="mt-4 py-12 lg:py-16 text-3xl">
           <div className="container flex items-end font-primary" data-aos="fade-up">
             <a
               className="flex items-end hover:opacity-70 hover:underline transition-all"
@@ -392,7 +390,7 @@ export default function Main() {
               rel="noreferrer"
             >
               <span>see more at my github</span>
-              <div className="flex items-center ml-2 mb-2 bg-gray-400 rounded-md">
+              <div className="flex items-center ml-2 mb-2 bg-gray-300 rounded-md">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 30 30"

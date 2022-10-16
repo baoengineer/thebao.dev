@@ -52,13 +52,12 @@ export default function Nav({ className }: NavProps) {
       <div className="container w-full">
         <ul className="flex flex-col items-end md:flex-row md:items-center justify-end relative bg-white dark:bg-black rounded-bl-sm rounded-br-sm p-4 -mx-6">
           <li>
-            <a
-              href="https://blog.thebao.dev"
-              target="_blank"
+            <Link
+              to="#about-me"
               className="p-2 hover:drop-shadow-md transition-all duration-300 hover:underline"
             >
-              #blog
-            </a>
+              #about-me
+            </Link>
           </li>
           <li>
             <Link
@@ -69,12 +68,13 @@ export default function Nav({ className }: NavProps) {
             </Link>
           </li>
           <li>
-            <Link
-              to="#about-me"
+            <a
+              href="https://blog.thebao.dev"
+              target="_blank"
               className="p-2 hover:drop-shadow-md transition-all duration-300 hover:underline"
             >
-              #about-me
-            </Link>
+              #blog
+            </a>
           </li>
           <li>
             <Link
