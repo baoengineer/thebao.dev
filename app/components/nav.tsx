@@ -16,7 +16,7 @@ export default function Nav({ className }: NavProps) {
       return;
     }
     let currentScroll = window.pageYOffset;
-    if (currentScroll - lastScroll.current > 0) {
+    if (currentScroll - lastScroll.current > 10) {
       nav.current.classList.add('-translate-y-full');
       nav.current.classList.remove('translate-y-0');
     } else {

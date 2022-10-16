@@ -87,7 +87,7 @@ export default function Main() {
           </ul>
         </div>
       </section>
-      <section id="about-me" className="pt-6 md:pt-12 lg:pt-20">
+      <section id="about-me" className="pt-20">
         <div className="container">
           <div className="grid lg:grid-cols-2 lg:gap-2 min-h-screen">
             <div className=" lg:sticky top-0 self-start">
@@ -106,24 +106,27 @@ export default function Main() {
                 )}
               </div>
             </div>
-            <article className="text-md mt-2">
+            <article className="text-sm md:text-md mt-4">
               <p className="text-xl font-primary" data-aos="fade-up">
                 I'm bao - a frontend engineer and an idle guy who loves coding, making internet
                 products, and tech stuffs.
               </p>
               <br />
-              <div data-aos="fade-up">
-                <p>working on modern websites, applications.</p>
+              <div className="text-xs md:text-md" data-aos="fade-up">
+                <p>I'm working on modern ui/ux interfaces, websites, applications.</p>
                 <p>specialized in javascript, react, and frontend web stacks.</p>
                 <p>focus on user experience, accessibility, and performance.</p>
                 <p>obsessed with being productive, but chill.</p>
                 <br />
                 <p>
-                  I love to make products that meaningful, create values, and make our world a
-                  better place.
+                  Make products that meaningful, create values, and
+                    <br className="hidden md:block" />
+
+                    make our world a
+                  better place is my passion.
                 </p>
               </div>
-              <div className="font-primary py-12 md:py-36 lg:py-56" data-aos="fade-up">
+              <div className="font-primary py-12 md:py-24 lg:py-56" data-aos="fade-up">
                 "good design is about process, not product."
                 <span className="text-gray-100">- jared sinclair</span>
               </div>
@@ -137,15 +140,18 @@ export default function Main() {
           </div>
         </div>
       </section>
-      <section className="py-6 md:py-12 lg:pb-20">
+      <section className="md:pt-12 pt-20">
         <div className="container px-4 lg:py-8 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 items-start gap-4 md:grid-cols-2">
             <div className="md:sticky md:top-12 lg:p-4 md:p-2 lg:px-16 lg:py-24 order-1 md:order-0">
               <div className="mx-auto max-w-xl text-left">
-                <h2 className="text-2xl font-primary text-left  md:text-3xl" data-aos="fade-up">
+                <h2
+                  className="text-xl md:text-2xl font-primary text-left  md:text-3xl"
+                  data-aos="fade-up"
+                >
                   have some great ideas?
                 </h2>
-                <p className=" text-left  mt-4 text-sm " data-aos="fade-up">
+                <p className="text-xs md:text-md text-left  mt-4 text-sm " data-aos="fade-up">
                   I love to collaborate, work together or just talk about softwares, web
                   technologies, coding, productivity and tech stuffs.
                   <br />
@@ -227,12 +233,12 @@ export default function Main() {
           </div>
         </div>
       </section>
-      <section id="works" className="pt-6 md:pt-12 lg:pt-20">
+      <section id="works" className="pt-20">
         <div className="container">
           <h3 className="text-2xl font-primary text-left  md:text-3xl" data-aos="fade-up">
             carfted with love
           </h3>
-          <h4 className="text-xl" data-aos="fade-up">
+          <h4 className="text-sm md:text-xl" data-aos="fade-up">
             these are a selection of my recent works.
           </h4>
         </div>
@@ -249,7 +255,7 @@ export default function Main() {
                       flodesk - design emails, funnels that people love to open
                     </strong>
                   </div>
-                  <div className="text-xs mt-3 md:m-3">
+                  <div className="font-primary text-xs mt-3 md:m-3">
                     I'm working at Flodesk as Frontend engineer. Developing email, website builders
                     that carfted millions of stunning emails, funnel pages that converts. loved by
                     hundred thousand of entrepreneurs, marketters.
@@ -288,7 +294,7 @@ export default function Main() {
                       uiutil - an indie ui development kit
                     </strong>
                   </p>
-                  <div className="text-xs mt-3 md:m-3">
+                  <div className="font-primary text-xs mt-3 md:m-3">
                     A open-sourced project that provided set of utilities and tools for UI
                     development. all in one place. personalized.
                   </div>
@@ -324,7 +330,9 @@ export default function Main() {
                       natours
                     </strong>
                   </p>
-                  <div className="text-xs sm:text-sm md:m-3">a modern landing page markup.</div>
+                  <div className="font-primary  text-xs sm:text-sm md:m-3">
+                    a modern landing page markup.
+                  </div>
                   <div>
                     <ul className="flex flex-wrap gap-2 text-xs mt-3 md:m-3">
                       <li className="text-gray-300">#landing-pages</li>
@@ -381,8 +389,8 @@ export default function Main() {
             </div>
           </li>
         </ul>
-        <div className="mt-4 py-12 lg:py-16 text-3xl">
-          <div className="container flex items-end font-primary" data-aos="fade-up">
+        <div className="mt-4 py-12 lg:py-16 text-lg md:text-2xl lg:text-3xl">
+          <div className="container flex items-center md:items-end font-primary" data-aos="fade-up">
             <a
               className="flex items-end hover:opacity-70 hover:underline transition-all"
               href="https://github.com/thebaodev"
