@@ -91,7 +91,9 @@ export default function Main() {
         <div className="container">
           <div className="grid lg:grid-cols-2 lg:gap-2 min-h-screen">
             <div className=" lg:sticky top-0 self-start">
-              <h3 data-aos="fade-up">about me</h3>
+              <h3 data-aos="fade-up" className="hidden md:block">
+                about me
+              </h3>
               <div className="flex relative">
                 <img
                   src={avatar}
@@ -106,13 +108,13 @@ export default function Main() {
                 )}
               </div>
             </div>
-            <article className="text-sm md:text-md mt-4">
-              <p className="text-xl font-primary" data-aos="fade-up">
-                I'm bao - a frontend engineer and an idle guy who loves coding, making internet
-                products, and tech stuffs.
+            <article className="text-sm md:text-md mt-4 md:mt-0">
+              <p className="text-xl" data-aos="fade-up">
+                I'm bao - a frontend engineer who loves coding, making internet products, and tech
+                stuffs.
               </p>
               <br />
-              <div className="text-xs md:text-md" data-aos="fade-up">
+              <div className="text-xs font-primary md:text-md leading-5" data-aos="fade-up">
                 <p>I'm working on modern ui/ux interfaces, websites, applications.</p>
                 <p>specialized in javascript, react, and frontend web stacks.</p>
                 <p>focus on user experience, accessibility, and performance.</p>
@@ -144,13 +146,13 @@ export default function Main() {
             <div className="md:sticky md:top-12 lg:p-4 md:p-2 lg:px-16 lg:py-24 order-1 md:order-0">
               <div className="mx-auto max-w-xl text-left">
                 <h2
-                  className="text-xl md:text-2xl font-sans text-left  md:text-3xl"
+                  className="text-2xl md:text-3xl font-sans text-left  md:text-3xl"
                   data-aos="fade-up"
                 >
                   have some great ideas?
                 </h2>
                 <p
-                  className="font-primary text-xs md:text-md text-left  mt-4 text-sm "
+                  className="font-primary text-xs md:text-md text-left leading-5 mt-4 text-sm "
                   data-aos="fade-up"
                 >
                   I love to collaborate, work together or just talk about softwares, web
@@ -167,7 +169,7 @@ export default function Main() {
                   </a>
                 </div>
                 <div className="flex items-center mt-4" data-aos="fade-up">
-                  <span className="text-gray-100 text-xs">or you can find me on</span>
+                  <span className="text-gray-100 text-xs font-primary">or you can find me on</span>
                   <ul className="flex">
                     <li className="flex items-center ml-2">
                       <a
@@ -236,10 +238,10 @@ export default function Main() {
       </section>
       <section id="works" className="pt-20">
         <div className="container">
-          <h3 className="text-2xl font-primary text-left  md:text-3xl" data-aos="fade-up">
-            carfted with love
+          <h3 className="font-sans text-2xl md:text-3xl text-left " data-aos="fade-up">
+            crafted with love
           </h3>
-          <h4 className="text-sm md:text-xl" data-aos="fade-up">
+          <h4 className="font-primary text-sm md:text-xl" data-aos="fade-up">
             these are a selection of my recent works.
           </h4>
         </div>
@@ -249,14 +251,14 @@ export default function Main() {
               <div className="grid md:grid-cols-2 py-4 md:py-8 lg:py-12">
                 <article>
                   <div className="relative">
-                    <small className="md:absolute h-full md:top-1/2 md:-translate-y-1/2 md:-left-6 text-md md:text-xl opacity-100 md:opacity-40">
+                    <small className="hidden md:block md:absolute h-full md:top-1/2 md:-translate-y-1/2 md:-left-6 text-md md:text-xl opacity-100 md:opacity-40">
                       01
                     </small>
-                    <strong className="flex md:ml-3 font-light tracking-wide text-lg md:text-xl lg:text-lg">
-                      flodesk - design emails, funnels that people love to open
+                    <strong className="flex md:ml-3 font-medium leading-6 tracking-wide text-lg md:text-xl lg:text-lg">
+                      flodesk - design emails, funnels people love to open
                     </strong>
                   </div>
-                  <div className="font-primary text-xs mt-3 md:m-3">
+                  <div className="font-primary leading-5 text-xs mt-3 md:m-3">
                     I'm working at Flodesk as Frontend engineer. Developing email, website builders
                     that carfted millions of stunning emails, funnel pages that converts. loved by
                     hundred thousand of entrepreneurs, marketters.
@@ -279,14 +281,14 @@ export default function Main() {
               <div className="grid md:grid-cols-2 py-4 md:py-8 lg:py-12">
                 <article>
                   <p className="relative">
-                    <small className="md:absolute h-full md:top-1/2 md:-translate-y-1/2 md:-left-6 text-md md:text-xl opacity-100 md:opacity-40">
+                    <small className="hidden md:block md:absolute h-full md:top-1/2 md:-translate-y-1/2 md:-left-6 text-md md:text-xl opacity-100 md:opacity-40">
                       02
                     </small>
-                    <strong className="flex md:ml-3 font-light tracking-wide text-lg md:text-xl lg:text-lg">
+                    <strong className="flex md:ml-3 font-medium leading-6 tracking-wide text-lg md:text-xl lg:text-lg">
                       uiutil - an indie ui development kit
                     </strong>
                   </p>
-                  <div className="font-primary text-xs mt-3 md:m-3">
+                  <div className="font-primary leading-5 text-xs mt-3 md:m-3">
                     A open-sourced project that provided set of utilities and tools for UI
                     development. all in one place. personalized.
                   </div>
@@ -306,17 +308,17 @@ export default function Main() {
           </li>
           <li data-aos="fade-up">
             <div className="container">
-              <div className="grid md:grid-cols-2 py-4 md:py-8 lg:py-12 pb-24">
+              <div className="grid md:grid-cols-2 py-4 md:py-8 lg:py-12">
                 <article>
                   <p className="relative">
-                    <small className="md:absolute h-full md:top-1/2 md:-translate-y-1/2 md:-left-6 text-md md:text-xl opacity-100 md:opacity-40">
+                    <small className="hidden md:block md:absolute h-full md:top-1/2 md:-translate-y-1/2 md:-left-6 text-md md:text-xl opacity-100 md:opacity-40">
                       03
                     </small>
-                    <strong className="flex md:ml-3 font-light tracking-wide text-lg md:text-xl lg:text-lg">
+                    <strong className="flex md:ml-3 font-medium leading-6 tracking-wide text-lg md:text-xl lg:text-lg">
                       natours
                     </strong>
                   </p>
-                  <div className="font-primary  text-xs sm:text-sm md:m-3">
+                  <div className="font-primary leading-5 text-xs sm:text-sm md:m-3">
                     a modern landing page markup.
                   </div>
                 </article>
@@ -338,14 +340,14 @@ export default function Main() {
               <div className="grid md:grid-cols-2 py-4 md:py-8 lg:py-12">
                 <article>
                   <p className="relative">
-                    <small className="md:absolute h-full md:top-1/2 md:-translate-y-1/2 md:-left-6 text-md md:text-xl opacity-100 md:opacity-40">
+                    <small className="hidden md:block md:absolute h-full md:top-1/2 md:-translate-y-1/2 md:-left-6 text-md md:text-xl opacity-100 md:opacity-40">
                       04
                     </small>
-                    <strong className="flex md:ml-3 font-light tracking-wide text-lg md:text-xl lg:text-lg">
+                    <strong className="flex md:ml-3 font-medium leading-6 tracking-wide text-lg md:text-xl lg:text-lg">
                       ivyfood
                     </strong>
                   </p>
-                  <div className="font-primary  text-xs sm:text-sm md:m-3">
+                  <div className="font-primary leading-5 text-xs sm:text-sm md:m-3">
                     another modern landing page markup.
                   </div>
                 </article>
@@ -363,7 +365,7 @@ export default function Main() {
             </div>
           </li>
         </ul>
-        <div className="mt-4 py-12 lg:py-16 text-lg md:text-2xl lg:text-3xl">
+        <div className="mt-4 py-8 lg:py-12 text-lg md:text-xl lg:text-2xl">
           <div className="container flex items-center md:items-end font-primary" data-aos="fade-up">
             <a
               className="flex items-end hover:opacity-70 hover:underline transition-all"

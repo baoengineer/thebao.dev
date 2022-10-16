@@ -753,9 +753,6 @@ video {
 .mb-2 {
   margin-bottom: 0.5rem;
 }
-.ml-8 {
-  margin-left: 2rem;
-}
 .block {
   display: block;
 }
@@ -782,6 +779,12 @@ video {
 }
 .h-40 {
   height: 10rem;
+}
+.h-20 {
+  height: 5rem;
+}
+.h-24 {
+  height: 6rem;
 }
 .min-h-1\/2-screen {
   min-height: 50vh;
@@ -932,6 +935,10 @@ video {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 .pt-4 {
   padding-top: 1rem;
 }
@@ -940,9 +947,6 @@ video {
 }
 .pb-24 {
   padding-bottom: 6rem;
-}
-.pl-8 {
-  padding-left: 2rem;
 }
 .text-left {
   text-align: left;
@@ -981,6 +985,21 @@ video {
 }
 .font-light {
   font-weight: 300;
+}
+.leading-3 {
+  line-height: .75rem;
+}
+.leading-10 {
+  line-height: 2.5rem;
+}
+.leading-6 {
+  line-height: 1.5rem;
+}
+.leading-4 {
+  line-height: 1rem;
+}
+.leading-5 {
+  line-height: 1.25rem;
 }
 .tracking-wide {
   letter-spacing: 0.025em;
@@ -1525,8 +1544,8 @@ svg {
     margin-left: 0.75rem;
   }
 
-  .md\:ml-0 {
-    margin-left: 0px;
+  .md\:mt-0 {
+    margin-top: 0px;
   }
 
   .md\:block {
@@ -1562,16 +1581,8 @@ svg {
     flex-direction: row;
   }
 
-  .md\:flex-col {
-    flex-direction: column;
-  }
-
   .md\:items-end {
     align-items: flex-end;
-  }
-
-  .md\:items-center {
-    align-items: center;
   }
 
   .md\:justify-end {
@@ -1644,6 +1655,10 @@ svg {
 
   .lg\:block {
     display: block;
+  }
+
+  .lg\:h-40 {
+    height: 10rem;
   }
 
   .lg\:w-48 {
