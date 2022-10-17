@@ -127,6 +127,7 @@ export default function Main() {
                 </p>
                 <p>· Obsessed with being productive, but chill.</p>
               </div>
+
               <div className="font-primary pt-12 md:py-24 lg:py-56" data-aos="fade-up">
                 "good design is about process, not product."
                 <span className="text-gray-100">- jared sinclair</span>
@@ -174,6 +175,29 @@ export default function Main() {
                   <ul className="flex">
                     <li className="flex items-center ml-2">
                       <a
+                          href="https://www.upwork.com/workwith/thebao"
+                        target="_blank"
+                          className="w-6 h-6 flex items-center justify-center text-gray-100 hover:text-black dark:hover:text-white transition"
+                        title="Hire me at upwork"
+                      >
+                        <svg
+                          id="Layer_1"
+                          version="1.1"
+                          viewBox="0 0 56.7 56.7"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          fill="currentColor"
+                          className="w-4 h-4"
+                        >
+                          <g>
+                            <path d="M38.8,24.6c-2.8,0-3.7,2.7-3.9,4.3v0.1l-0.4,1.5c1.2,1,2.7,1.7,4.2,1.7c2,0,3.8-1.7,3.9-3.9C42.6,26.3,40.9,24.6,38.8,24.6   z" />
+                            <path d="M28.9,3.7C15.2,3.7,4.1,14.8,4.1,28.5c0,13.7,11.1,24.8,24.8,24.8c13.7,0,24.8-11.1,24.8-24.8C53.7,14.8,42.6,3.7,28.9,3.7   z M38.8,36.1c-2,0-3.7-0.6-5.2-1.5l-1.7,8H28l2.4-11c-1-1.4-2-3-2.7-4.5v1.7c0,4.1-3.3,7.4-7.3,7.4c-4,0-7.3-3.3-7.3-7.4v-10h3.8   v10c0,2,1.6,3.6,3.6,3.6c2,0,3.6-1.6,3.6-3.6v-10h3.8c0.8,2.5,2.1,5.5,3.8,8.2c1-3.8,3.8-6.1,7.3-6.1c4.1,0,7.5,3.4,7.5,7.5   C46.3,32.7,42.9,36.1,38.8,36.1z" />
+                          </g>
+                        </svg>
+                      </a>
+                    </li>
+                    <li className="flex items-center">
+                      <a
                         href="https://twitter.com/thebao_dev"
                         target="_blank"
                         className="w-6 h-6 text-gray-100 hover:text-black dark:hover:text-white transition"
@@ -216,10 +240,19 @@ export default function Main() {
                     </li>
                   </ul>
                 </div>
+                <div
+                  className="badge-base LI-profile-badge py-4"
+                  data-locale="en_US"
+                  data-size="large"
+                  data-theme="dark"
+                  data-type="HORIZONTAL"
+                  data-vanity="thebao"
+                  data-version="v1"
+                ></div>
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-4 md:grid-cols-1 lg:grid-cols-2 grayscale order-0 md:order-1">
+            <div className="md:sticky top-24 grid grid-cols-2 gap-4 md:grid-cols-1 lg:grid-cols-2 grayscale order-0 md:order-1">
               <img
                 alt="made with love by bao"
                 src={cta1}

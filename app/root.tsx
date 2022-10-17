@@ -58,11 +58,11 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-        {MAINTENANCE_MODE ? (
-        <body >
-            <main className="flex items-center justify-center h-screen w-screen text-center">
-                <h1>Website is under maintenance.</h1>
-            </main>
+      {MAINTENANCE_MODE ? (
+        <body>
+          <main className="flex items-center justify-center h-screen w-screen text-center">
+            <h1>Website is under maintenance.</h1>
+          </main>
         </body>
       ) : (
         <body className="overflow-visible font-sans">
@@ -77,9 +77,16 @@ export default function App() {
             <LeftNav className="fixed top-full bottom-2 -translate-y-1/2 left-3" />
           </header>
           <Outlet />
-          <ScrollRestoration /> <Scripts />
+          <ScrollRestoration />
+          <Scripts />
           <LiveReload />
           <Footer />
+          <script
+            src="https://platform.linkedin.com/badges/js/profile.js"
+            async
+            defer
+            type="text/javascript"
+          ></script>
         </body>
       )}
     </html>
