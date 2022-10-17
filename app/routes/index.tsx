@@ -108,25 +108,26 @@ export default function Main() {
                 )}
               </div>
             </div>
-            <article className="text-sm md:text-md mt-4 md:mt-0">
-              <p className="text-xl" data-aos="fade-up">
-                I'm bao - a frontend engineer who loves coding, making internet products, and tech
-                stuffs.
+            <article className="text-sm md:text-md lg:text-lg mt-4 md:mt-0">
+              <p className="text-xl font-primary" data-aos="fade-up">
+                I'm a frontend engineer who love coding, making internet products, and tech stuffs.
               </p>
               <br />
-              <div className="text-xs font-primary md:text-md leading-5" data-aos="fade-up">
-                <p>I'm working on modern ui/ux interfaces, websites, applications.</p>
-                <p>specialized in javascript, react, and frontend web stacks.</p>
-                <p>focus on user experience, accessibility, and performance.</p>
-                <p>obsessed with being productive, but chill.</p>
+              <div
+                className="text-xs font-sans font-light md:text-md lg:text-lg leading-5"
+                data-aos="fade-up"
+              >
+                <p>· Working on modern ui/ux, website, and applications.</p>
+                <p>· Specialized in javascript, react, and frontend web stacks.</p>
+                <p>· Focus on user experience, accessibility, and performance.</p>
                 <br />
                 <p>
-                  Make products that meaningful, create values, and
-                  <br className="hidden md:block" />
-                  make our world a better place is my passion.
+                  · Make products that meaningful, create values, and
+                  <br className="hidden md:block" /> make our world a better place is my passion.
                 </p>
+                <p>· Obsessed with being productive, but chill.</p>
               </div>
-              <div className="font-primary py-12 md:py-24 lg:py-56" data-aos="fade-up">
+              <div className="font-primary pt-12 md:py-24 lg:py-56" data-aos="fade-up">
                 "good design is about process, not product."
                 <span className="text-gray-100">- jared sinclair</span>
               </div>
@@ -152,7 +153,7 @@ export default function Main() {
                   have some great ideas?
                 </h2>
                 <p
-                  className="font-primary text-xs md:text-md text-left leading-5 mt-4 text-sm "
+                  className="font-primary text-xs md:text-md lg:text-lg text-left leading-5 mt-4 text-sm "
                   data-aos="fade-up"
                 >
                   I love to collaborate, work together or just talk about softwares, web
@@ -258,7 +259,7 @@ export default function Main() {
                       flodesk - design emails, funnels people love to open
                     </strong>
                   </div>
-                  <div className="font-primary leading-5 text-xs mt-3 md:m-3">
+                  <div className="font-primary leading-5 text-xs md:text-sm mt-3 md:m-3">
                     I'm working at Flodesk as Frontend engineer. Developing email, website builders
                     that carfted millions of stunning emails, funnel pages that converts. loved by
                     hundred thousand of entrepreneurs, marketters.
@@ -288,7 +289,7 @@ export default function Main() {
                       uiutil - an indie ui development kit
                     </strong>
                   </p>
-                  <div className="font-primary leading-5 text-xs mt-3 md:m-3">
+                  <div className="font-primary leading-5 text-xs md:text-sm mt-3 md:m-3">
                     A open-sourced project that provided set of utilities and tools for UI
                     development. all in one place. personalized.
                   </div>
@@ -318,7 +319,7 @@ export default function Main() {
                       natours
                     </strong>
                   </p>
-                  <div className="font-primary leading-5 text-xs sm:text-sm md:m-3">
+                  <div className="font-primary leading-5 text-xs md:text-sm mt-3 md:m-3">
                     a modern landing page markup.
                   </div>
                 </article>
@@ -347,7 +348,7 @@ export default function Main() {
                       ivyfood
                     </strong>
                   </p>
-                  <div className="font-primary leading-5 text-xs sm:text-sm md:m-3">
+                  <div className="font-primary leading-5 text-xs md:text-sm mt-3 md:m-3">
                     another modern landing page markup.
                   </div>
                 </article>

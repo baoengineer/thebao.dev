@@ -77,12 +77,12 @@ export default function Nav({ className }: NavProps) {
             </a>
           </li>
           <li>
-            <Link
-              to="/contact"
+            <a
+              href="mailto:thebao.dev@gmail.com"
               className="p-2 hover:drop-shadow-md transition-all duration-300 hover:underline"
             >
               #contact
-            </Link>
+            </a>
           </li>
         </ul>
       </div>
