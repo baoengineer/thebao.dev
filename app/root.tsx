@@ -3,7 +3,7 @@ import mainStylesheet from 'public/styles/index.css';
 import type { SetStateAction } from 'react';
 import { useEffect, useState } from 'react';
 import { Nav, ThemeToggle } from './components';
-import type { MetaFunction } from '@remix-run/node';
+import { MetaFunction, redirect } from '@remix-run/node';
 import Curtain from './components/curtain';
 import AOS from 'aos';
 import clsx from 'clsx';
@@ -18,6 +18,7 @@ export const meta: MetaFunction = () => ({
   viewport: 'width=device-width,initial-scale=1',
 });
 
+const MAINTENANCE_MODE = true;
 export default function App() {
   const [theme, setTheme] = useState('light');
 
@@ -51,29 +52,36 @@ export default function App() {
     initTheme();
     initAOS();
   }, []);
-
   return (
     <html lang="en" className={clsx('antialiased', theme)}>
       <head>
         <Meta />
         <Links />
       </head>
-      <body className="overflow-visible font-sans">
-        <Curtain />
-        <header>
-          <ThemeToggle
-            className="fixed top-4 left-4 z-50 md:text-lg lg:text-xl"
-            theme={theme}
-            onChange={handleThemeChange}
-          />
+        {MAINTENANCE_MODE ? (
+        <body >
+            <main className="flex items-center justify-center h-screen w-screen text-center">
+                <h1>Website is under maintenance.</h1>
+            </main>
+        </body>
+      ) : (
+        <body className="overflow-visible font-sans">
+          <Curtain />
+          <header>
+            <ThemeToggle
+              className="fixed top-4 left-4 z-50 md:text-lg lg:text-xl"
+              theme={theme}
+              onChange={handleThemeChange}
+            />
             <Nav className="md:fixed top-0 z-40 w-full" />
-          <LeftNav className="fixed top-full bottom-2 -translate-y-1/2 left-3" />
-        </header>
-        <Outlet />
-        <ScrollRestoration /> <Scripts />
-        <LiveReload />
-        <Footer />
-      </body>
+            <LeftNav className="fixed top-full bottom-2 -translate-y-1/2 left-3" />
+          </header>
+          <Outlet />
+          <ScrollRestoration /> <Scripts />
+          <LiveReload />
+          <Footer />
+        </body>
+      )}
     </html>
   );
 }
