@@ -756,9 +756,6 @@ video {
 .mb-2 {
   margin-bottom: 0.5rem;
 }
-.mt-24 {
-  margin-top: 6rem;
-}
 .block {
   display: block;
 }
@@ -783,11 +780,11 @@ video {
 .h-6 {
   height: 1.5rem;
 }
-.h-40 {
-  height: 10rem;
-}
 .h-4 {
   height: 1rem;
+}
+.h-40 {
+  height: 10rem;
 }
 .min-h-1\/2-screen {
   min-height: 50vh;
@@ -940,10 +937,6 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 .pt-4 {
   padding-top: 1rem;
