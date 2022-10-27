@@ -1,6 +1,8 @@
 @layer base {
   html {
     @apply text-root;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   body {
     @apply font-primary text-xs sm:text-sm md:text-base bg-primary text-primary;

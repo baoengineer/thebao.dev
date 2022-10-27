@@ -90,8 +90,8 @@ export default function Main() {
       <section id="about-me" className="pt-20">
         <div className="container">
           <div className="grid lg:grid-cols-2 lg:gap-2 min-h-screen">
-            <div className=" lg:sticky top-0 self-start">
-              <h3 data-aos="fade-up" className="hidden md:block">
+            <div className=" lg:sticky top-24 self-start">
+              <h3 data-aos="fade-up" className="hidden md:block font-sans">
                 about me
               </h3>
               <div className="flex relative">
@@ -109,7 +109,7 @@ export default function Main() {
               </div>
             </div>
             <article className="text-sm md:text-md lg:text-lg mt-4 md:mt-0">
-              <p className="text-xl font-primary" data-aos="fade-up">
+              <p className="text-xl font-sans" data-aos="fade-up">
                 I'm a frontend engineer who love coding, making internet products, and tech stuffs.
               </p>
               <br />
@@ -128,9 +128,11 @@ export default function Main() {
                 <p>· Obsessed with being productive, but chill.</p>
               </div>
 
-              <div className="font-primary pt-12 md:py-24 lg:py-56" data-aos="fade-up">
-                "good design is about process, not product."
-                <span className="text-gray-100">- jared sinclair</span>
+              <div className="font-sans font-light pt-12 md:py-24 lg:py-56" data-aos="fade-up">
+                "<strong>good</strong> design <span className="font-light">is obvious</span>
+                <br />
+                <strong>great</strong> design <span className="font-light">is transparent."</span>
+                <span className="text-gray-100 font-light">- joe sparano</span>
               </div>
             </article>
             <Waypoint
@@ -154,7 +156,7 @@ export default function Main() {
                   have some great ideas?
                 </h2>
                 <p
-                  className="font-primary text-xs md:text-md lg:text-lg text-left leading-5 mt-4 text-sm "
+                  className="font-light text-xs md:text-md lg:text-lg text-left leading-5 mt-4 text-sm "
                   data-aos="fade-up"
                 >
                   I love to collaborate, work together or just talk about softwares, web
@@ -175,9 +177,9 @@ export default function Main() {
                   <ul className="flex">
                     <li className="flex items-center ml-2">
                       <a
-                          href="https://www.upwork.com/workwith/thebao"
+                        href="https://www.upwork.com/workwith/thebao"
                         target="_blank"
-                          className="w-6 h-6 flex items-center justify-center text-gray-100 hover:text-black dark:hover:text-white transition"
+                        className="w-6 h-6 flex items-center justify-center text-gray-100 hover:text-black dark:hover:text-white transition"
                         title="Hire me at upwork"
                       >
                         <svg
@@ -400,7 +402,7 @@ export default function Main() {
           </li>
         </ul>
         <div className="mt-4 py-8 lg:py-12 text-lg md:text-xl lg:text-2xl">
-          <div className="container flex items-center md:items-end font-primary" data-aos="fade-up">
+          <div className="container flex items-center md:items-end text-gray-200" data-aos="fade-up">
             <a
               className="flex items-end hover:opacity-70 hover:underline transition-all"
               href="https://github.com/thebaodev"

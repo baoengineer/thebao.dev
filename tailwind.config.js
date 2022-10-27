@@ -30,7 +30,8 @@ module.exports = {
       textColor,
       backgroundColor,
       fontFamily: {
-        primary: ['ModernSans-Light', 'serif'],
+        primary: ['ModernSans', 'serif'],
+        sans: ['SpaceGrotesk', 'serif'],
       },
       fontSize: {
         root: '24px',

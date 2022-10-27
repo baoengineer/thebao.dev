@@ -60,8 +60,8 @@ export default function App() {
       </head>
       {MAINTENANCE_MODE ? (
         <body>
-          <main className="flex items-center justify-center h-screen w-screen text-center">
-            <h1>Website is under maintenance.</h1>
+          <main className="flex items-center justify-center h-screen w-screen text-center grayscale">
+            <h1 className="font-sans font-light text-gray-200 text-5xl">Website is under maintenance. 🌆 </h1>
           </main>
         </body>
       ) : (
