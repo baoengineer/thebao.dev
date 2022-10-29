@@ -18,7 +18,7 @@ export const meta: MetaFunction = () => ({
   viewport: 'width=device-width,initial-scale=1',
 });
 
-const MAINTENANCE_MODE = true;
+const MAINTENANCE_MODE = false;
 export default function App() {
   const [theme, setTheme] = useState('light');
 
