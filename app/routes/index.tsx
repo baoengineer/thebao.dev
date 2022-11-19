@@ -1,15 +1,11 @@
 import anime from 'animejs';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import avatar from 'public/images/avatar.png';
-import Lottie from 'lottie-react';
-import meAnimation from '../animations/me.json';
-import { Waypoint } from 'react-waypoint';
 import cta1 from 'public/images/cta-1.jpg';
 import cta2 from 'public/images/cta-2.png';
 
 export default function Main() {
   const textStackRef = useRef<HTMLDivElement>(null);
-  const [renderAnimation, setRenderAnimation] = useState(false);
 
   const initTextStackAnimation = () => {
     const textStack = textStackRef.current;
@@ -100,11 +96,6 @@ export default function Main() {
                   className="w-24 md:w-36 lg:w-48 rounded-md drop-shadow-sm grayscale"
                   data-aos="fade-up"
                 />
-                {renderAnimation && (
-                  <div className="  hidden lg:block grayscale absolute -bottom-1/3 right-1/3 tr w-48">
-                    <Lottie animationData={meAnimation} initialSegment={[0, 50]} loop={false} />
-                  </div>
-                )}
               </div>
             </div>
             <article className="text-sm md:text-md lg:text-lg mt-4 md:mt-0">
@@ -134,19 +125,13 @@ export default function Main() {
                 <span className="text-gray-100 font-light">- joe sparano</span>
               </div>
             </article>
-            <Waypoint
-              topOffset={200}
-              onEnter={() => {
-                setRenderAnimation(true);
-              }}
-            />
           </div>
         </div>
       </section>
       <section className="md:pt-12 pt-20">
         <div className="container px-4 lg:py-8 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 items-start gap-4 md:grid-cols-2">
-            <div className="md:sticky md:top-12 lg:p-4 md:p-2 lg:px-16 lg:py-24 order-1 md:order-0">
+            <div className="md:sticky md:top-12 lg:p-4 md:p-2 lg:p-16 xl:py-24 order-1 md:order-0">
               <div className="mx-auto max-w-xl text-left">
                 <h2
                   className="text-2xl md:text-3xl font-sans text-left  md:text-3xl"
@@ -160,44 +145,10 @@ export default function Main() {
                 >
                   I love to collaborate, work together or just talk about softwares, web
                   technologies, coding, productivity and tech stuffs.
-                  <br />
-                  ping me, let's have a coffee together ☕️.
                 </p>
-                <div className="mt-4 md:mt-8" data-aos="fade-up">
-                  <a
-                    href="mailto:thebao.dev@gmail.com"
-                    className="inline-block rounded border border-black dark:border-white bg-black dark:bg-white px-4 lg:px-12 py-3 text-sm font-medium text-white dark:text-black transition-all hover:underline focus:outline-none focus:ring focus:ring-yellow-400"
-                  >
-                    talk to me
-                  </a>
-                </div>
                 <div className="flex items-center mt-4" data-aos="fade-up">
-                  <span className="text-gray-100 text-xs font-primary">or you can find me on</span>
+                  <span className="text-gray-100 text-xs font-primary">I'm on</span>
                   <ul className="flex">
-                    <li className="flex items-center ml-2">
-                      <a
-                        href="https://www.upwork.com/workwith/thebao"
-                        target="_blank"
-                        className="w-6 h-6 flex items-center justify-center text-gray-100 hover:text-black dark:hover:text-white transition"
-                        title="Hire me at upwork"
-                        rel="noreferrer"
-                      >
-                        <svg
-                          id="Layer_1"
-                          version="1.1"
-                          viewBox="0 0 56.7 56.7"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlnsXlink="http://www.w3.org/1999/xlink"
-                          fill="currentColor"
-                          className="w-4 h-4"
-                        >
-                          <g>
-                            <path d="M38.8,24.6c-2.8,0-3.7,2.7-3.9,4.3v0.1l-0.4,1.5c1.2,1,2.7,1.7,4.2,1.7c2,0,3.8-1.7,3.9-3.9C42.6,26.3,40.9,24.6,38.8,24.6   z" />
-                            <path d="M28.9,3.7C15.2,3.7,4.1,14.8,4.1,28.5c0,13.7,11.1,24.8,24.8,24.8c13.7,0,24.8-11.1,24.8-24.8C53.7,14.8,42.6,3.7,28.9,3.7   z M38.8,36.1c-2,0-3.7-0.6-5.2-1.5l-1.7,8H28l2.4-11c-1-1.4-2-3-2.7-4.5v1.7c0,4.1-3.3,7.4-7.3,7.4c-4,0-7.3-3.3-7.3-7.4v-10h3.8   v10c0,2,1.6,3.6,3.6,3.6c2,0,3.6-1.6,3.6-3.6v-10h3.8c0.8,2.5,2.1,5.5,3.8,8.2c1-3.8,3.8-6.1,7.3-6.1c4.1,0,7.5,3.4,7.5,7.5   C46.3,32.7,42.9,36.1,38.8,36.1z" />
-                          </g>
-                        </svg>
-                      </a>
-                    </li>
                     <li className="flex items-center">
                       <a
                         href="https://twitter.com/thebao_dev"
@@ -245,6 +196,14 @@ export default function Main() {
                     </li>
                   </ul>
                 </div>
+                <div className="mt-4" data-aos="fade-up">
+                  <a
+                    href="mailto:thebao.dev@gmail.com"
+                    className="inline-block rounded border border-black dark:border-white bg-black dark:bg-white px-4 lg:px-12 py-3 text-sm font-medium text-white dark:text-black transition-all hover:underline focus:outline-none focus:ring focus:ring-yellow-400"
+                  >
+                    talk to me
+                  </a>
+                </div>
                 <div
                   className="badge-base LI-profile-badge py-4"
                   data-locale="en_US"
@@ -290,14 +249,14 @@ export default function Main() {
               <div className="grid md:grid-cols-2 py-4 md:py-8 lg:py-12">
                 <article>
                   <div className="relative">
-                    <small className="hidden md:block md:absolute h-full md:top-1/2 md:-translate-y-1/2 md:-left-6 text-md md:text-xl opacity-100 md:opacity-40">
+                    <small className="hidden md:block md:absolute h-full md:top-1/2 md:-translate-y-1/2 md:-left-8 text-md md:text-xl opacity-100 md:opacity-40">
                       01
                     </small>
-                    <strong className="flex md:ml-3 font-medium leading-6 tracking-wide text-lg md:text-xl lg:text-lg">
+                    <strong className="flex font-medium leading-6 tracking-wide text-lg md:text-xl lg:text-lg">
                       flodesk - design emails, funnels people love to open
                     </strong>
                   </div>
-                  <div className="font-primary leading-5 text-xs md:text-sm mt-3 md:m-3">
+                  <div className="font-primary leading-5 text-xs md:text-sm mt-3 md:my-3">
                     I'm working at Flodesk as Frontend engineer. Developing email, website builders
                     that carfted millions of stunning emails, funnel pages that converts. loved by
                     hundred thousand of entrepreneurs, marketters.
@@ -321,15 +280,16 @@ export default function Main() {
               <div className="grid md:grid-cols-2 py-4 md:py-8 lg:py-12">
                 <article>
                   <p className="relative">
-                    <small className="hidden md:block md:absolute h-full md:top-1/2 md:-translate-y-1/2 md:-left-6 text-md md:text-xl opacity-100 md:opacity-40">
+                    <small className="hidden md:block md:absolute h-full md:top-1/2 md:-translate-y-1/2 md:-left-8 text-md md:text-xl opacity-100 md:opacity-40">
                       02
                     </small>
-                    <strong className="flex md:ml-3 font-medium leading-6 tracking-wide text-lg md:text-xl lg:text-lg">
+                    <strong className="flex font-medium leading-6 tracking-wide text-lg md:text-xl lg:text-lg">
                       typesth - type something endlessly
                     </strong>
                   </p>
-                  <div className="font-primary leading-5 text-xs md:text-sm mt-3 md:m-3">
-                    A type tester that you love to type. It focuses on the UI, animations, and typing experiences.
+                  <div className="font-primary leading-5 text-xs md:text-sm mt-3 md:my-3">
+                    A type tester that you love to type. It focuses on the UI, animations, and
+                    typing experiences.
                   </div>
                 </article>
                 <div className="flex items-center justify-end mt-12 lg:mt-0">
@@ -350,14 +310,14 @@ export default function Main() {
               <div className="grid md:grid-cols-2 py-4 md:py-8 lg:py-12">
                 <article>
                   <p className="relative">
-                    <small className="hidden md:block md:absolute h-full md:top-1/2 md:-translate-y-1/2 md:-left-6 text-md md:text-xl opacity-100 md:opacity-40">
+                    <small className="hidden md:block md:absolute h-full md:top-1/2 md:-translate-y-1/2 md:-left-8 text-md md:text-xl opacity-100 md:opacity-40">
                       03
                     </small>
-                    <strong className="flex md:ml-3 font-medium leading-6 tracking-wide text-lg md:text-xl lg:text-lg">
+                    <strong className="flex font-medium leading-6 tracking-wide text-lg md:text-xl lg:text-lg">
                       uiutil - an indie ui development kit
                     </strong>
                   </p>
-                  <div className="font-primary leading-5 text-xs md:text-sm mt-3 md:m-3">
+                  <div className="font-primary leading-5 text-xs md:text-sm mt-3 md:my-3">
                     A open-sourced project that provided set of utilities and tools for UI
                     development. all in one place. personalized.
                   </div>
@@ -380,14 +340,14 @@ export default function Main() {
               <div className="grid md:grid-cols-2 py-4 md:py-8 lg:py-12">
                 <article>
                   <p className="relative">
-                    <small className="hidden md:block md:absolute h-full md:top-1/2 md:-translate-y-1/2 md:-left-6 text-md md:text-xl opacity-100 md:opacity-40">
+                    <small className="hidden md:block md:absolute h-full md:top-1/2 md:-translate-y-1/2 md:-left-8 text-md md:text-xl opacity-100 md:opacity-40">
                       04
                     </small>
-                    <strong className="flex md:ml-3 font-medium leading-6 tracking-wide text-lg md:text-xl lg:text-lg">
+                    <strong className="flex font-medium leading-6 tracking-wide text-lg md:text-xl lg:text-lg">
                       natours
                     </strong>
                   </p>
-                  <div className="font-primary leading-5 text-xs md:text-sm mt-3 md:m-3">
+                  <div className="font-primary leading-5 text-xs md:text-sm mt-3 md:my-3">
                     a modern landing page markup.
                   </div>
                 </article>
