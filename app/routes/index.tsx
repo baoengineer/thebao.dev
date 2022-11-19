@@ -325,6 +325,35 @@ export default function Main() {
                       02
                     </small>
                     <strong className="flex md:ml-3 font-medium leading-6 tracking-wide text-lg md:text-xl lg:text-lg">
+                      typesth - type something endlessly
+                    </strong>
+                  </p>
+                  <div className="font-primary leading-5 text-xs md:text-sm mt-3 md:m-3">
+                    A type tester that you love to type. It focuses on the UI, animations, and typing experiences.
+                  </div>
+                </article>
+                <div className="flex items-center justify-end mt-12 lg:mt-0">
+                  <a
+                    className="relative hover:underline underline-offset-4 before:content-[' '] before:block before:opacity-50 before:text-gray-200 before:bg-gray-200 before:absolute before:-top-4 before:-left-4 before:w-12 before:h-12 before:rounded-full before-p-4 before:hover:w-16 before:hover:h-16 before:transition-all"
+                    href="https://uiutils.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span className="relative z-10 font-primary">view project →</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li data-aos="fade-up">
+            <div className="container">
+              <div className="grid md:grid-cols-2 py-4 md:py-8 lg:py-12">
+                <article>
+                  <p className="relative">
+                    <small className="hidden md:block md:absolute h-full md:top-1/2 md:-translate-y-1/2 md:-left-6 text-md md:text-xl opacity-100 md:opacity-40">
+                      03
+                    </small>
+                    <strong className="flex md:ml-3 font-medium leading-6 tracking-wide text-lg md:text-xl lg:text-lg">
                       uiutil - an indie ui development kit
                     </strong>
                   </p>
@@ -352,7 +381,7 @@ export default function Main() {
                 <article>
                   <p className="relative">
                     <small className="hidden md:block md:absolute h-full md:top-1/2 md:-translate-y-1/2 md:-left-6 text-md md:text-xl opacity-100 md:opacity-40">
-                      03
+                      04
                     </small>
                     <strong className="flex md:ml-3 font-medium leading-6 tracking-wide text-lg md:text-xl lg:text-lg">
                       natours
@@ -375,35 +404,6 @@ export default function Main() {
               </div>
             </div>
           </li>
-          <li data-aos="fade-up">
-            <div className="container">
-              <div className="grid md:grid-cols-2 py-4 md:py-8 lg:py-12">
-                <article>
-                  <p className="relative">
-                    <small className="hidden md:block md:absolute h-full md:top-1/2 md:-translate-y-1/2 md:-left-6 text-md md:text-xl opacity-100 md:opacity-40">
-                      04
-                    </small>
-                    <strong className="flex md:ml-3 font-medium leading-6 tracking-wide text-lg md:text-xl lg:text-lg">
-                      ivyfood
-                    </strong>
-                  </p>
-                  <div className="font-primary leading-5 text-xs md:text-sm mt-3 md:m-3">
-                    another modern landing page markup.
-                  </div>
-                </article>
-                <div className="flex items-center justify-end mt-12 lg:mt-0">
-                  <a
-                    className="relative hover:underline underline-offset-4 before:content-[' '] before:block before:opacity-50 before:text-gray-200 before:bg-gray-200 before:absolute before:-top-4 before:-left-4 before:w-12 before:h-12 before:rounded-full before-p-4 before:hover:w-16 before:hover:h-16 before:transition-all"
-                    href="https://projects.thebao.dev/ivyfood"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <span className="relative z-10 font-primary">view project →</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
         </ul>
         <div className="mt-4 py-8 lg:py-12 text-lg md:text-xl lg:text-2xl">
           <div
@@ -412,7 +412,7 @@ export default function Main() {
           >
             <a
               className="flex items-end hover:opacity-70 hover:underline transition-all"
-              href="https://github.com/thebaodev"
+              href="https://github.com/baoidl"
               target="_blank"
               rel="noreferrer"
             >
