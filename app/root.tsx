@@ -3,7 +3,8 @@ import mainStylesheet from 'public/styles/index.css';
 import type { SetStateAction } from 'react';
 import { useEffect, useState } from 'react';
 import { Nav, ThemeToggle } from './components';
-import { MetaFunction, redirect } from '@remix-run/node';
+import type { MetaFunction } from '@remix-run/node';
+import { redirect } from '@remix-run/node';
 import Curtain from './components/curtain';
 import AOS from 'aos';
 import clsx from 'clsx';
@@ -61,7 +62,9 @@ export default function App() {
       {MAINTENANCE_MODE ? (
         <body>
           <main className="flex items-center justify-center h-screen w-screen text-center grayscale">
-            <h1 className="font-sans font-light text-gray-200 text-5xl">Website is under maintenance. 🌆 </h1>
+            <h1 className="font-sans font-light text-gray-200 text-5xl">
+              Website is under maintenance. 🌆{' '}
+            </h1>
           </main>
         </body>
       ) : (
@@ -73,7 +76,7 @@ export default function App() {
               theme={theme}
               onChange={handleThemeChange}
             />
-            <Nav 3 />
+            <Nav className="md:fixed top-0 z-40 w-full" />
             <LeftNav className="fixed top-full bottom-2 -translate-y-1/2 left-3" />
           </header>
           <Outlet />
