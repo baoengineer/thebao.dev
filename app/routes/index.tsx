@@ -295,7 +295,7 @@ export default function Main() {
                 <div className="flex items-center justify-end mt-12 lg:mt-0">
                   <a
                     className="relative hover:underline underline-offset-4 before:content-[' '] before:block before:opacity-50 before:text-gray-200 before:bg-gray-200 before:absolute before:-top-4 before:-left-4 before:w-12 before:h-12 before:rounded-full before-p-4 before:hover:w-16 before:hover:h-16 before:transition-all"
-                    href="https://uiutils.com"
+                    href="https://typesth.com"
                     target="_blank"
                     rel="noreferrer"
                   >
